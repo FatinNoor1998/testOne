@@ -2,11 +2,49 @@
   "sections": {
     "main": {
       "type": "main-404",
+<<<<<<< HEAD
+=======
+      "disabled": true,
+      "settings": {
+      }
+    },
+    "c931eb14-c2ae-477a-8f10-ecdf0a352b5d": {
+      "type": "image-section",
+      "blocks": {
+        "27834707-0fff-4580-92e8-aa768dd1fffa": {
+          "type": "text-block",
+          "settings": {
+            "text-content": "<p>Hello world<\/p>",
+            "font-size": 21,
+            "mobile-font-size": 16,
+            "line-height": 37,
+            "mobile-line-height": 37,
+            "font": "Helvetica, Arial, sans-serif",
+            "text-color": "#000000",
+            "block-width": "medium",
+            "custom-block-width": 800
+          }
+        },
+        "9759b3a3-0bbc-45ab-9a52-a46b9e6690c2": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/person-fishing-on-the-beach-is-silhouetted-at-sunset.jpg",
+            "image_width": 100,
+            "alignment": "center"
+          }
+        }
+      },
+      "block_order": [
+        "27834707-0fff-4580-92e8-aa768dd1fffa",
+        "9759b3a3-0bbc-45ab-9a52-a46b9e6690c2"
+      ],
+>>>>>>> 0f06cb743c1393551c7984dfdfd8f80f651a2b4a
       "settings": {
       }
     }
   },
   "order": [
-    "main"
+    "main",
+    "c931eb14-c2ae-477a-8f10-ecdf0a352b5d"
   ]
 }
