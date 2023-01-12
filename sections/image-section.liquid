@@ -2,15 +2,82 @@
   {% for block in section.blocks %}
     {% case block.type %}
       {% when 'text-block' %}
-        <div class="text-block-{{ block-id }}">
-          <div class="block-{{ block-id }}"></div>
+        <div class="text-block-{{ block.id }}">
+          <div class="block-{{ block.id }}-width-{{ block.settings.block-width }}">
+              {{ block.settings.text-content }}
+          </div>
         </div>
 
       {% when 'spacer-block' %}
-        <div class="spacer-{{ block.id }}"></div>
+        <div class="spacer-{{ block.id }}">
+        
+        </div>
+
+      {% when 'image' %}
+        {% if block.settings.image == blank %}
+         <div class="image-{{ block.id }}">
+            <img src="//cdn.shopify.com/s/files/1/0575/9575/6709/files/404-Image-min.jpg?v=1655291164" width = "500" height="500">
+         </div>
+          
+        {% else %}
+          <div class="image-{{block.id}}">          
+            <img src ="{{ block.settings.image | img_url: '500px' }}">
+          </div>
+        {% endif %} 
+        
     {% endcase %}
   {% endfor %}
 </Section>
+
+<style>
+
+  {% for block in section.blocks %}
+    {% case block.type %}
+    {% when 'text-block' %}
+
+    .block-{{ block.id }}-width-small{
+      max-width: 575px;
+      margin: 0 auto;
+    }
+    .block-{{ block.id }}-width-medium{
+      max-width: 1148px;
+      margin: 0 auto;
+    }
+    .block-{{ block.id }}-width-full{
+      max-width: 100%;
+    }
+    .block-{{ block.id }}-width-custom{
+      max-width: {{ block.settings.custom-block-width | append: "px" }};
+      margin: 0 auto;
+    }
+    .section-wrapper-{{ section.id }} .text-block-{{ block.id }}{
+      text-align: center;
+    }
+    .section-wrapper-{{ section.id }} .text-block-{{ block.id }} p{
+      font-size: {{ block.settings.font-size | append: 'px' }};
+      font-family: {{ block.settings.font }};
+      color: {{ block.settings.text-color }};
+      line-height: {{ block.settings.line-height }}px;
+    }
+    {% when 'spacer-block' %}
+      .section-wrapper-{{ section.id }} .spacer-{{ block.id }}{
+        height: {{ block.settings.spacer-height }}px;
+      }
+
+    {% when 'image' %}
+      .section-wrapper-{{ section.id }} .image-{{ block.id }}{
+
+        display: flex;
+        justify-content: {{ block.settings.alignment }};
+      }
+      .section-wrapper-{{ section.id }} .image-{{ block.id }} img{
+        width: {{ block.settings.image_width }}px;
+      }
+
+      {% endcase %}
+      {% endfor %}
+
+</style>
 
 {% schema %}
 {
@@ -24,7 +91,7 @@
           "type": "richtext",
           "id": "text-content",
           "label": "Change text block",
-          "default": "<p>Hello world</p>"
+          "default": "<p>Hello world <a href='http://www.google.com/'><span>write some link</span></a></p>"
         },
         {
           "type": "range",
@@ -143,12 +210,12 @@
       {
         "type": "range",
         "id": "image_width",
-        "min": 50,
-        "max": 200,
-        "step": 5,
+        "min": 100,
+        "max": 1000,
+        "step": 50,
         "unit": "px",
         "label": "Image width",
-        "default": 100
+        "default": 600
       },
       {
         "type": "select",
