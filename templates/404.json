@@ -2,8 +2,6 @@
   "sections": {
     "main": {
       "type": "main-404",
-<<<<<<< HEAD
-=======
       "disabled": true,
       "settings": {
       }
@@ -14,8 +12,8 @@
         "27834707-0fff-4580-92e8-aa768dd1fffa": {
           "type": "text-block",
           "settings": {
-            "text-content": "<p>Hello world<\/p>",
-            "font-size": 21,
+            "text-content": "<p>40 -  Page not found!<\/p>",
+            "font-size": 34,
             "mobile-font-size": 16,
             "line-height": 37,
             "mobile-line-height": 37,
@@ -28,17 +26,37 @@
         "9759b3a3-0bbc-45ab-9a52-a46b9e6690c2": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/person-fishing-on-the-beach-is-silhouetted-at-sunset.jpg",
-            "image_width": 100,
+            "image_width": 500,
             "alignment": "center"
+          }
+        },
+        "9e079a2f-96f3-4093-a8ea-87a5eb72c2b0": {
+          "type": "spacer-block",
+          "settings": {
+            "spacer-height": 30
+          }
+        },
+        "40d28bbd-14bb-42c7-b773-e2bde1bd729d": {
+          "type": "text-block",
+          "settings": {
+            "text-content": "<p>Oops, it looks like the page you are looking for is no longer here...<br\/>Choose one of the links below or <a href=\"https:\/\/waxlondon.com\/\">click here to return home.<\/a><\/p>",
+            "font-size": 16,
+            "mobile-font-size": 16,
+            "line-height": 22,
+            "mobile-line-height": 37,
+            "font": "Helvetica, Arial, sans-serif",
+            "text-color": "#000000",
+            "block-width": "medium",
+            "custom-block-width": 800
           }
         }
       },
       "block_order": [
         "27834707-0fff-4580-92e8-aa768dd1fffa",
-        "9759b3a3-0bbc-45ab-9a52-a46b9e6690c2"
+        "9759b3a3-0bbc-45ab-9a52-a46b9e6690c2",
+        "9e079a2f-96f3-4093-a8ea-87a5eb72c2b0",
+        "40d28bbd-14bb-42c7-b773-e2bde1bd729d"
       ],
->>>>>>> 0f06cb743c1393551c7984dfdfd8f80f651a2b4a
       "settings": {
       }
     }
