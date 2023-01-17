@@ -13,25 +13,12 @@
         <div class="spacer-{{ block.id }}">
         
         </div>
-
-      {% when 'image' %}
-        {% if block.settings.image == blank %}
-         <div class="image-{{ block.id }}">
-            <img src="//cdn.shopify.com/s/files/1/0575/9575/6709/files/404-Image-min.jpg?v=1655291164" width = "500" height="500">
-         </div>
-          
-        {% else %}
-          <div class="image-{{block.id}}">          
-            <img src ="{{ block.settings.image | img_url: '500px' }}">
-          </div>
-        {% endif %} 
         
     {% endcase %}
   {% endfor %}
 </Section>
 
 <style>
-
   {% for block in section.blocks %}
     {% case block.type %}
     {% when 'text-block' %}
@@ -64,35 +51,23 @@
       .section-wrapper-{{ section.id }} .spacer-{{ block.id }}{
         height: {{ block.settings.spacer-height }}px;
       }
-
-    {% when 'image' %}
-      .section-wrapper-{{ section.id }} .image-{{ block.id }}{
-
-        display: flex;
-        justify-content: {{ block.settings.alignment }};
-      }
-      .section-wrapper-{{ section.id }} .image-{{ block.id }} img{
-        width: {{ block.settings.image_width }}px;
-      }
-
-      {% endcase %}
-      {% endfor %}
-
+    {% endcase %}
+  {% endfor %}
 </style>
 
 {% schema %}
-{
-  "name": "image-section",
-  "blocks": [
-    {
-      "name": "text-block",
-      "type": "text-block",
-      "settings": [
+  {
+    "name": "single-column-text",
+    "blocks": [
+      {
+        "name": "text-block",
+        "type": "text-block",
+        "settings": [
         {
           "type": "richtext",
           "id": "text-content",
           "label": "Change text block",
-          "default": "<p>Hello world <a href='http://www.google.com/'><span>write some link</span></a></p>"
+          "default": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eu euismod ante, quis finibus odio. Aenean scelerisque consectetur pharetra. In condimentum est eu eros malesuada aliquam.</p>"
         },
         {
           "type": "range",
@@ -178,7 +153,28 @@
           "step": 50,
           "unit": "px",
           "default": 800
+        },
+        {
+          "type": "select",
+          "id": "text-align",
+          "label": "text-align",
+          "options": [
+            {
+              "value": "left",
+              "label": "left"
+            },
+            {
+              "value": "center",
+              "label": "center"
+            },
+            {
+              "value": "right",
+              "label": "right"
+            }
+          ],
+          "default": "left"
         }
+
       ]
     },
 
@@ -197,56 +193,14 @@
           "default": 30
         }
       ]
-    },
-
-    {
-      "type": "image",
-      "name": "Image",
-      "settings": [
-      {
-        "type": "image_picker",
-        "id": "image",
-        "label": "Image"
-      },
-      {
-        "type": "range",
-        "id": "image_width",
-        "min": 100,
-        "max": 1000,
-        "step": 50,
-        "unit": "px",
-        "label": "Image width",
-        "default": 600
-      },
-      {
-        "type": "select",
-        "id": "alignment",
-        "label": "Image alignment on large screen",
-        "options": [
-          {
-            "value": "left",
-            "label": "Left"
-          },
-          {
-            "value": "center",
-            "label": "Center"
-          },
-          {
-            "value": "right",
-            "label": "Right"
-          }
-        ],
-        "default": "center"
-      }
-     ]
-    }
-  ],
-  "presets": [
+    }     
+    ],
+    "presets": [
     {
       "category": "content",
-      "name": "image-section"
+      "name": "single-column-text"
     }
-  ]
+  ] 
 }
 {% endschema %}
 
