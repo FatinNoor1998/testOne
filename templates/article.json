@@ -37,20 +37,66 @@
           "type": "text-block",
           "settings": {
             "text-content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eu euismod ante, quis finibus odio. Aenean scelerisque consectetur pharetra. In condimentum est eu eros malesuada aliquam.<\/p>",
-            "font-size": 16,
+            "font-size": 24,
             "mobile-font-size": 13,
-            "line-height": 37,
+            "line-height": 30,
             "mobile-line-height": 37,
-            "font": "Helvetica, Arial, sans-serif",
+            "font": "Georgia, Utopia, 'Times New Roman', Times, serif",
             "text-color": "#000000",
             "block-width": "medium",
             "custom-block-width": 250,
             "text-align": "left"
           }
+        },
+        "85990992-4805-47ff-a275-ccbd24ea03c6": {
+          "type": "spacer-block",
+          "settings": {
+            "spacer-height": 2
+          }
+        },
+        "8074adb6-0012-4f49-af90-8aa107807dca": {
+          "type": "text-block",
+          "settings": {
+            "text-content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eu euismod ante, quis finibus odio. Aenean scelerisque consectetur pharetra. In condimentum est eu eros malesuada aliquam. Aenean iaculis ligula a quam vehicula mattis. Nulla fringilla bibendum erat id molestie. Quisque id arcu in libero euismod rutrum sed ut libero. Nunc et dolor non ex elementum varius vel ut ligula. Sed id felis ex. Aenean tristique lobortis est, vitae consequat turpis sagittis varius. Quisque pharetra, dui ornare iaculis consectetur, magna velit condimentum nulla, non tristique nisl lorem ac risus. Cras accumsan eu est in dignissim. Aenean ligula felis, rutrum in augue quis, consectetur porta libero.<\/p>",
+            "font-size": 15,
+            "mobile-font-size": 16,
+            "line-height": 22,
+            "mobile-line-height": 30,
+            "font": "Helvetica, Arial, sans-serif",
+            "text-color": "#000000",
+            "block-width": "medium",
+            "custom-block-width": 800,
+            "text-align": "left"
+          }
+        },
+        "b452eb99-5bef-467e-86f6-15a84b8261f2": {
+          "type": "spacer-block",
+          "settings": {
+            "spacer-height": 2
+          }
+        },
+        "b429e53d-0dff-45c4-8c19-44b33dcf215f": {
+          "type": "text-block",
+          "settings": {
+            "text-content": "<p>Nunc faucibus ornare risus nec accumsan. Donec sed nisi rutrum, mattis diam a, tempus risus. Morbi at lectus elementum, laoreet orci sit amet, rutrum ipsum. Integer vel aliquet risus, sed pharetra justo. Pellentesque commodo eu quam vel hendrerit. Mauris non turpis fermentum, faucibus nulla quis, convallis nulla. Ut efficitur metus eros, quis consequat nunc tincidunt et. Sed eleifend arcu vel porta cursus. Mauris ultrices mauris vel lacus hendrerit sodales. Quisque a mattis turpis. Sed nisl purus, malesuada.<\/p>",
+            "font-size": 15,
+            "mobile-font-size": 16,
+            "line-height": 22,
+            "mobile-line-height": 30,
+            "font": "Helvetica, Arial, sans-serif",
+            "text-color": "#000000",
+            "block-width": "medium",
+            "custom-block-width": 800,
+            "text-align": "left"
+          }
         }
       },
       "block_order": [
-        "bf1caaca-5dff-4b41-8c47-261c46fea0e6"
+        "bf1caaca-5dff-4b41-8c47-261c46fea0e6",
+        "85990992-4805-47ff-a275-ccbd24ea03c6",
+        "8074adb6-0012-4f49-af90-8aa107807dca",
+        "b452eb99-5bef-467e-86f6-15a84b8261f2",
+        "b429e53d-0dff-45c4-8c19-44b33dcf215f"
       ],
       "settings": {
       }
