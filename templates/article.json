@@ -29,9 +29,35 @@
       ],
       "settings": {
       }
+    },
+    "7a9084b0-7bdd-4ca3-9b1e-e61e98be5640": {
+      "type": "single_column_text",
+      "blocks": {
+        "bf1caaca-5dff-4b41-8c47-261c46fea0e6": {
+          "type": "text-block",
+          "settings": {
+            "text-content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eu euismod ante, quis finibus odio. Aenean scelerisque consectetur pharetra. In condimentum est eu eros malesuada aliquam.<\/p>",
+            "font-size": 16,
+            "mobile-font-size": 13,
+            "line-height": 37,
+            "mobile-line-height": 37,
+            "font": "Helvetica, Arial, sans-serif",
+            "text-color": "#000000",
+            "block-width": "medium",
+            "custom-block-width": 250,
+            "text-align": "left"
+          }
+        }
+      },
+      "block_order": [
+        "bf1caaca-5dff-4b41-8c47-261c46fea0e6"
+      ],
+      "settings": {
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "7a9084b0-7bdd-4ca3-9b1e-e61e98be5640"
   ]
 }
