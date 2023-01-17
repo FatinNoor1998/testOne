@@ -3,7 +3,7 @@
     {% case block.type %}
       {% when 'text-block' %}
         <div class="text-block-{{ block.id }}">
-          <div class="block-{{ block.id }}-width-{{ block.settings.block-width }}">
+          <div class="block-{{ block.id }}-width-{{ block.settings.block-width }} text-align-{{ block.settings.text-align }}">
               {{ block.settings.text-content }}
               
           </div>
@@ -24,11 +24,11 @@
     {% when 'text-block' %}
 
     .block-{{ block.id }}-width-small{
-      max-width: 575px;
+      max-width: 400px;
       margin: 0 auto;
     }
     .block-{{ block.id }}-width-medium{
-      max-width: 1148px;
+      max-width: 600px;
       margin: 0 auto;
     }
     .block-{{ block.id }}-width-full{
@@ -38,9 +38,16 @@
       max-width: {{ block.settings.custom-block-width | append: "px" }};
       margin: 0 auto;
     }
-    .section-wrapper-{{ section.id }} .text-block-{{ block.id }}{
+    .section-wrapper-{{ section.id }} .text-block-{{ block.id }} .block-{{ block.id }}.text-align-left{
+      text-align: left;
+    }
+    .section-wrapper-{{ section.id }} .text-block-{{ block.id }} .block-{{ block.id }}.text-align-center{
       text-align: center;
     }
+    .section-wrapper-{{ section.id }} .text-block-{{ block.id }} .block-{{ block.id }}.text-align-right{
+      text-align: right;
+    }
+
     .section-wrapper-{{ section.id }} .text-block-{{ block.id }} p{
       font-size: {{ block.settings.font-size | append: 'px' }};
       font-family: {{ block.settings.font }};
