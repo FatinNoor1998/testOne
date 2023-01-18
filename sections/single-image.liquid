@@ -34,19 +34,22 @@
       max-width: 100%;
     }
 
+
   {% for block in section.blocks %}
     {% case block.type %}
     {% when 'image' %}
 
-    .section-wrapper-{{ section.id }} .block-{{ block.id }} p{
+    .section-wrapper-{{ section.id }} .single-image-{{ block.id }} .block p{
       font-size: {{ block.settings.font-size | append: 'px' }};
       font-family: {{ block.settings.font }};
       color: {{ block.settings.text-color }};
       line-height: {{ block.settings.line-height }}px;
+      margin: 0px;
     }
-    .section-wrapper-{{ section.id }} img{
+    .section-wrapper-{{ section.id }} .single-image-{{ block.id }} img{
       width: 100%;
     } 
+
 
       {% endcase %}
       {% endfor %}
