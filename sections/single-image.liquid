@@ -11,12 +11,11 @@
                 loading="lazy">
           {%- else -%}
                 {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
-            
+
+      {% endif %}
               <div class="block-{{ block.id }} {{ block.settings.text-align }}">
                   {{ block.settings.text-content }}
               </div>
-
-      {% endif %}
     {% endcase %}
   {% endfor %}
 </Section>
