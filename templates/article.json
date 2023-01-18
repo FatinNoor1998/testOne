@@ -90,10 +90,38 @@
         "padding-top": 20,
         "padding-bottom": 20
       }
+    },
+    "33f08f80-f410-4ef0-b249-c466c80b4b1b": {
+      "type": "double_column_text",
+      "blocks": {
+        "template--17540903534868__33f08f80-f410-4ef0-b249-c466c80b4b1b-1674042405642b286e-0": {
+          "type": "text-block",
+          "settings": {
+            "text-content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eu euismod ante, quis finibus odio. Aenean scelerisque consectetur pharetra. In condimentum est eu eros malesuada aliquam. Aenean iaculis ligula a quam vehicula mattis. Nulla fringilla bibendum erat id molestie. Quisque id arcu in libero euismod rutrum sed ut libero. Nunc et dolor non ex elementum varius vel ut ligula. Sed id felis ex. Aenean tristique lobortis est, vitae consequat turpis sagittis varius. Quisque pharetra, dui ornare iaculis consectetur, magna velit condimentum nulla, non tristique nisl lorem ac risus. Cras accumsan eu est in dignissim.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--17540903534868__33f08f80-f410-4ef0-b249-c466c80b4b1b-1674042405642b286e-0"
+      ],
+      "settings": {
+        "font-size": 21,
+        "mobile-font-size": 16,
+        "line-height": 30,
+        "mobile-line-height": 30,
+        "font": "Trebuchet MS, sans-serif",
+        "text-color": "#000000",
+        "text-align": "center",
+        "section-width": "medium",
+        "custom-section-width": 1000,
+        "padding-top": 20,
+        "padding-bottom": 20
+      }
     }
   },
   "order": [
     "main",
-    "7a9084b0-7bdd-4ca3-9b1e-e61e98be5640"
+    "7a9084b0-7bdd-4ca3-9b1e-e61e98be5640",
+    "33f08f80-f410-4ef0-b249-c466c80b4b1b"
   ]
 }
