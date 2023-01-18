@@ -42,7 +42,7 @@
     {% case block.type %}
     {% when 'image' %}
 
-    .section-wrapper-{{ section.id }} .block p{
+    .section-wrapper-{{ section.id }} .single-image-{{ block.id }} .block p{
       font-size: {{ block.settings.font-size | append: 'px' }};
       font-family: {{ block.settings.font }};
       color: {{ block.settings.text-color }};
