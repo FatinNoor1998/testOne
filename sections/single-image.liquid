@@ -39,13 +39,13 @@
     {% case block.type %}
     {% when 'image' %}
 
-    .section-wrapper-{{ section.id }} .single-image-{{ block.id }} .block p{
+    .section-wrapper-{{ section.id }} .block-{{ block.id }} p{
       font-size: {{ block.settings.font-size | append: 'px' }};
       font-family: {{ block.settings.font }};
       color: {{ block.settings.text-color }};
       line-height: {{ block.settings.line-height }}px;
     }
-    .section-wrapper-{{ section.id }} .single-image-{{ block.id }} img{
+    .section-wrapper-{{ section.id }} img{
       width: 100%;
     } 
 
