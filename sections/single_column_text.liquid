@@ -48,7 +48,12 @@
     .section-wrapper-{{ section.id }} .text-block-{{ block.id }} .block-{{ block.id }}.text-align-right{
       text-align: right;
     }
-
+    .section-wrapper-{{ section.id }} .text-block-{{ block.id }} .block-{{ block.id }}{
+      padding-top: {{ block.settings.padding-top }}PX;
+    }
+    .section-wrapper-{{ section.id }} .text-block-{{ block.id }} .block-{{ block.id }}{
+      padding-bottom: {{ block.settings.padding-bottom }}PX;
+    }
 
     .section-wrapper-{{ section.id }} .text-block-{{ block.id }} p{
       font-size: {{ block.settings.font-size | append: 'px' }};
