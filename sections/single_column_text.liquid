@@ -19,6 +19,7 @@
 </Section>
 
 <style>
+
   {% for block in section.blocks %}
     {% case block.type %}
     {% when 'text-block' %}
@@ -48,12 +49,14 @@
       text-align: right;
     }
 
+
     .section-wrapper-{{ section.id }} .text-block-{{ block.id }} p{
       font-size: {{ block.settings.font-size | append: 'px' }};
       font-family: {{ block.settings.font }};
       color: {{ block.settings.text-color }};
       line-height: {{ block.settings.line-height }}px;
     }
+
     {% when 'spacer-block' %}
       .section-wrapper-{{ section.id }} .spacer-{{ block.id }}{
         height: {{ block.settings.spacer-height }}px;
@@ -65,6 +68,115 @@
 {% schema %}
   {
     "name": "single-column-text",
+    "tag": "section",
+    "settings": [
+      {
+          "type": "select",
+          "id": "text-align",
+          "label": "text-align",
+          "options": [
+            {
+              "value": "left",
+              "label": "left"
+            },
+            {
+              "value": "center",
+              "label": "center"
+            },
+            {
+              "value": "right",
+              "label": "right"
+            }
+          ],
+          "default": "left" 
+      },
+
+      {
+        "type": "range",
+          "id": "font-size",
+          "label": "Font size",
+          "min": 12,
+          "max": 50,
+          "step": 1,
+          "unit": "px",
+          "default": 16
+      },
+      {
+        "type": "range",
+          "id": "line-height",
+          "label": "Line height",
+          "min": 10,
+          "max": 100,
+          "step": 1,
+          "unit": "px",
+          "default": 30
+      },
+      {
+        "type": "font",
+         "id": "font",
+         "label": "Font Family"
+      },
+      {
+        "type": "color",
+          "label": "Text color",
+          "id": "text-color",
+          "default": "#000000"
+      },
+      {
+          "type": "select",
+          "id": "block-width",
+          "label": "Block width",
+          "options": [
+            {
+              "value": "small",
+              "label": "Small"
+            },
+            {
+              "value": "medium",
+              "label": "Medium"
+            },
+            {
+              "value": "full",
+              "label": "Full"
+            },
+            {
+              "value": "custom",
+              "label": "Custom"
+            }
+          ],
+          "default": "medium"
+        },
+        {
+          "type": "range",
+          "id": "custom-block-width",
+          "label": "Custom block width",
+          "min": 200,
+          "max": 1900,
+          "step": 50,
+          "unit": "px",
+          "default": 800
+        },
+        {
+          "type": "range",
+          "id": "padding_top",
+          "min": 0,
+          "max": 100,
+          "step": 2,
+          "unit": "px",
+          "label": "Padding Top",
+          "default": 20
+        },
+        {
+          "type": "range",
+          "id": "padding_bottom",
+          "min": 0,
+          "max": 100,
+          "step": 2,
+          "unit": "px",
+          "label": "Padding Bottom",
+          "default": 20
+        }
+    ],
     "blocks": [
       {
         "name": "text-block",
@@ -181,6 +293,7 @@
           ],
           "default": "left"
         }
+        
 
       ]
     },
