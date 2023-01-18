@@ -2,24 +2,23 @@
   {% for block in section.blocks %}
     {% case block.type %}
       {% when 'image' %}
-        {% if block.settings.image == blank %}
-        <div class="image-{{ block.id }}">
-           <img src="{{ 'image_1' | asset_url }}" alt="img">
-        </div>         
-        {% else %}
-          <div class="image-{{block.id}}">          
-            <img src ="{{ block.settings.image }}">
-          </div>
-        {% endif %} 
+        {% if block.settings.image %}
+            <img
+              src=" {{ block.settings.image | img_url: 'master' }} "
+              alt=""
+              height=""
+              width=""
+              loading="lazy">
+          {%- else -%}
+              {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
 
           <div class="block-{{ block.id }} {{ block.settings.text-align }}">
               {{ block.settings.text-content }}
           </div>
-
+      {% endif %}
     {% endcase %}
   {% endfor %}
 </Section>
-
 
 <style>
     section .section-wrapper-{{ section.id }}.width-small{
