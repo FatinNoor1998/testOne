@@ -4,7 +4,7 @@
       {% when 'image' %}
         {% if block.settings.image == blank %}
         <div class="image-{{ block.id }}">
-           <img src={{ 'image_1' | assets_url }}>
+           <img src="{{ 'image_1' | asset_url }}" alt="img">
         </div>         
         {% else %}
           <div class="image-{{block.id}}">          
