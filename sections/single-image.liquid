@@ -4,11 +4,11 @@
       {% when 'image' %}
         {% if block.settings.image == blank %}
         <div class="image-{{ block.id }}">
-           <img src={{ 'image_1' | assets_url | img_url: '600px' }}>
+           <img src={{ 'image_1' | assets_url }}>
         </div>         
         {% else %}
           <div class="image-{{block.id}}">          
-            <img src ="{{ block.settings.image | img_url: '600px' }}">
+            <img src ="{{ block.settings.image }}">
           </div>
         {% endif %} 
 
