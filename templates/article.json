@@ -114,9 +114,9 @@
         "4edd1de6-cd0a-4dc6-93cc-0232a24fc9cc"
       ],
       "settings": {
-        "font-size": 21,
+        "font-size": 15,
         "mobile-font-size": 16,
-        "line-height": 30,
+        "line-height": 22,
         "mobile-line-height": 30,
         "font": "Trebuchet MS, sans-serif",
         "text-color": "#000000",
