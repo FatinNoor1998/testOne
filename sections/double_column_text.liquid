@@ -1,8 +1,234 @@
+<Section class="section-wrapper-{{ section.id }} width-{{ section.settings.section-width }}">
+  {% for block in section.blocks %}
+    {% case block.type %}
+      {% when 'text-block' %}
+        <div class="text-block-{{ block.id }}">
+          <div class="block-{{ block.id }} ">
+              {{ block.settings.text-content }}              
+          </div>
+        </div>       
+    {% endcase %}
+  {% endfor %}
+</Section>
+
+<style>
+    section .section-wrapper-{{ section.id }}.width-{{ section.settings.section-width }}{
+        display: flex;
+        gap: 20px;
+        justify-content: space-between;
+    } 
+    section .section-wrapper-{{ section.id }}.width-small{
+      max-width: 600px;
+      margin: 0 auto;
+    }
+    section .section-wrapper-{{ section.id }}.width-medium{
+      max-width: 968px;
+      margin: 0 auto;
+    }
+    section .section-wrapper-{{ section.id }}.width-full{
+      max-width: 100%;
+    }
+    section .section-wrapper-{{ section.id }}.width-custom{
+      max-width: {{ section.settings.custom-section-width | append: "px" }};
+      margin: 0 auto;
+    }
+    section .section-wrapper-{{ section.id }}{
+      padding-top: {{ section.settings.padding-top }}PX;
+      padding-bottom: {{ section.settings.padding-bottom }}PX;
+      padding-right: 80px;
+      padding-left: 80px;
+    }
+    .section-wrapper-{{ section.id }}.width-{{ section.settings.section-width }} p{
+      font-size: {{ section.settings.font-size | append: 'px' }};
+      font-family: {{ section.settings.font }};
+      color: {{ section.settings.text-color }};
+      line-height: {{ section.settings.line-height }}px;
+    }
+    {% for block in section.blocks %}
+      {% case block.type %}
+      {%  when 'text-block' %}
+        section .section-wrapper-{{ section.id }} .text-block-{{ block.id }} .block-{{ block.id }}{
+          width: {{ block.settings.custom-block-width }}px;
+        }
+      {% endcase %}
+    {% endfor %}
+
+      
+</style>
+
 {% schema %}
   {
-    "name": "Section name",
-    "settings": []
-  }
+    "name": "double-column-text",
+    "tag": "section",
+    "max_blocks": 2,
+    "settings": [
+      {
+          "type": "range",
+          "id": "font-size",
+          "label": "Font size",
+          "min": 12,
+          "max": 50,
+          "step": 1,
+          "unit": "px",
+          "default": 16
+        },
+        {
+          "type": "range",
+          "id": "mobile-font-size",
+          "label": "Mobile Font size",
+          "min": 12,
+          "max": 50,
+          "step": 1,
+          "unit": "px",
+          "default": 16
+        },
+        {
+          "type": "range",
+          "id": "line-height",
+          "label": "Line height",
+          "min": 10,
+          "max": 100,
+          "step": 1,
+          "unit": "px",
+          "default": 30
+        },
+        {
+          "type": "range",
+          "id": "mobile-line-height",
+          "label": "Mobile Line height",
+          "min": 10,
+          "max": 100,
+          "step": 1,
+          "unit": "px",
+          "default": 30
+        },
+        {
+         "type": "font",
+         "id": "font",
+         "label": "Font Family"
+        },
+        {
+          "type": "color",
+          "label": "Text color",
+          "id": "text-color",
+          "default": "#000000"
+        },
+        {
+          "type": "select",
+          "id": "text-align",
+          "label": "text-align",
+          "options": [
+            {
+              "value": "left",
+              "label": "left"
+            },
+            {
+              "value": "center",
+              "label": "center"
+            },
+            {
+              "value": "right",
+              "label": "right"
+            }
+          ],
+          "default": "left"
+        },
+        {
+          "type": "select",
+          "id": "section-width",
+          "label": "Section width",
+          "options": [
+            {
+              "value": "small",
+              "label": "Small"
+            },
+            {
+              "value": "medium",
+              "label": "Medium"
+            },
+            {
+              "value": "full",
+              "label": "Full"
+            },
+            {
+              "value": "custom",
+              "label": "Custom"
+            }
+          ],
+          "default": "medium"
+        },
+        {
+          "type": "range",
+          "id": "custom-section-width",
+          "label": "Custom Section width",
+          "min": 200,
+          "max": 1000,
+          "step": 50,
+          "unit": "px",
+          "default": 1000
+        },
+        {
+          "type": "range",
+          "id": "padding-top",
+          "min": 0,
+          "max": 100,
+          "step": 2,
+          "unit": "px",
+          "label": "Padding Top",
+          "default": 20
+        },
+        {
+          "type": "range",
+          "id": "padding-bottom",
+          "min": 0,
+          "max": 100,
+          "step": 2,
+          "unit": "px",
+          "label": "Padding Bottom",
+          "default": 20
+        }
+    ],
+    "blocks": [
+      {
+        "name": "text-block",
+        "type": "text-block",
+        "settings":[
+          {
+            "type": "richtext",
+            "id": "text-content",
+            "label": "Change your text",
+            "default": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eu euismod ante, quis finibus odio. Aenean scelerisque consectetur pharetra. In condimentum est eu eros malesuada aliquam. Aenean iaculis ligula a quam vehicula mattis. Nulla fringilla bibendum erat id molestie. Quisque id arcu in libero euismod rutrum sed ut libero. Nunc et dolor non ex elementum varius vel ut ligula. Sed id felis ex. Aenean tristique lobortis est, vitae consequat turpis sagittis varius. Quisque pharetra, dui ornare iaculis consectetur, magna velit condimentum nulla, non tristique nisl lorem ac risus. Cras accumsan eu est in dignissim.</p>"
+         }
+        ]
+      },
+      {
+          "type": "range",
+          "id": "custom-block-width",
+          "label": "Custom Block width",
+          "min": 200,
+          "max": 475,
+          "step": 50,
+          "unit": "px",
+          "default": 474
+
+      }
+    ],
+    "presets": [
+    {
+      "category": "content",
+      "name": "double-column-text",
+      "blocks": [
+        {
+          "type": "text-block"
+        },
+        {
+          "type": "text-block"
+        }
+
+      ]
+    }
+  ] 
+}
 {% endschema %}
 
 {% stylesheet %}
