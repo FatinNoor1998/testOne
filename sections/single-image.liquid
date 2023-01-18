@@ -3,22 +3,27 @@
     {% case block.type %}
       {% when 'image' %}
         {% if block.settings.image %}
-            <img
-              src=" {{ block.settings.image | img_url: 'master' }} "
-              alt=""
-              height=""
-              width=""
-              loading="lazy">
-          {%- else -%}
-              {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
 
-          <div class="block-{{ block.id }} {{ block.settings.text-align }}">
-              {{ block.settings.text-content }}
+           <div class="single-image-{{ block.id }}">
+              <img
+                src=" {{ block.settings.image | img_url: 'master' }} "
+                alt=""
+                height=""
+                width=""
+                loading="lazy">
+          {%- else -%}
+                {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
+            
+              <div class="block {{ block.settings.text-align }}">
+                  {{ block.settings.text-content }}
+              </div>
           </div>
+
       {% endif %}
     {% endcase %}
   {% endfor %}
 </Section>
+
 
 <style>
     section .section-wrapper-{{ section.id }}.width-small{
@@ -37,13 +42,16 @@
     {% case block.type %}
     {% when 'image' %}
 
-    .section-wrapper-{{ section.id }} .block-{{ block.id }} p{
+    .section-wrapper-{{ section.id }} .block p{
       font-size: {{ block.settings.font-size | append: 'px' }};
       font-family: {{ block.settings.font }};
       color: {{ block.settings.text-color }};
       line-height: {{ block.settings.line-height }}px;
     }
-    
+    .section-wrapper-{{ section.id }} .single-image-{{ block.id }} img{
+      width: 100%;
+    } 
+
       {% endcase %}
       {% endfor %}
 
