@@ -1,0 +1,193 @@
+<Section class="section-wrapper-{{ section.id }} width-{{ section.settings.section-width }}">
+  {% for block in section.blocks %}
+    {% case block.type %}
+      {% when 'image' %}
+        {% if block.settings.image %}
+              <img
+                src=" {{ block.settings.image | img_url: 'master' }} "
+                alt=""
+                height=""
+                width=""
+                loading="lazy">
+          {%- else -%}
+                {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
+
+      {% endif %}
+                <div class="block-{{ block.id }} {{ block.settings.text-align }}">
+                  {{ block.settings.text-content }}
+              </div>
+    {% endcase %}
+  {% endfor %}
+</Section>
+
+
+<style>
+    section .section-wrapper-{{ section.id }}.width-small{
+      max-width: 600px;
+      margin: 0 auto;
+    }
+    section .section-wrapper-{{ section.id }}.width-medium{
+      max-width: 967px;
+      margin: 0 auto;
+    }
+    section .section-wrapper-{{ section.id }}.width-full{
+      max-width: 100%;
+    }
+
+  {% for block in section.blocks %}
+    {% case block.type %}
+    {% when 'image' %}
+
+    .section-wrapper-{{ section.id }} .block-{{ block.id }} p{
+      font-size: {{ block.settings.font-size | append: 'px' }};
+      font-family: {{ block.settings.font }};
+      color: {{ block.settings.text-color }};
+      line-height: {{ block.settings.line-height }}px;
+      margin: 0px;
+    }
+    .section-wrapper-{{ section.id }} img{
+      width: 100%;
+    } 
+
+      {% endcase %}
+      {% endfor %}
+
+</style>
+
+
+{% schema %}
+  {
+  "name": "single-image",
+  "tag": "section",
+  "settings": [
+    {      
+         "type": "select",
+          "id": "section-width",
+          "label": "Width",
+          "options": [
+            {
+              "value": "small",
+              "label": "Small"
+            },
+            {
+              "value": "medium",
+              "label": "Medium"
+            },
+            {
+              "value": "full",
+              "label": "Full"
+            }
+          ],
+          "default": "medium"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "image",
+      "name": "Image",
+      "settings": [
+       {
+        "type": "image_picker",
+        "id": "image",
+        "label": "Image"
+       },
+        {
+          "type": "richtext",
+          "id": "text-content",
+          "label": "Change text block",
+          "default": "<p>Model wears Whiting Shirt Cosmic Papaya Check with Dean T Shirt Black and Pleat Trousers Black</p>"
+        },
+        {
+          "type": "range",
+          "id": "font-size",
+          "label": "Font size",
+          "min": 12,
+          "max": 50,
+          "step": 1,
+          "unit": "px",
+          "default": 16
+        },
+        {
+          "type": "range",
+          "id": "mobile-font-size",
+          "label": "Mobile Font size",
+          "min": 12,
+          "max": 50,
+          "step": 1,
+          "unit": "px",
+          "default": 16
+        },
+        {
+          "type": "range",
+          "id": "line-height",
+          "label": "Line height",
+          "min": 10,
+          "max": 100,
+          "step": 1,
+          "unit": "px",
+          "default": 37
+        },
+        {
+          "type": "range",
+          "id": "mobile-line-height",
+          "label": "Mobile Line height",
+          "min": 10,
+          "max": 100,
+          "step": 1,
+          "unit": "px",
+          "default": 37
+        },
+        {
+         "type": "font",
+         "id": "font",
+         "label": "Font Family"
+        },
+        {
+          "type": "color",
+          "label": "Text color",
+          "id": "text-color",
+          "default": "#000000"
+        },
+        {
+          "type": "select",
+          "id": "text-align",
+          "label": "text-align",
+          "options": [
+            {
+              "value": "left",
+              "label": "left"
+            },
+            {
+              "value": "center",
+              "label": "center"
+            },
+            {
+              "value": "right",
+              "label": "right"
+            }
+          ],
+          "default": "left"
+        }
+      ]
+    }
+    
+  ],
+  "presets": [
+    {
+      "category": "content",
+      "name": "single-image",
+      "blocks": [
+        {
+          "type": "image"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

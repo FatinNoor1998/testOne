@@ -35,7 +35,7 @@
     section .section-wrapper-{{ section.id }}{
       padding-top: {{ section.settings.padding-top }}PX;
       padding-bottom: {{ section.settings.padding-bottom }}PX;
-      padding-right: 80px;
+            padding-right: 80px;
       padding-left: 80px;
     }
     .section-wrapper-{{ section.id }}.width-{{ section.settings.section-width }} p{
@@ -44,11 +44,12 @@
       color: {{ section.settings.text-color }};
       line-height: {{ section.settings.line-height }}px;
     }
+
     {% for block in section.blocks %}
       {% case block.type %}
       {%  when 'text-block' %}
         section .section-wrapper-{{ section.id }} .text-block-{{ block.id }} .block-{{ block.id }}{
-          width: {{ block.settings.custom-block-width }}px;
+          max-width: {{ block.settings.block-width }}px;
         }
       {% endcase %}
     {% endfor %}
@@ -198,20 +199,21 @@
             "id": "text-content",
             "label": "Change your text",
             "default": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eu euismod ante, quis finibus odio. Aenean scelerisque consectetur pharetra. In condimentum est eu eros malesuada aliquam. Aenean iaculis ligula a quam vehicula mattis. Nulla fringilla bibendum erat id molestie. Quisque id arcu in libero euismod rutrum sed ut libero. Nunc et dolor non ex elementum varius vel ut ligula. Sed id felis ex. Aenean tristique lobortis est, vitae consequat turpis sagittis varius. Quisque pharetra, dui ornare iaculis consectetur, magna velit condimentum nulla, non tristique nisl lorem ac risus. Cras accumsan eu est in dignissim.</p>"
-         }
-        ]
-      },
-      {
+         },
+          {
           "type": "range",
-          "id": "custom-block-width",
-          "label": "Custom Block width",
+          "id": "block-width",
+          "label": "Block width",
           "min": 200,
           "max": 475,
-          "step": 50,
+          "step": 25,
           "unit": "px",
-          "default": 474
+          "default": 475
 
+          }
+        ]
       }
+
     ],
     "presets": [
     {
