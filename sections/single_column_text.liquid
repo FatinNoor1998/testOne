@@ -3,7 +3,7 @@
     {% case block.type %}
       {% when 'text-block' %}
         <div class="text-block-{{ block.id }}">
-          <div class="block-{{ block.id }} width-{{ block.settings.block-width }} text-align-{{ block.settings.text-align }}">
+          <div class="block-{{ block.id }} width-{{ block.settings.block-width }} {{ block.settings.text-align }}">
               {{ block.settings.text-content }}
               
           </div>
