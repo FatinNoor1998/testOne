@@ -3,7 +3,7 @@
     {% case block.type %}
       {% when 'text-block' %}
         <div class="text-block-{{ block.id }}">
-          <div class="block-{{ block.id }}-width-{{ block.settings.block-width }} text-align-{{ block.settings.text-align }}">
+          <div class="block-{{ block.id }} width-{{ block.settings.block-width }} text-align-{{ block.settings.text-align }}">
               {{ block.settings.text-content }}
               
           </div>
@@ -24,18 +24,18 @@
     {% case block.type %}
     {% when 'text-block' %}
 
-    .block-{{ block.id }}-width-small{
+    .block-{{ block.id }}.width-small{
       max-width: 400px;
       margin: 0 auto;
     }
-    .block-{{ block.id }}-width-medium{
+    .block-{{ block.id }}.width-medium{
       max-width: 600px;
       margin: 0 auto;
     }
-    .block-{{ block.id }}-width-full{
+    .block-{{ block.id }}.width-full{
       max-width: 100%;
     }
-    .block-{{ block.id }}-width-custom{
+    .block-{{ block.id }}.width-custom{
       max-width: {{ block.settings.custom-block-width | append: "px" }};
       margin: 0 auto;
     }
