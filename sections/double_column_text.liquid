@@ -6,13 +6,7 @@
           <div class="block-{{ block.id }} ">
               {{ block.settings.text-content }}              
           </div>
-          <div class="block-{{ block.id }} ">
-            {{ block.settings.text-content }}             
-          </div>
-        </div>
-
-
-        
+        </div>       
     {% endcase %}
   {% endfor %}
 </Section>
@@ -43,6 +37,7 @@
       color: {{ section.settings.text-color }};
       line-height: {{ section.settings.line-height }}px;
     }
+
       
 </style>
 
@@ -50,7 +45,7 @@
   {
     "name": "double-column-text",
     "tag": "section",
-
+    "max_blocks": 2,
     "settings": [
       {
           "type": "range",
@@ -198,6 +193,9 @@
       "category": "content",
       "name": "double-column-text",
       "blocks": [
+        {
+          "type": "text-block"
+        },
         {
           "type": "text-block"
         }
