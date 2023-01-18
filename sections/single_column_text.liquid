@@ -30,9 +30,11 @@
       max-width: 100%;
     }
     section .section-wrapper-{{ section.id }}.width-custom{
-      max-width: {{ block.settings.custom-block-width | append: "px" }};
+      max-width: {{ section.settings.custom-section-width | append: "px" }};
       margin: 0 auto;
     }
+    section .section-wrapper-{{ section.id }}{
+      
   {% for block in section.blocks %}
     {% case block.type %}
     {% when 'text-block' %}
@@ -111,8 +113,8 @@
       },
       {
           "type": "select",
-          "id": "block-width",
-          "label": "Block width",
+          "id": "section-width",
+          "label": "Section width",
           "options": [
             {
               "value": "small",
@@ -135,8 +137,8 @@
         },
         {
           "type": "range",
-          "id": "custom-block-width",
-          "label": "Custom block width",
+          "id": "custom-section-width",
+          "label": "Custom Section width",
           "min": 200,
           "max": 1900,
           "step": 50,
