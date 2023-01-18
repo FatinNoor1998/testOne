@@ -141,9 +141,9 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/04-10-2022-WAX1465-Square.jpg",
             "text-content": "<p>Model wears Whiting Shirt Cosmic Papaya Check with Dean T Shirt Black and Pleat Trousers Black<\/p>",
-            "font-size": 16,
+            "font-size": 14,
             "mobile-font-size": 16,
-            "line-height": 37,
+            "line-height": 22,
             "mobile-line-height": 37,
             "font": "",
             "text-color": "#000000",
