@@ -1,4 +1,4 @@
-<Section class="section-wrapper-{{ section.id }} width-{{ section.settings.section-width }} {{ section.settings.text-align }}">
+<Section class="section-wrapper-{{ section.id }} width-{{ section.settings.section-width }}">
   {% for block in section.blocks %}
     {% case block.type %}
       {% when 'text-block' %}
@@ -62,27 +62,6 @@
     "name": "single-column-text",
     "tag": "section",
     "settings": [
-      {
-          "type": "select",
-          "id": "text-align",
-          "label": "text-align",
-          "options": [
-            {
-              "value": "left",
-              "label": "left"
-            },
-            {
-              "value": "center",
-              "label": "center"
-            },
-            {
-              "value": "right",
-              "label": "right"
-            }
-          ],
-          "default": "left" 
-      },
-
       {
         "type": "range",
           "id": "font-size",
@@ -230,40 +209,6 @@
           "label": "Text color",
           "id": "text-color",
           "default": "#000000"
-        },
-        {
-          "type": "select",
-          "id": "block-width",
-          "label": "Block width",
-          "options": [
-            {
-              "value": "small",
-              "label": "Small"
-            },
-            {
-              "value": "medium",
-              "label": "Medium"
-            },
-            {
-              "value": "full",
-              "label": "Full"
-            },
-            {
-              "value": "custom",
-              "label": "Custom"
-            }
-          ],
-          "default": "medium"
-        },
-        {
-          "type": "range",
-          "id": "custom-block-width",
-          "label": "Custom block width",
-          "min": 200,
-          "max": 1900,
-          "step": 50,
-          "unit": "px",
-          "default": 800
         },
         {
           "type": "select",
