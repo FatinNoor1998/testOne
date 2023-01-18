@@ -15,6 +15,7 @@
     section .section-wrapper-{{ section.id }}.width-{{ section.settings.section-width }}{
         display: flex;
         gap: 20px;
+        justify-content: space-between;
     } 
     section .section-wrapper-{{ section.id }}.width-small{
       max-width: 600px;
@@ -42,6 +43,7 @@
       line-height: {{ section.settings.line-height }}px;
     }
 
+
       
 </style>
 
@@ -59,7 +61,7 @@
           "max": 50,
           "step": 1,
           "unit": "px",
-          "default": 15
+          "default": 16
         },
         {
           "type": "range",
@@ -79,7 +81,7 @@
           "max": 100,
           "step": 1,
           "unit": "px",
-          "default": 22
+          "default": 30
         },
         {
           "type": "range",
@@ -151,7 +153,7 @@
           "id": "custom-section-width",
           "label": "Custom Section width",
           "min": 200,
-          "max": 1900,
+          "max": 1000,
           "step": 50,
           "unit": "px",
           "default": 1000
@@ -189,8 +191,8 @@
             "default": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eu euismod ante, quis finibus odio. Aenean scelerisque consectetur pharetra. In condimentum est eu eros malesuada aliquam. Aenean iaculis ligula a quam vehicula mattis. Nulla fringilla bibendum erat id molestie. Quisque id arcu in libero euismod rutrum sed ut libero. Nunc et dolor non ex elementum varius vel ut ligula. Sed id felis ex. Aenean tristique lobortis est, vitae consequat turpis sagittis varius. Quisque pharetra, dui ornare iaculis consectetur, magna velit condimentum nulla, non tristique nisl lorem ac risus. Cras accumsan eu est in dignissim.</p>"
          }
         ]
-
       }
+
     ],
     "presets": [
     {
