@@ -126,11 +126,44 @@
         "padding-top": 20,
         "padding-bottom": 20
       }
+    },
+    "f1088849-632e-47b3-9fe3-1cd8678520f0": {
+      "type": "image-section",
+      "disabled": true,
+      "settings": {
+      }
+    },
+    "176dd7ad-1c47-4009-ba0a-da778ac7845b": {
+      "type": "single-image",
+      "blocks": {
+        "template--17540903534868__176dd7ad-1c47-4009-ba0a-da778ac7845b-1674054022ede57c46-0": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/person-fishing-on-the-beach-is-silhouetted-at-sunset.jpg",
+            "text-content": "<p>Model wears Whiting Shirt Cosmic Papaya Check with Dean T Shirt Black and Pleat Trousers Black<\/p>",
+            "font-size": 16,
+            "mobile-font-size": 16,
+            "line-height": 37,
+            "mobile-line-height": 37,
+            "font": "",
+            "text-color": "#000000",
+            "text-align": "left"
+          }
+        }
+      },
+      "block_order": [
+        "template--17540903534868__176dd7ad-1c47-4009-ba0a-da778ac7845b-1674054022ede57c46-0"
+      ],
+      "settings": {
+        "section-width": "small"
+      }
     }
   },
   "order": [
     "main",
     "7a9084b0-7bdd-4ca3-9b1e-e61e98be5640",
-    "33f08f80-f410-4ef0-b249-c466c80b4b1b"
+    "33f08f80-f410-4ef0-b249-c466c80b4b1b",
+    "f1088849-632e-47b3-9fe3-1cd8678520f0",
+    "176dd7ad-1c47-4009-ba0a-da778ac7845b"
   ]
 }
