@@ -3,8 +3,6 @@
     {% case block.type %}
       {% when 'image' %}
         {% if block.settings.image %}
-
-           <div class="single-image-{{ block.id }}">
               <img
                 src=" {{ block.settings.image | img_url: 'master' }} "
                 alt=""
@@ -14,10 +12,9 @@
           {%- else -%}
                 {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
             
-              <div class="block {{ block.settings.text-align }}">
+              <div class="block-{{ block.id }} {{ block.settings.text-align }}">
                   {{ block.settings.text-content }}
               </div>
-          </div>
 
       {% endif %}
     {% endcase %}
