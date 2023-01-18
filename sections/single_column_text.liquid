@@ -37,6 +37,12 @@
       padding-top: {{ section.settings.padding-top }}PX;
       padding-bottom: {{ section.settings.padding-bottom }}PX;
     }
+    section .section-wrapper-{{ section.id }}{
+      font-size: {{ section.settings.font-size | append: 'px' }};
+      font-family: {{ section.settings.font }};
+      color: {{ section.settings.text-color }};
+      line-height: {{ section.settings.line-height }}px;
+    }
       
   {% for block in section.blocks %}
     {% case block.type %}
