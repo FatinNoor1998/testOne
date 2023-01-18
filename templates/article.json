@@ -45,11 +45,14 @@
             "text-color": "#000000",
             "block-width": "medium",
             "custom-block-width": 500,
-            "text-align": "left"
+            "text-align": "left",
+            "padding-top": 0,
+            "padding-bottom": 2
           }
         },
         "85990992-4805-47ff-a275-ccbd24ea03c6": {
           "type": "spacer-block",
+          "disabled": true,
           "settings": {
             "spacer-height": 2
           }
@@ -66,11 +69,14 @@
             "text-color": "#000000",
             "block-width": "medium",
             "custom-block-width": 800,
-            "text-align": "left"
+            "text-align": "left",
+            "padding-top": 0,
+            "padding-bottom": 4
           }
         },
         "b452eb99-5bef-467e-86f6-15a84b8261f2": {
           "type": "spacer-block",
+          "disabled": true,
           "settings": {
             "spacer-height": 2
           }
@@ -87,7 +93,9 @@
             "text-color": "#000000",
             "block-width": "medium",
             "custom-block-width": 800,
-            "text-align": "left"
+            "text-align": "left",
+            "padding-top": 0,
+            "padding-bottom": 0
           }
         }
       },
@@ -99,6 +107,14 @@
         "b429e53d-0dff-45c4-8c19-44b33dcf215f"
       ],
       "settings": {
+        "text-align": "left",
+        "font-size": 16,
+        "line-height": 30,
+        "text-color": "#000000",
+        "block-width": "medium",
+        "custom-block-width": 800,
+        "padding_top": 20,
+        "padding_bottom": 20
       }
     }
   },
