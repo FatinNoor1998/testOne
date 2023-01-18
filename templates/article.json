@@ -44,7 +44,7 @@
             "font": "Georgia, Utopia, 'Times New Roman', Times, serif",
             "text-color": "#000000",
             "block-width": "medium",
-            "custom-block-width": 250,
+            "custom-block-width": 500,
             "text-align": "left"
           }
         },
