@@ -43,7 +43,14 @@
       line-height: {{ section.settings.line-height }}px;
     }
 
-
+    {% for block in section.blocks %}
+      {% case block.type %}
+      {%  when 'text-block' %}
+        section .section-wrapper-{{ section.id }} .text-block-{{ block.id }} .block-{{ block.id }}{
+          width: {{ block.settings.block-width }}px;
+        }
+      {% endcase %}
+    {% endfor %}
 
       
 </style>
