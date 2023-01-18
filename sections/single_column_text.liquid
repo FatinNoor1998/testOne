@@ -37,26 +37,17 @@
     {% case block.type %}
     {% when 'text-block' %}
 
-    
-
     .section-wrapper-{{ section.id }} .text-block-{{ block.id }} .block-{{ block.id }}{
       padding-top: {{ block.settings.padding-top }}PX;
-    }
-    .section-wrapper-{{ section.id }} .text-block-{{ block.id }} .block-{{ block.id }}{
       padding-bottom: {{ block.settings.padding-bottom }}PX;
     }
-
     .section-wrapper-{{ section.id }} .text-block-{{ block.id }} p{
       font-size: {{ block.settings.font-size | append: 'px' }};
       font-family: {{ block.settings.font }};
       color: {{ block.settings.text-color }};
       line-height: {{ block.settings.line-height }}px;
     }
-
-    {% when 'spacer-block' %}
-      .section-wrapper-{{ section.id }} .spacer-{{ block.id }}{
-        height: {{ block.settings.spacer-height }}px;
-      }
+  
     {% endcase %}
   {% endfor %}
 </style>
