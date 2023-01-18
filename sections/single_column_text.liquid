@@ -34,6 +34,9 @@
       margin: 0 auto;
     }
     section .section-wrapper-{{ section.id }}{
+      padding-top: {{ section.settings.padding-top }}PX;
+      padding-bottom: {{ section.settings.padding-bottom }}PX;
+    }
       
   {% for block in section.blocks %}
     {% case block.type %}
