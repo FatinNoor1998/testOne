@@ -43,18 +43,9 @@
             "mobile-line-height": 37,
             "font": "Georgia, Utopia, 'Times New Roman', Times, serif",
             "text-color": "#000000",
-            "block-width": "medium",
-            "custom-block-width": 500,
             "text-align": "left",
             "padding-top": 0,
             "padding-bottom": 2
-          }
-        },
-        "85990992-4805-47ff-a275-ccbd24ea03c6": {
-          "type": "spacer-block",
-          "disabled": true,
-          "settings": {
-            "spacer-height": 2
           }
         },
         "8074adb6-0012-4f49-af90-8aa107807dca": {
@@ -67,18 +58,9 @@
             "mobile-line-height": 30,
             "font": "Helvetica, Arial, sans-serif",
             "text-color": "#000000",
-            "block-width": "medium",
-            "custom-block-width": 800,
             "text-align": "left",
             "padding-top": 0,
             "padding-bottom": 4
-          }
-        },
-        "b452eb99-5bef-467e-86f6-15a84b8261f2": {
-          "type": "spacer-block",
-          "disabled": true,
-          "settings": {
-            "spacer-height": 2
           }
         },
         "b429e53d-0dff-45c4-8c19-44b33dcf215f": {
@@ -91,8 +73,6 @@
             "mobile-line-height": 30,
             "font": "Helvetica, Arial, sans-serif",
             "text-color": "#000000",
-            "block-width": "medium",
-            "custom-block-width": 800,
             "text-align": "left",
             "padding-top": 0,
             "padding-bottom": 0
@@ -101,25 +81,54 @@
       },
       "block_order": [
         "bf1caaca-5dff-4b41-8c47-261c46fea0e6",
-        "85990992-4805-47ff-a275-ccbd24ea03c6",
         "8074adb6-0012-4f49-af90-8aa107807dca",
-        "b452eb99-5bef-467e-86f6-15a84b8261f2",
         "b429e53d-0dff-45c4-8c19-44b33dcf215f"
       ],
       "settings": {
-        "text-align": "left",
+        "section-width": "medium",
+        "custom-section-width": 800,
+        "padding-top": 20,
+        "padding-bottom": 20
+      }
+    },
+    "c8761f27-dda9-459d-aeec-d8d15236ef75": {
+      "type": "double_column_text",
+      "blocks": {
+        "template--17540903534868__c8761f27-dda9-459d-aeec-d8d15236ef75-167404172529cfa11d-0": {
+          "type": "text-block",
+          "settings": {
+            "text-block": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eu euismod ante, quis finibus odio. Aenean scelerisque consectetur pharetra. In condimentum est eu eros malesuada aliquam. Aenean iaculis ligula a quam vehicula mattis. Nulla fringilla bibendum erat id molestie. Quisque id arcu in libero euismod rutrum sed ut libero. Nunc et dolor non ex elementum varius vel ut ligula. Sed id felis ex. Aenean tristique lobortis est, vitae consequat turpis sagittis varius. Quisque pharetra, dui ornare iaculis consectetur, magna velit condimentum nulla, non tristique nisl lorem ac risus. Cras accumsan eu est in dignissim.<\/p>"
+          }
+        },
+        "template--17540903534868__c8761f27-dda9-459d-aeec-d8d15236ef75-167404172529cfa11d-1": {
+          "type": "text-block",
+          "settings": {
+            "text-block": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eu euismod ante, quis finibus odio. Aenean scelerisque consectetur pharetra. In condimentum est eu eros malesuada aliquam. Aenean iaculis ligula a quam vehicula mattis. Nulla fringilla bibendum erat id molestie. Quisque id arcu in libero euismod rutrum sed ut libero. Nunc et dolor non ex elementum varius vel ut ligula. Sed id felis ex. Aenean tristique lobortis est, vitae consequat turpis sagittis varius. Quisque pharetra, dui ornare iaculis consectetur, magna velit condimentum nulla, non tristique nisl lorem ac risus. Cras accumsan eu est in dignissim.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--17540903534868__c8761f27-dda9-459d-aeec-d8d15236ef75-167404172529cfa11d-0",
+        "template--17540903534868__c8761f27-dda9-459d-aeec-d8d15236ef75-167404172529cfa11d-1"
+      ],
+      "settings": {
         "font-size": 16,
+        "mobile-font-size": 16,
         "line-height": 30,
+        "mobile-line-height": 30,
+        "font": "",
         "text-color": "#000000",
-        "block-width": "medium",
-        "custom-block-width": 800,
-        "padding_top": 20,
-        "padding_bottom": 20
+        "text-align": "left",
+        "section-width": "medium",
+        "custom-section-width": 1000,
+        "padding-top": 20,
+        "padding-bottom": 20
       }
     }
   },
   "order": [
     "main",
-    "7a9084b0-7bdd-4ca3-9b1e-e61e98be5640"
+    "7a9084b0-7bdd-4ca3-9b1e-e61e98be5640",
+    "c8761f27-dda9-459d-aeec-d8d15236ef75"
   ]
 }
