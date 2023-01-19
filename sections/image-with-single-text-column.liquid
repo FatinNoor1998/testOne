@@ -1,7 +1,268 @@
 {% schema %}
   {
-    "name": "Section name",
-    "settings": []
+    "name": "image-with-single-text-column",
+    "tag": "section",
+    "settings": [
+    {      
+         "type": "select",
+          "id": "section-width",
+          "label": "Width",
+          "options": [
+            {
+              "value": "small",
+              "label": "Small"
+            },
+            {
+              "value": "medium",
+              "label": "Medium"
+            },
+            {
+              "value": "full",
+              "label": "Full"
+            }
+          ],
+          "default": "medium"
+    },
+    {
+          "type": "range",
+          "id": "custom-section-width",
+          "label": "Custom Section width",
+          "min": 400,
+          "max": 1600,
+          "step": 50,
+          "unit": "px",
+          "default": 900
+    }
+  ],
+
+  "blocks": [
+    {
+      "type": "image",
+      "name": "Image",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        },
+        {
+          "type": "range",
+          "id": "custom-image-width",
+          "label": "Custom Image width",
+          "min": 400,
+          "max": 1000,
+          "step": 50,
+          "unit": "px",
+          "default": 450
+        }
+      ]
+    },
+
+    {
+      "type": "heading",
+      "name": "Heading",
+      "settings": [
+        {
+          "type": "richtext",
+          "id": "text-content",
+          "label": "Heading",
+          "default": "<p><h2>Whiting Overshirt</h2></p>"
+        },
+        {
+          "type": "range",
+          "id": "font-size",
+          "label": "Font size",
+          "min": 12,
+          "max": 50,
+          "step": 1,
+          "unit": "px",
+          "default": 24
+        },
+        {
+          "type": "range",
+          "id": "mobile-font-size",
+          "label": "Mobile Font size",
+          "min": 12,
+          "max": 50,
+          "step": 1,
+          "unit": "px",
+          "default": 16
+        },
+        {
+          "type": "range",
+          "id": "line-height",
+          "label": "Line height",
+          "min": 10,
+          "max": 100,
+          "step": 1,
+          "unit": "px",
+          "default": 22
+        },
+        {
+          "type": "range",
+          "id": "mobile-line-height",
+          "label": "Mobile Line height",
+          "min": 10,
+          "max": 100,
+          "step": 1,
+          "unit": "px",
+          "default": 22
+        },
+        {
+         "type": "font",
+         "id": "font",
+         "label": "Font Family"
+        },
+        {
+          "type": "color",
+          "label": "Text color",
+          "id": "text-color",
+          "default": "#000000"
+        },
+        {
+          "type": "select",
+          "id": "text-align",
+          "label": "text-align",
+          "options": [
+            {
+              "value": "left",
+              "label": "left"
+            },
+            {
+              "value": "center",
+              "label": "center"
+            },
+            {
+              "value": "right",
+              "label": "right"
+            }
+          ],
+          "default": "left"
+        }
+      ]
+    },
+
+    {
+      "type": "text-block",
+      "name": "Text Block",
+      "settings": [
+        {
+          "type": "richtext",
+          "id": "text-content",
+          "label": "Description",
+          "default": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eu euismod ante, quis finibus odio. Aenean scelerisque consectetur pharetra. In condimentum est eu eros malesuada aliquam. Aenean iaculis ligula a quam vehicula mattis. Nulla fringilla bibendum erat id molestie. Quisque id arcu in libero euismod rutrum sed ut libero. Nunc et dolor non ex elementum varius vel ut ligula. Sed id felis ex. Aenean tristique lobortis est, vitae consequat turpis sagittis varius. Quisque pharetra, dui ornare iaculis consectetur, magna velit condimentum nulla, non tristique nisl lorem ac risus. Cras accumsan eu est in dignissim. Aenean ligula felis, rutrum in augue quis, consectetur porta libero. Nunc faucibus ornare risus nec accumsan. Donec sed nisi rutrum, mattis diam a, tempus risus. Morbi at lectus elementum, laoreet orci sit amet, rutrum ipsum. Integer vel aliquet risus, sed pharetra justo. Pellentesque commodo eu quam vel hendrerit. Mauris non turpis fermentum, faucibus nulla quis, convallis nulla. Ut efficitur metus eros, quis consequat nunc tincidunt et. Sed eleifend arcu vel porta cursus. Mauris ultrices mauris vel lacus hendrerit sodales. Quisque a mattis turpis. Sed nisl purus, malesuada ac ultricies iaculis, iaculis id tellus. Morbi hendrerit ipsum sit amet lacus convallis tincidunt. Praesent quis libero rutrum, pharetra ex non, tincidunt justo. Nulla facilisi.</p>"
+        },       
+        {
+          "type": "range",
+          "id": "font-size",
+          "label": "Font size",
+          "min": 12,
+          "max": 50,
+          "step": 1,
+          "unit": "px",
+          "default": 16
+        },
+        {
+          "type": "range",
+          "id": "mobile-font-size",
+          "label": "Mobile Font size",
+          "min": 12,
+          "max": 50,
+          "step": 1,
+          "unit": "px",
+          "default": 16
+        },
+        {
+          "type": "range",
+          "id": "line-height",
+          "label": "Line height",
+          "min": 10,
+          "max": 100,
+          "step": 1,
+          "unit": "px",
+          "default": 22
+        },
+        {
+          "type": "range",
+          "id": "mobile-line-height",
+          "label": "Mobile Line height",
+          "min": 10,
+          "max": 100,
+          "step": 1,
+          "unit": "px",
+          "default": 22
+        },
+        {
+         "type": "font",
+         "id": "font",
+         "label": "Font Family"
+        },
+        {
+          "type": "color",
+          "label": "Text color",
+          "id": "text-color",
+          "default": "#000000"
+        },
+        {
+          "type": "select",
+          "id": "text-align",
+          "label": "text-align",
+          "options": [
+            {
+              "value": "left",
+              "label": "left"
+            },
+            {
+              "value": "center",
+              "label": "center"
+            },
+            {
+              "value": "right",
+              "label": "right"
+            }
+          ],
+          "default": "left"
+        },
+        {
+          "type": "select",
+          "id": "align-item",
+          "label": "Align Item",
+          "options": [
+            {
+              "value": "start",
+              "label": "Start"
+            },
+            {
+              "value": "center",
+              "label": "Center"
+            },
+            {
+              "value": "end",
+              "label": "End"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "category": "content",
+      "name": "image-with-single-text-column",
+      "blocks": [
+        {
+          "type": "image"
+        },
+        {
+          "type": "heading"
+        },
+        {
+          "type": "text-block"
+        }
+      ]
+    }
+  ]
+
   }
 {% endschema %}
 
