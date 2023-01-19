@@ -1,3 +1,36 @@
+<Section class="section-wrapper-{{ section.id }} width-{{ section.settings.section-width }}">
+  {% for block in section.blocks %}
+    {% case block.type %}
+      {% when 'image' %}
+        {% if block.settings.image %}
+              <img
+                src=" {{ block.settings.image | img_url: 'master' }} "
+                alt=""
+                height=""
+                width= 600px
+                loading="lazy">
+          {%- else -%}
+                {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
+
+         {% endif %}
+
+      <div class="text-section">
+      {% when 'heading' %}
+          <div class="heading-{{ block.id }} {{ block.settings.text-align }}">
+                  {{ block.settings.text-content }}
+          </div>
+
+       {% when 'text-block' %}
+         <div class="description-{{ block.id }} {{ block.settings.text-align }} {{ block.settings.align-items }}">
+                  {{ block.settings.text-content }}
+         </div>
+        </div>   
+
+    {% endcase %}
+  {% endfor %}
+</Section>
+
+
 {% schema %}
   {
     "name": "sc-text-image",
@@ -225,7 +258,7 @@
         },
         {
           "type": "select",
-          "id": "align-item",
+          "id": "align-items",
           "label": "Align Item",
           "options": [
             {
