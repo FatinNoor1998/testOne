@@ -21,15 +21,6 @@
       </div>
     </div>   
   </div>
-  {% for block in section.blocks %}
-    {% case block.type %}
-    {% when 'spacer-block' %}
-      <div class="spacer-{{ block.id }}">
-          
-      </div>
-
-    {% endcase %}
-  {% endfor %}
 </Section>
 
 <style>
@@ -73,17 +64,6 @@
       color: {{ section.settings.text-description-text-color }};
       line-height: {{ section.settings.line-height }}px;
     } 
-
-
-  {% for block in section.blocks %}
-    {% case block.type %}
-    {% when 'spacer-block' %}
-      .section-wrapper-{{ section.id }} .spacer-{{ block.id }}{
-        height: {{ block.settings.spacer-height }}px;
-      }
-
-      {% endcase %}
-      {% endfor %}
 
 </style>
 
@@ -311,25 +291,6 @@
           ],
           "default": "left"
         }
-  ],
-
-  "blocks": [
-    {
-      "type": "spacer-block",
-      "name": "Spacer",
-      "settings": [
-        {
-          "type": "range",
-          "id": "spacer-height",
-          "label": "Spacer Height",
-          "min": 0,
-          "max": 200,
-          "step": 5,
-          "unit": "px",
-          "default": 10
-        }
-      ]
-    }
   ],
   "presets": [
     {
