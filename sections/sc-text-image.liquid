@@ -1,5 +1,4 @@
 <Section class="section-wrapper-{{ section.id }} width-{{ section.settings.section-width }} {{ section.settings.align-items }}">
-  <div class="image-text">
       {% if section.settings.image %}
       <img
         src=" {{ section.settings.image | img_url: 'master' }} "
@@ -20,7 +19,6 @@
                 {{ section.settings.description-content}}
       </div>
     </div>   
-  </div>
 </Section>
 
 <style>
@@ -192,7 +190,7 @@
           "type": "color",
           "label": "Heading color",
           "id": "heading-color",
-          "default": "#000000"
+          "default": "#FFFFFF"
     },
         {
           "type": "select",
