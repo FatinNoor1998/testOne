@@ -18,12 +18,18 @@
       <div class="description {{ section.settings.description-text-align }} ">
                 {{ section.settings.description-content}}
       </div>
+       <div class="button{% if section.settings.hide-button == true %} hide-btn{% endif %}" >
+         <a href="#" type="button">{{ section.settings.button-text }} </a>
+       </div>
     </div>   
 </Section>
 
 <style>
   section .section-wrapper-{{ section.id }}.row-reverse{
     flex-direction: row-reverse;
+  }
+  section .section-wrapper-{{ section.id }} .text-section .button.hide-btn{
+    display: none;
   }
   section .section-wrapper-{{ section.id }}{
     display: flex;
@@ -50,6 +56,9 @@
     .section-wrapper-{{ section.id }} img{
       max-width: {{ section.settings.custom-image-width }}px;
     } 
+    .section-wrapper-{{ section.id }} .text-section{
+      padding-left: 55px;
+    }
     .section-wrapper-{{ section.id }} .text-section .heading p{
       font-size: {{ section.settings.heading-font-size | append: 'px' }};
       font-family: {{ section.settings.heading-font }};
@@ -62,9 +71,19 @@
     .section-wrapper-{{ section.id }} .text-section .description p{
       font-size: {{ section.settings.description-font-size | append: 'px' }};
       font-family: {{ section.settings.description-font }};
-      color: {{ section.settings.text-description-text-color }};
+      color: {{ section.settings.description-text-color }};
       line-height: {{ section.settings.line-height }}px;
     } 
+    .section-wrapper-{{ section.id }} .text-section .button{
+      border-radius: 100px;
+      background: #333333;
+      --border-offset: none;     
+    }
+    .section-wrapper-{{ section.id }} .text-section .button a{
+      color: #FFFFFF;
+      text-decoration: none;
+    }
+
 
 </style>
 
@@ -297,8 +316,28 @@
             }
           ],
           "default": "left"
+        },
+        {
+          "type": "checkbox",
+          "id": "hide-button",
+          "label": "hide Button",
+          "default": false
+        },
+        {
+          "type": "text",
+          "id": "button-text",
+          "label": "Buton Label",
+          "default": "Shop The Look"
+        },
+        {
+          "type": "url",
+          "id": "button-url",
+          "label": "Button Link"
         }
+
   ],
+
+
   "presets": [
     {
       "category": "content",
