@@ -75,6 +75,7 @@
         color: {{ block.settings.text-color }};
         margin: 0px;
       }
+<<<<<<< HEAD
 
       {% when 'spacer-block' %}
         .section-wrapper-{{ section.id }} .spacer-{{ block.id }}{
@@ -82,7 +83,15 @@
         }
       {% endcase %}
     {% endfor %}
+=======
+>>>>>>> b4d56a5e92bc7f643166eaaa5820d71998361127
 
+      {% when 'spacer-block' %}
+        .section-wrapper-{{ section.id }} .spacer-{{ block.id }}{
+          height: {{ block.settings.spacer-height }}px;
+        }
+      {% endcase %}
+    {% endfor %}
 </style>
 
 {% schema %}
