@@ -149,13 +149,21 @@
             "text-color": "#000000",
             "text-align": "left"
           }
+        },
+        "e8b26a03-8fbd-4aca-804e-dc93d01bab49": {
+          "type": "spacer-block",
+          "settings": {
+            "spacer-height": 35
+          }
         }
       },
       "block_order": [
-        "template--17540903534868__79bc8bd5-e0a5-4fcf-b460-93c1785d35d6-16740550899262ede1-0"
+        "template--17540903534868__79bc8bd5-e0a5-4fcf-b460-93c1785d35d6-16740550899262ede1-0",
+        "e8b26a03-8fbd-4aca-804e-dc93d01bab49"
       ],
       "settings": {
-        "section-width": "small"
+        "section-width": "small",
+        "custom-section-width": 900
       }
     }
   },
