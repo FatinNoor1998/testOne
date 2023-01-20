@@ -24,7 +24,7 @@
 
 {% schema %}
   {
-    "name": "Section name",
+    "name": "spacer",
     "blocks": [
       {
         "type": "spacer-block",
@@ -38,11 +38,22 @@
             "max": 200,
             "step": 5,
             "unit": "px",
-            "default": 10
+            "default": 30
           }
         ]
       }
-    ]
+    ],
+    "presets": [
+    {
+      "category": "content",
+      "name": "spacer",
+      "blocks": [
+        {
+          "type": "spacer-block"
+        }
+      ]
+    }
+    ] 
   }
 {% endschema %}
 

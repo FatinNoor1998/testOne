@@ -1,4 +1,4 @@
-<Section class="section-wrapper-{{ section.id }} width-{{ section.settings.section-width }} {{ section.settings.align-items }}">
+<Section class="section-wrapper-{{ section.id }} width-{{ section.settings.section-width }} {{ section.settings.align-items }}{% if section.settings.swap == true %} row-reverse{% endif %}">
       {% if section.settings.image %}
       <img
         src=" {{ section.settings.image | img_url: 'master' }} "
@@ -22,6 +22,9 @@
 </Section>
 
 <style>
+  section .section-wrapper-{{ section.id }}.row-reverse{
+    flex-direction: row-reverse;
+  }
   section .section-wrapper-{{ section.id }}{
     display: flex;
     justify-content: space-between;
@@ -93,6 +96,12 @@
             }
           ],
           "default": "medium"
+    },
+    {
+      "type": "checkbox",
+      "id": "swap",
+      "label": "Swap",
+      "default": false
     },
     {
           "type": "range",
