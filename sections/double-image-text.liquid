@@ -17,7 +17,7 @@
                     
                       {% endif %}
                   </div>
-                  <div class="text-block {{ block.settings.text-align }}">
+                    <div class="text-block {{ block.settings.text-align }} {% if block.settings.hide-text == true %}hide-text{% endif %}">
                     {{ section.settings.text }}
                   </div> 
                 </div>
@@ -36,7 +36,7 @@
                     
                       {% endif %}
                   </div>
-                  <div class="text-block {{ block.settings.text-align }}">
+                  <div class="text-block {{ block.settings.text-align }} {% if block.settings.hide-text == true %}hide-text{% endif %}">
                     {{ section.settings.text }}
                  </div> 
                 </div>       
@@ -69,21 +69,21 @@
         gap: {{ block.settings.gap }}px;
         line-height: 0px;
       }
-      .section-wrapper-{{ section.id }} .image-wrapper > div{
-        flex: 1;
-        background-color: red;
-      }
       .section-wrapper-{{ section.id }} .image-wrapper .image{
         background: {{ block.settings.background-color }};
+        flex: 1;
+      }
+      .section-wrapper-{{ section.id }} .image-wrapper .image .left-image,
+      .section-wrapper-{{ section.id }} .image-wrapper .image .right-image{
+        height: 100%;
 
       }
-
       .section-wrapper-{{ section.id }} .image-wrapper img{
         width: 100%;
         height: 100%;
         object-fit: cover;
       }
-       .section-wrapper-{{ section.id }} .text-block p{
+       .section-wrapper-{{ section.id }} .image-wrapper .image .text-block p{
         font-size: {{ block.settings.font-size | append: 'px' }};
         font-family: {{ block.settings.font }};
         color: {{ block.settings.text-color }};
@@ -174,7 +174,7 @@
         "type": "color",
         "label": "Text color",
         "id": "text-color",
-        "default": "#FFFFFF"
+        "default": "#000000"
       },
       {
         "type": "range",
