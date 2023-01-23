@@ -2,8 +2,8 @@
     {% for block in section.blocks %}
       {% case block.type %}
         {% when 'image' %}
-          <div class="image-wrapper">
-                <div class="left-image-wrapper image {{ block.settings.custom-box-width }}">
+          <div class="image-wrapper {{ block.settings.block-width }}">
+                <div class="left-image-wrapper image">
                   <div class="left-image">
                       {% if block.settings.first-image %}
                       <img
@@ -13,7 +13,7 @@
                         width=""
                         loading="lazy">
                       {%- else -%}
-                        {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
+                        {{ 'first-image' | placeholder_svg_tag: 'placeholder-svg' }}
                     
                       {% endif %}
                   </div>
@@ -22,7 +22,7 @@
                   </div> 
                 </div>
 
-                <div class="right-image-wrapper image {{ block.settings.custom-box-width }}">
+                <div class="right-image-wrapper image">
                   <div class="right-image">
                       {% if block.settings.second-image %}
                       <img
@@ -32,7 +32,7 @@
                         width= ""
                         loading="lazy">
                       {%- else -%}
-                        {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
+                        {{ 'second-image' | placeholder_svg_tag: 'placeholder-svg' }}
                     
                       {% endif %}
                   </div>
@@ -55,24 +55,25 @@
   {% for block in section.blocks %}
     {% case block.type %}
     {% when 'image' %}
+      .section-wrapper-{{ section.id }} .image-wrapper.small{
+        max-width: 600px;
+        margin: 0 auto;
+      }
+      .section-wrapper-{{ section.id }} .image-wrapper.medium{
+        max-width: 968px;
+        margin: 0 auto;
+      }
       .section-wrapper-{{ section.id }} .image-wrapper{
         display: flex;
         justify-content: center;
         gap: {{ block.settings.gap }}px;
         line-height: 0px;
-        margin: auto;
-        width: {{ block.settings.block-width }}px;
       }
-      .section-wrapper-{{ section.id }} .image-wrapper .image{
+      .section-wrapper-{{ section.id }} .image-wrapper.image{
         background: {{ block.settings.background-color }};
-      }
-      .section-wrapper-{{ section.id }} .image-wrapper .left-image-wrapper .left-image{
-        padding: {{ block.settings.top-down-margin }}px {{ block.settings.left-right-margin }}px;
-        height: 100%;
       }
       .section-wrapper-{{ section.id }} .image-wrapper img{
         width: 100%;
-        height: 100%;
       }
        .section-wrapper-{{ section.id }} .text-block p{
         font-size: {{ block.settings.font-size | append: 'px' }};
@@ -108,56 +109,22 @@
         "label": "Second Image"
       },
       {
-        "type": "range",
+        "type": "select",
         "id": "block-width",
         "label": "Block Width",
-        "min": 600,
-        "max": 1400,
-        "step": 10,
-        "unit": "px",
-        "default": 1000
+        "options": [
+          {
+              "value": "small",
+              "label": "Small"
+            },
+            {
+              "value": "medium",
+              "label": "Medium"
+            }
+        ],
+        "default": "small"
       },
 
-      {
-        "type": "range",
-        "id": "first-image-width",
-        "label": "First Image Width",
-        "min": 220,
-        "max": 700,
-        "step": 5,
-        "unit": "px",
-        "default": 300
-      },
-      {
-        "type": "range",
-        "id": "second-image-width",
-        "label": "Second Image Width",
-        "min": 220,
-        "max": 700,
-        "step": 5,
-        "unit": "px",
-        "default": 300
-      },
-      {
-        "type": "range",
-        "id": "top-down-padding",
-        "label": "Left Image Padding(Top-Down)",
-        "min": 0,
-        "max": 100,
-        "step": 2,
-        "unit": "px",
-        "default": 56
-      },
-      {
-        "type": "range",
-        "id": "left-right-padding",
-        "label": "Left Image Padding(Left-Right)",
-        "min": 0,
-        "max": 100,
-        "step": 2,
-        "unit": "px",
-        "default": 56
-      },
       {
         "type": "range",
         "id": "gap",
