@@ -2,7 +2,7 @@
     {% for block in section.blocks %}
       {% case block.type %}
         {% when 'image' %}
-          <div class="image-wrapper {{ block.settings.block-width }}">
+          <div class="image-wrapper {{ block.settings.block-width }} {% if section.settings.swap == true %}row-reverse{% endif %}">
                 <div class="left-image-wrapper image">
                    <div class="left-image">
                       <div class="inner-image-block-left {% if block.settings.full-image == true %}full-image{% endif %}">
@@ -71,6 +71,9 @@
         display: flex;
         justify-content: center;
         gap: {{ block.settings.gap }}px;
+      }
+      .section-wrapper-{{ section.id }} .image-wrapper.row-reverse{
+        flex-direction: row-reverse;
       }
       .section-wrapper-{{ section.id }} .image-wrapper.small .image{       
         flex: 1;
@@ -174,6 +177,12 @@
         "label": "Full Image",
         "default": false
       },
+        {
+          "type": "checkbox",
+          "id": "swap",
+          "label": "Swap",
+          "default": false
+        },
       {
         "type": "range",
         "id": "gap",
