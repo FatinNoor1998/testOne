@@ -142,6 +142,7 @@
             "first-image": "shopify:\/\/shop_images\/04-10-2022-WAX1465-Square_2ab5c0f0-5eff-4119-b7db-7df313e95bfb.jpg",
             "second-image": "shopify:\/\/shop_images\/04-10-2022-WAX1307.jpg",
             "block-width": "small",
+            "full-image": false,
             "gap": 48,
             "background-color": "#e22120",
             "text": "<p>rgrg<\/p>",
@@ -166,41 +167,6 @@
       ],
       "settings": {
       }
-    },
-    "96c16991-6156-4b22-a8ec-7d886fd21dfe": {
-      "type": "single-image",
-      "blocks": {
-        "template--17540903534868__96c16991-6156-4b22-a8ec-7d886fd21dfe-1674549233ac35afb4-0": {
-          "type": "image",
-          "settings": {
-            "first-image": "shopify:\/\/shop_images\/04-10-2022-WAX1307.jpg",
-            "second-image": "shopify:\/\/shop_images\/04-10-2022-WAX1517.jpg",
-            "block-width": "small",
-            "full-image": false,
-            "gap": 0,
-            "background-color": "#f5a0a0",
-            "text": "<p>hello<\/p>",
-            "font": "",
-            "font-size": 14,
-            "text-color": "#000000",
-            "line-height": 0,
-            "hide-text": false,
-            "text-align": "left"
-          }
-        },
-        "template--17540903534868__96c16991-6156-4b22-a8ec-7d886fd21dfe-1674549233ac35afb4-1": {
-          "type": "spacer-block",
-          "settings": {
-            "spacer-height": 30
-          }
-        }
-      },
-      "block_order": [
-        "template--17540903534868__96c16991-6156-4b22-a8ec-7d886fd21dfe-1674549233ac35afb4-0",
-        "template--17540903534868__96c16991-6156-4b22-a8ec-7d886fd21dfe-1674549233ac35afb4-1"
-      ],
-      "settings": {
-      }
     }
   },
   "order": [
@@ -208,7 +174,6 @@
     "7a9084b0-7bdd-4ca3-9b1e-e61e98be5640",
     "33f08f80-f410-4ef0-b249-c466c80b4b1b",
     "f1088849-632e-47b3-9fe3-1cd8678520f0",
-    "096f5e82-a588-4008-b695-394b4cdb317d",
-    "96c16991-6156-4b22-a8ec-7d886fd21dfe"
+    "096f5e82-a588-4008-b695-394b4cdb317d"
   ]
 }
