@@ -664,6 +664,12 @@
             "ans-text-color": "#333333",
             "border-color": "#E6C1A9"
           }
+        },
+        "df8019b4-659d-4556-90c3-05874febdf9e": {
+          "type": "spacer-block",
+          "settings": {
+            "spacer-height": 30
+          }
         }
       },
       "block_order": [
@@ -671,7 +677,27 @@
         "template--17540903534868__7de081bf-3bf8-4929-8e92-4fbafbfc43cd-1674570876c89d71be-1",
         "a69ed7a9-ac75-44ff-b48e-b41a688a38a8",
         "c039caa4-bb4f-4e44-a3a5-f3cc32ad90aa",
-        "e774ae00-7e29-45f8-ae89-d7be8a263b5d"
+        "e774ae00-7e29-45f8-ae89-d7be8a263b5d",
+        "df8019b4-659d-4556-90c3-05874febdf9e"
+      ],
+      "settings": {
+      }
+    },
+    "792ee03b-2f33-47de-96bb-5c1f75587cdf": {
+      "type": "button",
+      "blocks": {
+        "template--17540903534868__792ee03b-2f33-47de-96bb-5c1f75587cdf-16745709085e02fa2c-0": {
+          "type": "button",
+          "settings": {
+            "button-text": "LIsten Now",
+            "button-url": "",
+            "button-color": "#333333",
+            "text-color": "#FFFFFF"
+          }
+        }
+      },
+      "block_order": [
+        "template--17540903534868__792ee03b-2f33-47de-96bb-5c1f75587cdf-16745709085e02fa2c-0"
       ],
       "settings": {
       }
@@ -699,6 +725,7 @@
     "68d30fe5-8005-4419-be72-86fc4d182219",
     "22bcb4fe-ea57-4636-a7ce-319dc6254681",
     "b8a217f3-6660-4e32-ba91-098b949225d0",
-    "7de081bf-3bf8-4929-8e92-4fbafbfc43cd"
+    "7de081bf-3bf8-4929-8e92-4fbafbfc43cd",
+    "792ee03b-2f33-47de-96bb-5c1f75587cdf"
   ]
 }
