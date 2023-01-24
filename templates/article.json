@@ -145,9 +145,10 @@
             "full-image": false,
             "gap": 48,
             "background-color": "#c1beb4",
-            "text": "<p>jyjyj<\/p>",
+            "text-first": "<p>hello <a href=\"\/collections\/all\" target=\"_blank\" title=\"All products\">first<\/a><\/p>",
+            "text-second": "<p>hello <a href=\"\/collections\/all\" target=\"_blank\" title=\"All products\">second<\/a><\/p>",
             "font": "",
-            "font-size": 15,
+            "font-size": 16,
             "text-color": "#000000",
             "hide-text": false,
             "text-align": "left"
