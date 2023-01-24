@@ -1,7 +1,86 @@
+<Section class="section-wrapper-{{ section.id }}">
+  {% for block in section.blocks %}
+    {% case block.type %}
+      {% when 'button' %}
+        <div class="button-block">
+            <div class="button" >
+              <a href=" " type="button">{{ block.settings.button-text }} </a>
+            </div>
+        </div>
+    {% endcase %}
+  {% endfor %}
+</Section>
+
+<style>
+  {% for block in section.blocks %}
+    {% case block.type %}
+    {% when 'button' %}
+      .section-wrapper-{{ section.id }} .button-block{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .section-wrapper-{{ section.id }} .button-block .button{
+        border-radius: 100px;
+        background: {{ block.settings.button-color }};
+        --border-offset: none;     
+        text-align: center;
+        background: {{ block.settings.button-color }};
+      }
+    .section-wrapper-{{ section.id }} .button-block .button a{
+      color: {{ block.settings.text-color }};
+      text-decoration: none;
+    }
+
+  {% endcase %}
+{% endfor %}
+</style>
+
 {% schema %}
   {
-    "name": "Section name",
-    "settings": []
+    "name": "button",
+    "blocks": [
+      {
+        "name": "button",
+        "type": "button",
+        "settings": [
+          {
+            "type": "text",
+            "id": "button-text",
+            "label": "Buton Label",
+            "default": "LIsten Now"
+          },
+          {
+          "type": "url",
+          "id": "button-url",
+          "label": "Button Link"
+          },
+          {
+          "type": "color",
+          "id": "button-color",
+          "label": "Button Color",
+          "default": "#333333"
+          },
+          {
+            "type": "color",
+            "id": "text-color",
+            "label": "Text Color",
+            "default": "#FFFFFF"
+          }
+        ]
+      }
+    ],
+    "presets": [
+    {
+      "category": "content",
+      "name": "button",
+      "blocks": [
+        {
+          "type": "button"
+        }
+      ]
+    }
+    ]
   }
 {% endschema %}
 
