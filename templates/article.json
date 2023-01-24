@@ -143,6 +143,7 @@
             "second-image": "shopify:\/\/shop_images\/04-10-2022-WAX1307.jpg",
             "block-width": "medium",
             "full-image": false,
+            "swap": false,
             "gap": 0,
             "background-color": "#c1beb4",
             "text-first": "<p>hello <a href=\"\/collections\/all\" target=\"_blank\" title=\"All products\">first<\/a><\/p>",
@@ -167,6 +168,41 @@
       ],
       "settings": {
       }
+    },
+    "9f6272ce-5188-4d53-89e9-456934f6243b": {
+      "type": "faq-section",
+      "blocks": {
+        "template--17540903534868__9f6272ce-5188-4d53-89e9-456934f6243b-1674565241ce93b67d-0": {
+          "type": "question-block",
+          "settings": {
+            "qus-text-content": "<p>This is the question, commodo eu quam vel hendrerit. Mauris non turpis fermentum, faucibus nulla quis, convallis nulla?<\/p>",
+            "qus-font-size": 15,
+            "qus-mobile-font-size": 15,
+            "qus-line-height": 22,
+            "qus-mobile-line-height": 22,
+            "qus-font": "",
+            "qus-text-color": "#E37730"
+          }
+        },
+        "template--17540903534868__9f6272ce-5188-4d53-89e9-456934f6243b-1674565241ce93b67d-1": {
+          "type": "answer-block",
+          "settings": {
+            "ans-text-content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eu euismod ante, quis finibus odio. Aenean scelerisque consectetur pharetra. In condimentum est eu eros malesuada aliquam. Aenean iaculis ligula a quam vehicula mattis. Nulla fringilla bibendum erat id molestie. Quisque id arcu in libero euismod rutrum sed ut libero. Nunc et dolor non ex elementum varius vel ut ligula. Sed id felis ex. Aenean tristique lobortis est, vitae consequat turpis sagittis varius. Quisque pharetra, dui ornare iaculis consectetur, magna velit condimentum nulla, non tristique nisl lorem ac risus. Cras accumsan eu est in dignissim. Aenean ligula felis, rutrum in augue quis, consectetur porta libero. Nunc faucibus ornare risus nec accumsan. Donec sed nisi rutrum, mattis diam a, tempus risus. Morbi at lectus elementum, laoreet orci sit amet, rutrum ipsum. Integer vel aliquet risus, sed pharetra justo. <br> Pellentesque commodo eu quam vel hendrerit. Mauris non turpis fermentum, faucibus nulla quis, convallis nulla. Ut efficitur metus eros, quis consequat nunc tincidunt et. Sed eleifend arcu vel porta cursus. Mauris ultrices mauris vel lacus hendrerit sodales. Quisque a mattis turpis. Sed nisl purus, malesuada ac ultricies iaculis, iaculis id tellus. Morbi hendrerit ipsum sit amet lacus convallis tincidunt. Praesent quis libero rutrum, pharetra ex non, tincidunt justo. Nulla facilisi.<\/p>",
+            "ans-font-size": 15,
+            "ans-mobile-font-size": 15,
+            "ans-line-height": 22,
+            "ans-mobile-line-height": 22,
+            "ans-font": "",
+            "ans-text-color": "#333333"
+          }
+        }
+      },
+      "block_order": [
+        "template--17540903534868__9f6272ce-5188-4d53-89e9-456934f6243b-1674565241ce93b67d-0",
+        "template--17540903534868__9f6272ce-5188-4d53-89e9-456934f6243b-1674565241ce93b67d-1"
+      ],
+      "settings": {
+      }
     }
   },
   "order": [
@@ -174,6 +210,7 @@
     "7a9084b0-7bdd-4ca3-9b1e-e61e98be5640",
     "33f08f80-f410-4ef0-b249-c466c80b4b1b",
     "f1088849-632e-47b3-9fe3-1cd8678520f0",
-    "096f5e82-a588-4008-b695-394b4cdb317d"
+    "096f5e82-a588-4008-b695-394b4cdb317d",
+    "9f6272ce-5188-4d53-89e9-456934f6243b"
   ]
 }
