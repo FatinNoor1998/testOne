@@ -145,17 +145,16 @@
             "full-image": false,
             "gap": 48,
             "background-color": "#c1beb4",
-            "text": "<p>rgrg<\/p>",
+            "text": "<p>jyjyj<\/p>",
             "font": "",
             "font-size": 15,
             "text-color": "#000000",
-            "hide-text": false,
+            "hide-text": true,
             "text-align": "left"
           }
         },
         "template--17540903534868__096f5e82-a588-4008-b695-394b4cdb317d-1674485400c993eb83-1": {
           "type": "spacer-block",
-          "disabled": true,
           "settings": {
             "spacer-height": 40
           }
@@ -170,6 +169,7 @@
     },
     "2e48af8c-7bdc-4e83-95ce-f4eddaa11cf6": {
       "type": "single-image",
+      "disabled": true,
       "blocks": {
         "template--17540903534868__2e48af8c-7bdc-4e83-95ce-f4eddaa11cf6-1674554629ae4d3b7c-0": {
           "type": "image",
