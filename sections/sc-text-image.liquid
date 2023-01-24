@@ -4,7 +4,7 @@
     src=" {{ section.settings.image | img_url: 'master' }} "
     alt=""
     height=""
-    width= 600px
+    width= ""
     loading="lazy">
 {%- else -%}
     {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
@@ -39,11 +39,11 @@ gap: {{ section.settings.gap }}px;
 background: {{ section.settings.background-color }};
 }
 section .section-wrapper-{{ section.id }}.width-small{
-  max-width: 60%;
+  max-width: 600px;
   margin: 0 auto;
 }
 section .section-wrapper-{{ section.id }}.width-medium{
-  max-width: 80%;
+  max-width: 900px;
   margin: 0 auto;
 }
 section .section-wrapper-{{ section.id }}.width-full{
@@ -73,6 +73,7 @@ section .section-wrapper-{{ section.id }}.width-custom{
   font-family: {{ section.settings.description-font }};
   color: {{ section.settings.description-text-color }};
   line-height: {{ section.settings.line-height }}px;
+  margin-top: 0px;
 } 
 .section-wrapper-{{ section.id }} .text-section .button{
   border-radius: 100px;
