@@ -176,7 +176,7 @@
           "type": "question-block",
           "settings": {
             "qus-text-content": "<p>This is the question, commodo eu quam vel hendrerit. Mauris non turpis fermentum, faucibus nulla quis, convallis nulla?<\/p>",
-            "qus-font-size": 18,
+            "qus-font-size": 15,
             "qus-mobile-font-size": 15,
             "qus-line-height": 22,
             "qus-mobile-line-height": 22,
