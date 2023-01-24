@@ -176,12 +176,12 @@
           "type": "question-block",
           "settings": {
             "qus-text-content": "<p>This is the question, commodo eu quam vel hendrerit. Mauris non turpis fermentum, faucibus nulla quis, convallis nulla?<\/p>",
-            "qus-font-size": 15,
+            "qus-font-size": 18,
             "qus-mobile-font-size": 15,
             "qus-line-height": 22,
             "qus-mobile-line-height": 22,
-            "qus-font": "",
-            "qus-text-color": "#E37730"
+            "qus-font": "Helvetica, Arial, sans-serif",
+            "qus-text-color": "#e37730"
           }
         },
         "template--17540903534868__9f6272ce-5188-4d53-89e9-456934f6243b-1674565241ce93b67d-1": {
@@ -193,13 +193,48 @@
             "ans-line-height": 22,
             "ans-mobile-line-height": 22,
             "ans-font": "",
-            "ans-text-color": "#333333"
+            "ans-text-color": "#333333",
+            "border-color": "#E6C1A9"
+          }
+        },
+        "f3f94469-3ee4-4db1-b913-e002285228fb": {
+          "type": "spacer-block",
+          "settings": {
+            "spacer-height": 30
+          }
+        },
+        "4202db5b-4df3-48b6-b31d-a4a2c2d374af": {
+          "type": "question-block",
+          "settings": {
+            "qus-text-content": "<p>This is the question, commodo eu quam vel hendrerit. Mauris non turpis fermentum, faucibus nulla quis, convallis nulla?<\/p>",
+            "qus-font-size": 15,
+            "qus-mobile-font-size": 15,
+            "qus-line-height": 22,
+            "qus-mobile-line-height": 22,
+            "qus-font": "Helvetica, Arial, sans-serif",
+            "qus-text-color": "#E37730"
+          }
+        },
+        "1919d941-cbe2-4533-889e-6b34f3a217a2": {
+          "type": "answer-block",
+          "settings": {
+            "ans-text-content": "<p>Mauris ultrices mauris vel lacus hendrerit sodales. Quisque a mattis turpis. Sed nisl purus, malesuada ac ultricies iaculis, iaculis id tellus. Morbi hendrerit ipsum sit amet lacus convallis tincidunt. Praesent quis libero rutrum, pharetra ex non, tincidunt justo. Nulla facilisi.<\/p>",
+            "ans-font-size": 15,
+            "ans-mobile-font-size": 15,
+            "ans-line-height": 22,
+            "ans-mobile-line-height": 22,
+            "ans-font": "Helvetica, Arial, sans-serif",
+            "ans-text-color": "#333333",
+            "border-color": "#E6C1A9"
           }
         }
       },
       "block_order": [
         "template--17540903534868__9f6272ce-5188-4d53-89e9-456934f6243b-1674565241ce93b67d-0",
-        "template--17540903534868__9f6272ce-5188-4d53-89e9-456934f6243b-1674565241ce93b67d-1"
+        "template--17540903534868__9f6272ce-5188-4d53-89e9-456934f6243b-1674565241ce93b67d-1",
+        "f3f94469-3ee4-4db1-b913-e002285228fb",
+        "4202db5b-4df3-48b6-b31d-a4a2c2d374af",
+        "1919d941-cbe2-4533-889e-6b34f3a217a2"
       ],
       "settings": {
       }
