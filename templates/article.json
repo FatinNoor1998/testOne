@@ -149,13 +149,13 @@
             "font": "",
             "font-size": 15,
             "text-color": "#000000",
-            "line-height": 0,
             "hide-text": false,
             "text-align": "left"
           }
         },
         "template--17540903534868__096f5e82-a588-4008-b695-394b4cdb317d-1674485400c993eb83-1": {
           "type": "spacer-block",
+          "disabled": true,
           "settings": {
             "spacer-height": 40
           }
