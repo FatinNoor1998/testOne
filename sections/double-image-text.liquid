@@ -20,7 +20,7 @@
                       </div>
                   </div>
                     <div class="text-block {{ block.settings.text-align }} {% if block.settings.hide-text == true %}hide-text{% endif %}">
-                     {{ block.settings.text }}
+                     {{ block.settings.text-first }}
                   </div> 
                 </div>
 
@@ -41,7 +41,7 @@
                     </div>
                   </div>
                   <div class="text-block {{ block.settings.text-align }} {% if block.settings.hide-text == true %}hide-text{% endif %}">
-                    {{ block.settings.text }}
+                    {{ block.settings.text-second }}
                  </div> 
                 </div>       
          </div>
@@ -183,10 +183,17 @@
       },
       {
         "type": "richtext",
-        "id": "text",
-        "label": "Change Text",
+        "id": "text-first",
+        "label": "Change Text ( First Image)",
         "default": "<p>hello</p>"
       },
+      {
+        "type": "richtext",
+        "id": "text-second",
+        "label": "Change Text ( Second Image)",
+        "default": "<p>hello</p>"
+      },
+
       {
       "type": "font",
       "id": "font",
