@@ -143,7 +143,7 @@
             "second-image": "shopify:\/\/shop_images\/04-10-2022-WAX1307.jpg",
             "block-width": "small",
             "full-image": false,
-            "gap": 48,
+            "gap": 0,
             "background-color": "#c1beb4",
             "text-first": "<p>hello <a href=\"\/collections\/all\" target=\"_blank\" title=\"All products\">first<\/a><\/p>",
             "text-second": "<p>hello <a href=\"\/collections\/all\" target=\"_blank\" title=\"All products\">second<\/a><\/p>",
