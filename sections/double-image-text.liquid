@@ -72,9 +72,13 @@
         justify-content: center;
         gap: {{ block.settings.gap }}px;
       }
-      .section-wrapper-{{ section.id }} .image-wrapper .image{       
+      .section-wrapper-{{ section.id }} .image-wrapper.small .image{       
         flex: 1;
-        height: 375px;
+        min-height: 375px;
+      }
+      .section-wrapper-{{ section.id }} .image-wrapper.medium .image{       
+        flex: 1;
+        min-height: 605px;
       }
       .section-wrapper-{{ section.id }} .image-wrapper .left-image-wrapper .left-image{
         background: {{ block.settings.background-color }};
