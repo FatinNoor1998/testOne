@@ -127,6 +127,88 @@
         "padding-bottom": 20
       }
     },
+    "e82f6cb4-3f26-4f82-886b-b89658766ad9": {
+      "type": "single-image",
+      "blocks": {
+        "template--17540903534868__e82f6cb4-3f26-4f82-886b-b89658766ad9-167456935603fe817e-0": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/04-10-2022-WAX1465-Square_2ab5c0f0-5eff-4119-b7db-7df313e95bfb.jpg",
+            "text-content": "<p>Model wears <a href=\"\/products\/nike-crackle-print-tb-tee\" title=\"NIKE | CRACKLE PRINT TB TEE\">Whiting Shirt Cosmic Papaya Check <\/a>with Dean T Shirt Black and Pleat Trousers Black<\/p>",
+            "font-size": 13,
+            "mobile-font-size": 16,
+            "line-height": 22,
+            "mobile-line-height": 37,
+            "font": "",
+            "text-color": "#000000",
+            "text-align": "left"
+          }
+        }
+      },
+      "block_order": [
+        "template--17540903534868__e82f6cb4-3f26-4f82-886b-b89658766ad9-167456935603fe817e-0"
+      ],
+      "settings": {
+        "section-width": "small"
+      }
+    },
+    "93a9fe20-e24c-4658-8863-42270c6991af": {
+      "type": "spacer",
+      "blocks": {
+        "template--17540903534868__93a9fe20-e24c-4658-8863-42270c6991af-1674569464422dadac-0": {
+          "type": "spacer-block",
+          "settings": {
+            "spacer-height": 35
+          }
+        }
+      },
+      "block_order": [
+        "template--17540903534868__93a9fe20-e24c-4658-8863-42270c6991af-1674569464422dadac-0"
+      ],
+      "settings": {
+      }
+    },
+    "c995ca55-ba94-491c-9dda-4f400cffa065": {
+      "type": "single-image",
+      "blocks": {
+        "template--17540903534868__c995ca55-ba94-491c-9dda-4f400cffa065-167456935603fe817e-0": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/04-10-2022-WAX1465-Square_2ab5c0f0-5eff-4119-b7db-7df313e95bfb.jpg",
+            "text-content": "<p>Model wears Whiting Shirt Cosmic Papaya Check with Dean T Shirt Black and Pleat Trousers Black<\/p>",
+            "font-size": 14,
+            "mobile-font-size": 16,
+            "line-height": 22,
+            "mobile-line-height": 37,
+            "font": "",
+            "text-color": "#000000",
+            "text-align": "left"
+          }
+        }
+      },
+      "block_order": [
+        "template--17540903534868__c995ca55-ba94-491c-9dda-4f400cffa065-167456935603fe817e-0"
+      ],
+      "settings": {
+        "section-width": "medium"
+      }
+    },
+    "4b4b8b9b-66aa-4625-a962-47a34395afc0": {
+      "type": "spacer",
+      "blocks": {
+        "template--17540903534868__4b4b8b9b-66aa-4625-a962-47a34395afc0-1674569464422dadac-0": {
+          "type": "spacer-block",
+          "settings": {
+            "spacer-height": 35
+          }
+        }
+      },
+      "block_order": [
+        "template--17540903534868__4b4b8b9b-66aa-4625-a962-47a34395afc0-1674569464422dadac-0"
+      ],
+      "settings": {
+      }
+    },
     "f1088849-632e-47b3-9fe3-1cd8678520f0": {
       "type": "image-section",
       "disabled": true,
@@ -193,6 +275,10 @@
     "main",
     "7a9084b0-7bdd-4ca3-9b1e-e61e98be5640",
     "33f08f80-f410-4ef0-b249-c466c80b4b1b",
+    "e82f6cb4-3f26-4f82-886b-b89658766ad9",
+    "93a9fe20-e24c-4658-8863-42270c6991af",
+    "c995ca55-ba94-491c-9dda-4f400cffa065",
+    "4b4b8b9b-66aa-4625-a962-47a34395afc0",
     "f1088849-632e-47b3-9fe3-1cd8678520f0",
     "096f5e82-a588-4008-b695-394b4cdb317d",
     "205ddc60-a022-4949-963a-d1ec9559e8c8"
