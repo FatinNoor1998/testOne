@@ -4,8 +4,8 @@
         {% when 'image' %}
           <div class="image-wrapper {{ block.settings.block-width }}">
                 <div class="left-image-wrapper image">
-                   <div class="left-image {% if block.settings.full-image == true %}full-image{% endif %}">
-                      <div class="inner-image-block left">
+                   <div class="left-image">
+                      <div class="inner-image-block-left {% if block.settings.full-image == true %}full-image{% endif %}">
                           {% if block.settings.first-image %}
                           <img
                             src=" {{ block.settings.first-image | img_url: 'master' }} "
@@ -20,7 +20,7 @@
                       </div>
                   </div>
                     <div class="text-block {{ block.settings.text-align }} {% if block.settings.hide-text == true %}hide-text{% endif %}">
-                     {{ block.settings.text }}
+                     {{ block.settings.text-first }}
                   </div> 
                 </div>
 
@@ -41,7 +41,7 @@
                     </div>
                   </div>
                   <div class="text-block {{ block.settings.text-align }} {% if block.settings.hide-text == true %}hide-text{% endif %}">
-                    {{ block.settings.text }}
+                    {{ block.settings.text-second }}
                  </div> 
                 </div>       
          </div>
@@ -71,41 +71,57 @@
         display: flex;
         justify-content: center;
         gap: {{ block.settings.gap }}px;
-        line-height: 0px;
       }
-      .section-wrapper-{{ section.id }} .image-wrapper .image{
-        background: {{ block.settings.background-color }};
+      .section-wrapper-{{ section.id }} .image-wrapper.small .image{       
         flex: 1;
+        height: 375px;
+      }
+      .section-wrapper-{{ section.id }} .image-wrapper.medium .image{       
+        flex: 1;
+        height: 605px;
+      }
+      .section-wrapper-{{ section.id }} .image-wrapper .left-image-wrapper .left-image{
+        background: {{ block.settings.background-color }};
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+      }
+      .section-wrapper-{{ section.id }} .image-wrapper.small .left-image-wrapper .left-image .inner-image-block-left{
+        width: 228px;
+        height: 285px;
+      }
+      .section-wrapper-{{ section.id }} .image-wrapper.medium .left-image-wrapper .left-image .inner-image-block-left{
+        width: 373px;
+        height: 465px;
+      }
+      .section-wrapper-{{ section.id }} .image-wrapper .left-image-wrapper .left-image .inner-image-block-left.full-image{
+        width: 100%;
+        height: 100%;
+      }
+      .section-wrapper-{{ section.id }} .image-wrapper .image .right-image,
+      .section-wrapper-{{ section.id }} .image-wrapper .image .right-image .inner-image-block-right
+      {
+        height: 100%;
       }
 
-      .section-wrapper-{{ section.id }} .image-wrapper .image .right-image{
-        height: 100%;
-
-      .section-wrapper-{{ section.id }} .image-wrapper .image .left-image,
-      .section-wrapper-{{ section.id }} .image-wrapper .image .right-image{
-        height: 100%;
-
-      }
-      .section-wrapper-{{ section.id }} .image-wrapper img{
+      .section-wrapper-{{ section.id }} .image-wrapper .image img{
         width: 100%;
         height: 100%;
         object-fit: cover;
       }
-      .section-wrapper-{{ section.id }} .image-wrapper .image .left-image{
-        width: 228px;
-        height: 285px;
-        margin: 45px auto;       
-      }
-      .section-wrapper-{{ section.id }} .image-wrapper.small .image .left-image.full image{
 
-      }
        .section-wrapper-{{ section.id }} .image-wrapper .image .text-block p{
         font-size: {{ block.settings.font-size | append: 'px' }};
         font-family: {{ block.settings.font }};
         color: {{ block.settings.text-color }};
         margin: 0px;
       }
-      .section-wrapper-{{ section.id }} .image-wrapper .image .text-block.hide-text{
+
+      .section-wrapper-{{ section.id }} .image-wrapper .image .text-block p a{
+        color: {{ block.settings.text-color }};
+      }
+      .section-wrapper-{{ section.id }} .image-wrapper .image .text-block.hide-text p{
         display: none;
       }
 
@@ -172,14 +188,21 @@
         "type": "color",
         "id": "background-color",
         "label": "Background color",
-        "default": "#FFFFFF"
+        "default": "#C1BEB4"
       },
       {
         "type": "richtext",
-        "id": "text",
-        "label": "Change Text",
+        "id": "text-first",
+        "label": "Change Text ( First Image)",
         "default": "<p>hello</p>"
       },
+      {
+        "type": "richtext",
+        "id": "text-second",
+        "label": "Change Text ( Second Image)",
+        "default": "<p>hello</p>"
+      },
+
       {
       "type": "font",
       "id": "font",
@@ -200,16 +223,6 @@
         "label": "Text color",
         "id": "text-color",
         "default": "#000000"
-      },
-      {
-        "type": "range",
-        "id": "line-height",
-        "label": "Line height",
-        "min": 0,
-        "max": 100,
-        "step": 1,
-        "unit": "px",
-        "default": 0
       },
       {
         "type": "checkbox",
