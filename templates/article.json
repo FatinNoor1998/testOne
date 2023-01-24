@@ -141,15 +141,15 @@
           "settings": {
             "first-image": "shopify:\/\/shop_images\/04-10-2022-WAX1465-Square_2ab5c0f0-5eff-4119-b7db-7df313e95bfb.jpg",
             "second-image": "shopify:\/\/shop_images\/04-10-2022-WAX1307.jpg",
-            "block-width": "small",
-            "full-image": false,
+            "block-width": "medium",
+            "full-image": true,
             "gap": 48,
             "background-color": "#c1beb4",
             "text": "<p>jyjyj<\/p>",
             "font": "",
             "font-size": 15,
             "text-color": "#000000",
-            "hide-text": true,
+            "hide-text": false,
             "text-align": "left"
           }
         },
@@ -166,32 +166,6 @@
       ],
       "settings": {
       }
-    },
-    "2e48af8c-7bdc-4e83-95ce-f4eddaa11cf6": {
-      "type": "single-image",
-      "disabled": true,
-      "blocks": {
-        "template--17540903534868__2e48af8c-7bdc-4e83-95ce-f4eddaa11cf6-1674554629ae4d3b7c-0": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/04-10-2022-WAX1465-Square_2ab5c0f0-5eff-4119-b7db-7df313e95bfb.jpg",
-            "text-content": "<p>Model wears Whiting Shirt Cosmic Papaya Check with Dean T Shirt Black and Pleat Trousers Black<\/p>",
-            "font-size": 16,
-            "mobile-font-size": 16,
-            "line-height": 37,
-            "mobile-line-height": 37,
-            "font": "",
-            "text-color": "#000000",
-            "text-align": "left"
-          }
-        }
-      },
-      "block_order": [
-        "template--17540903534868__2e48af8c-7bdc-4e83-95ce-f4eddaa11cf6-1674554629ae4d3b7c-0"
-      ],
-      "settings": {
-        "section-width": "small"
-      }
     }
   },
   "order": [
@@ -199,7 +173,6 @@
     "7a9084b0-7bdd-4ca3-9b1e-e61e98be5640",
     "33f08f80-f410-4ef0-b249-c466c80b4b1b",
     "f1088849-632e-47b3-9fe3-1cd8678520f0",
-    "096f5e82-a588-4008-b695-394b4cdb317d",
-    "2e48af8c-7bdc-4e83-95ce-f4eddaa11cf6"
+    "096f5e82-a588-4008-b695-394b4cdb317d"
   ]
 }
