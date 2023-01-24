@@ -29,9 +29,7 @@
     .section-wrapper-{{ section.id }}{
       max-width: 600px;
       margin: 0 auto;
-    }
-
-      
+    }   
   {% for block in section.blocks %}
     {% case block.type %}
     {% when 'question-block' %}
@@ -43,7 +41,12 @@
       line-height: {{ block.settings.qus-line-height }}px;
     }
     {% when 'answer-block' %}
-    .section-wrapper-{{ section.id }} .question-text-block-{{ block.id }} .text-block p{
+      .section-wrapper-{{ section.id }} .answer-text-block-{{ block.id }}{
+        border-left: 2px solid;
+        border-color: {{ block.settings.border-color }};
+        padding-left: 28px;
+      }
+    .section-wrapper-{{ section.id }} .answer-text-block-{{ block.id }} .text-block p{
       font-size: {{ block.settings.ans-font-size | append: 'px' }};
       font-family: {{ block.settings.ans-font }};
       color: {{ block.settings.ans-text-color }};
@@ -187,6 +190,12 @@
           "label": "Text color ( Answer )",
           "id": "ans-text-color",
           "default": "#333333"
+        },
+        {
+          "type": "color",
+          "id": "border-color",
+          "label": "Border Color",
+          "default": "#E6C1A9"
         }  
       ]
     },
