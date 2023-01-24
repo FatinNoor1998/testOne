@@ -2,10 +2,11 @@
   {% for block in section.blocks %}
     {% case block.type %}
       {% when 'button' %}
-      <div class="button" >
-        <a href=" " type="button">{{ block.settings.button-text }} </a>
-      </div>
-
+        <div class="button-block">
+            <div class="button" >
+              <a href=" " type="button">{{ block.settings.button-text }} </a>
+            </div>
+        </div>
     {% endcase %}
   {% endfor %}
 </Section>
@@ -14,13 +15,18 @@
   {% for block in section.blocks %}
     {% case block.type %}
     {% when 'button' %}
-      .section-wrapper-{{ section.id }} .button{
+      .section-wrapper-{{ section.id }} .button-block{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .section-wrapper-{{ section.id }} .button-block .button{
         border-radius: 100px;
         background: #333333;
-        --border-offset: none; 
+        --border-offset: none;     
         text-align: center;
       }
-    .section-wrapper-{{ section.id }} .button a{
+    .section-wrapper-{{ section.id }} .button-block .button a{
       color: #FFFFFF;
       text-decoration: none;
     }
