@@ -364,58 +364,6 @@
       "settings": {
       }
     },
-    "23bf38e8-933f-40b7-a3af-a39bd73cf139": {
-      "type": "spacer",
-      "blocks": {
-        "template--17540903534868__23bf38e8-933f-40b7-a3af-a39bd73cf139-1674569464422dadac-0": {
-          "type": "spacer-block",
-          "settings": {
-            "spacer-height": 30
-          }
-        }
-      },
-      "block_order": [
-        "template--17540903534868__23bf38e8-933f-40b7-a3af-a39bd73cf139-1674569464422dadac-0"
-      ],
-      "settings": {
-      }
-    },
-    "d6a76c6e-2a03-4899-9378-3adbaeef3036": {
-      "type": "double-image-text",
-      "blocks": {
-        "template--17540903534868__d6a76c6e-2a03-4899-9378-3adbaeef3036-1674569648713189b2-0": {
-          "type": "image",
-          "settings": {
-            "first-image": "shopify:\/\/shop_images\/04-10-2022-WAX1342.jpg",
-            "second-image": "shopify:\/\/shop_images\/04-10-2022-WAX1334.jpg",
-            "block-width": "medium",
-            "full-image": true,
-            "swap": false,
-            "gap": 0,
-            "background-color": "#C1BEB4",
-            "text-first": "<p>hello<\/p>",
-            "text-second": "<p>hello<\/p>",
-            "font": "",
-            "font-size": 14,
-            "text-color": "#000000",
-            "hide-text": true,
-            "text-align": "left"
-          }
-        },
-        "template--17540903534868__d6a76c6e-2a03-4899-9378-3adbaeef3036-1674569648713189b2-1": {
-          "type": "spacer-block",
-          "settings": {
-            "spacer-height": 30
-          }
-        }
-      },
-      "block_order": [
-        "template--17540903534868__d6a76c6e-2a03-4899-9378-3adbaeef3036-1674569648713189b2-0",
-        "template--17540903534868__d6a76c6e-2a03-4899-9378-3adbaeef3036-1674569648713189b2-1"
-      ],
-      "settings": {
-      }
-    },
     "ddeeec38-0605-44cb-a301-75064ec9d2e5": {
       "type": "double-image-text",
       "blocks": {
@@ -441,7 +389,7 @@
         "template--17540903534868__ddeeec38-0605-44cb-a301-75064ec9d2e5-1674569648713189b2-1": {
           "type": "spacer-block",
           "settings": {
-            "spacer-height": 30
+            "spacer-height": 45
           }
         }
       },
@@ -571,29 +519,13 @@
         "template--17540903534868__3bf84eaa-0c83-4c21-8362-8c49c89c7481-1674569648713189b2-1": {
           "type": "spacer-block",
           "settings": {
-            "spacer-height": 30
+            "spacer-height": 100
           }
         }
       },
       "block_order": [
         "template--17540903534868__3bf84eaa-0c83-4c21-8362-8c49c89c7481-1674569648713189b2-0",
         "template--17540903534868__3bf84eaa-0c83-4c21-8362-8c49c89c7481-1674569648713189b2-1"
-      ],
-      "settings": {
-      }
-    },
-    "dd84ba89-5967-4100-a9ed-7258075cb38a": {
-      "type": "spacer",
-      "blocks": {
-        "template--17540903534868__dd84ba89-5967-4100-a9ed-7258075cb38a-1674569464422dadac-0": {
-          "type": "spacer-block",
-          "settings": {
-            "spacer-height": 85
-          }
-        }
-      },
-      "block_order": [
-        "template--17540903534868__dd84ba89-5967-4100-a9ed-7258075cb38a-1674569464422dadac-0"
       ],
       "settings": {
       }
@@ -627,6 +559,52 @@
         "button-text": "Shop The Look",
         "button-url": ""
       }
+    },
+    "22bcb4fe-ea57-4636-a7ce-319dc6254681": {
+      "type": "spacer",
+      "blocks": {
+        "template--17540903534868__22bcb4fe-ea57-4636-a7ce-319dc6254681-1674569464422dadac-0": {
+          "type": "spacer-block",
+          "settings": {
+            "spacer-height": 45
+          }
+        }
+      },
+      "block_order": [
+        "template--17540903534868__22bcb4fe-ea57-4636-a7ce-319dc6254681-1674569464422dadac-0"
+      ],
+      "settings": {
+      }
+    },
+    "b8a217f3-6660-4e32-ba91-098b949225d0": {
+      "type": "sc-text-image",
+      "settings": {
+        "section-width": "medium",
+        "swap": true,
+        "custom-section-width": 975,
+        "align-item": "center",
+        "gap": 22,
+        "background-color": "#73735d",
+        "image": "shopify:\/\/shop_images\/04-10-2022-WAX1342.jpg",
+        "custom-image-width": 475,
+        "heading": "<p>Whiting Overshirt<\/p>",
+        "heading-font-size": 24,
+        "heading-font-size-mobile": 16,
+        "heading-font": "",
+        "heading-color": "#FFFFFF",
+        "heading-text-align": "left",
+        "description-content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eu euismod ante, quis finibus odio. Aenean scelerisque consectetur pharetra. In condimentum est eu eros malesuada aliquam. Aenean iaculis ligula a quam vehicula mattis. Nulla fringilla bibendum erat id molestie. Quisque id arcu in libero euismod rutrum sed ut libero. Nunc et dolor non ex elementum varius vel ut ligula. Sed id felis ex. Aenean tristique lobortis est, vitae consequat turpis sagittis varius. Quisque pharetra, dui ornare iaculis consectetur, magna velit condimentum nulla, non tristique nisl lorem ac risus. Cras accumsan eu est in dignissim. Aenean ligula felis, rutrum in augue quis, consectetur porta libero. Nunc faucibus ornare risus nec accumsan. Donec sed nisi rutrum, mattis diam a, tempus risus. Morbi at lectus elementum, laoreet orci sit amet, rutrum ipsum. Integer vel aliquet risus, sed pharetra justo. Pellentesque <\/p>",
+        "description-font-size": 16,
+        "description-mobile-font-size": 16,
+        "line-height": 22,
+        "mobile-line-height": 22,
+        "description-font": "",
+        "description-text-color": "#000000",
+        "description-text-align": "left",
+        "hide-button": false,
+        "button-text": "Shop The Look",
+        "button-url": ""
+      }
     }
   },
   "order": [
@@ -643,14 +621,13 @@
     "096f5e82-a588-4008-b695-394b4cdb317d",
     "ef0b94e8-fa46-4d58-b683-d4aa1bbed932",
     "559305e9-a977-47e8-836d-a608fc91e80a",
-    "23bf38e8-933f-40b7-a3af-a39bd73cf139",
-    "d6a76c6e-2a03-4899-9378-3adbaeef3036",
     "ddeeec38-0605-44cb-a301-75064ec9d2e5",
     "02ef450f-464b-438d-869c-4272c8f127a7",
     "40758450-9a8e-441c-8728-210b8be980ef",
     "646a7249-a971-4384-8242-cdbdba7e2f22",
     "3bf84eaa-0c83-4c21-8362-8c49c89c7481",
-    "dd84ba89-5967-4100-a9ed-7258075cb38a",
-    "68d30fe5-8005-4419-be72-86fc4d182219"
+    "68d30fe5-8005-4419-be72-86fc4d182219",
+    "22bcb4fe-ea57-4636-a7ce-319dc6254681",
+    "b8a217f3-6660-4e32-ba91-098b949225d0"
   ]
 }
