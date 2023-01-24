@@ -1,229 +1,265 @@
-<Section class="section-wrapper-{{ section.id }} width-{{ section.settings.section-width }}">
-  {% for block in section.blocks %}
-    {% case block.type %}
-      {% when 'image' %}
-        {% if block.settings.image %}
-              <img
-                src=" {{ block.settings.image | img_url: 'master' }} "
-                alt=""
-                height=""
-                width= 600px
-                loading="lazy">
-          {%- else -%}
-                {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
+<Section class="section-wrapper-{{ section.id }}">
+    {% for block in section.blocks %}
+      {% case block.type %}
+        {% when 'image' %}
+          <div class="image-wrapper {{ block.settings.block-width }}">
+                <div class="left-image-wrapper image">
+                   <div class="left-image {% if block.settings.full-image == true %}full-image{% endif %}">
+                      {% if block.settings.first-image %}
+                      <img
+                        src=" {{ block.settings.first-image | img_url: 'master' }} "
+                        alt=""
+                        height=""
+                        width=""
+                        loading="lazy">
+                      {%- else -%}
+                        {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
+                    
+                      {% endif %}
+                  </div>
+                    <div class="text-block {{ block.settings.text-align }} {% if block.settings.hide-text == true %}hide-text{% endif %}">
+                    {{ block.settings.text }}
+                  </div> 
+                </div>
 
-      {% endif %}
-                <div class="block-{{ block.id }} {{ block.settings.text-align }}">
-                  {{ block.settings.text-content }}
-              </div>
+                <div class="right-image-wrapper image">
+                  <div class="right-image">
+                      {% if block.settings.second-image %}
+                      <img
+                        src=" {{ block.settings.second-image | img_url: 'master' }} "
+                        alt=""
+                        height=""
+                        width= ""
+                        loading="lazy">
+                      {%- else -%}
+                        {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
+                    
+                      {% endif %}
+                  </div>
+                  <div class="text-block {{ block.settings.text-align }} {% if block.settings.hide-text == true %}hide-text{% endif %}">
+                    {{ block.settings.text }}
+                 </div> 
+                </div>       
+         </div>
 
         {% when 'spacer-block' %}
             <div class="spacer-{{ block.id }}">
                 
             </div>
-            
-    {% endcase %}
+   {% endcase %}
   {% endfor %}
 </Section>
 
-
 <style>
-    section .section-wrapper-{{ section.id }}.width-small{
-      max-width: 600px;
-      margin: 0 auto;
-    }
-    section .section-wrapper-{{ section.id }}.width-medium{
-      max-width: 967px;
-      margin: 0 auto;
-    }
-    section .section-wrapper-{{ section.id }}.width-full{
-      max-width: 100%;
-    }
-    section .section-wrapper-{{ section.id }}.width-custom{
-      max-width: {{ section.settings.custom-section-width | append: "px" }};
-      margin: 0 auto;
-    }
 
   {% for block in section.blocks %}
     {% case block.type %}
     {% when 'image' %}
+      .section-wrapper-{{ section.id }} .image-wrapper.small{
+        max-width: 600px;
+        margin: 0 auto;
+      }
+      .section-wrapper-{{ section.id }} .image-wrapper.medium{
+        max-width: 968px;
+        margin: 0 auto;
+      }
+      .section-wrapper-{{ section.id }} .image-wrapper{
+        display: flex;
+        justify-content: center;
+        gap: {{ block.settings.gap }}px;
+      }
+      .section-wrapper-{{ section.id }} .image-wrapper .image{
+        background: {{ block.settings.background-color }};
+        flex: 1;
+      }
+      .section-wrapper-{{ section.id }} .image-wrapper .image .right-image{
+        height: 100%;
+      }
+      .section-wrapper-{{ section.id }} .image-wrapper img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      .section-wrapper-{{ section.id }} .image-wrapper .image .left-image{
+        width: 228px;
+        height: 285px;
+      }
+      .section-wrapper-{{ section.id }} .image-wrapper.small .image .left-image.full image{
 
-    .section-wrapper-{{ section.id }} .block-{{ block.id }} p{
-      font-size: {{ block.settings.font-size | append: 'px' }};
-      font-family: {{ block.settings.font }};
-      color: {{ block.settings.text-color }};
-      line-height: {{ block.settings.line-height }}px;
-      margin: 0px;
-    }
-    .section-wrapper-{{ section.id }} img{
-      width: 100%;
-    } 
+      }
+       .section-wrapper-{{ section.id }} .image-wrapper .image .text-block p{
+        font-size: {{ block.settings.font-size | append: 'px' }};
+        font-family: {{ block.settings.font }};
+        color: {{ block.settings.text-color }};
+        margin: 0px;
+      }
+      .section-wrapper-{{ section.id }} .image-wrapper .image .text-block.hide-text{
+        display: none;
+      }
 
-    {% when 'spacer-block' %}
-      .section-wrapper-{{ section.id }} .spacer-{{ block.id }}{
-        height: {{ block.settings.spacer-height }}px;
-    }
 
+      {% when 'spacer-block' %}
+        .section-wrapper-{{ section.id }} .spacer-{{ block.id }}{
+          height: {{ block.settings.spacer-height }}px;
+        }
       {% endcase %}
-      {% endfor %}
-
+    {% endfor %}
 </style>
 
-
 {% schema %}
+{
+"name": "double-image-text",
+"blocks":[
   {
-  "name": "single-image",
-  "tag": "section",
-  "settings": [
-    {      
-         "type": "select",
-          "id": "section-width",
-          "label": "Width",
-          "options": [
-            {
+    "type": "image",
+    "name": "Image",
+    "settings": [
+      {
+        "type": "image_picker",
+        "id": "first-image",
+        "label": "First Image"
+      },
+      {
+        "type": "image_picker",
+        "id": "second-image",
+        "label": "Second Image"
+      },
+      {
+        "type": "select",
+        "id": "block-width",
+        "label": "Block Width",
+        "options": [
+          {
               "value": "small",
               "label": "Small"
             },
             {
               "value": "medium",
               "label": "Medium"
-            },
-            {
-              "value": "full",
-              "label": "Full"
             }
-          ],
-          "default": "medium"
-    },
-    {
-          "type": "range",
-          "id": "custom-section-width",
-          "label": "Custom Section width",
-          "min": 400,
-          "max": 1600,
-          "step": 50,
-          "unit": "px",
-          "default": 900
-    }
-  ],
+        ],
+        "default": "small"
+      },
+      {
+        "type": "checkbox",
+        "id": "full-image",
+        "label": "Full Image",
+        "default": false
+      },
+      {
+        "type": "range",
+        "id": "gap",
+        "label": "Gap between",
+        "min": 0,
+        "max": 100,
+        "step": 2,
+        "unit": "px",
+        "default": 56
+      },
+      {
+        "type": "color",
+        "id": "background-color",
+        "label": "Background color",
+        "default": "#FFFFFF"
+      },
+      {
+        "type": "richtext",
+        "id": "text",
+        "label": "Change Text",
+        "default": "<p>hello</p>"
+      },
+      {
+      "type": "font",
+      "id": "font",
+      "label": "Font Family"
+      },
+      {
+        "type": "range",
+        "id": "font-size",
+        "label": "Font size",
+        "min": 12,
+        "max": 50,
+        "step": 1,
+        "unit": "px",
+        "default": 14
+      },
+      {
+        "type": "color",
+        "label": "Text color",
+        "id": "text-color",
+        "default": "#000000"
+      },
+      {
+        "type": "range",
+        "id": "line-height",
+        "label": "Line height",
+        "min": 0,
+        "max": 100,
+        "step": 1,
+        "unit": "px",
+        "default": 0
+      },
+      {
+        "type": "checkbox",
+        "id": "hide-text",
+        "label": "Hide Text",
+        "default": false
+      },
+      {
+        "type": "select",
+        "id": "text-align",
+        "label": "Text align",
+        "options": [
+          {
+            "value": "left",
+            "label": "left"
+          },
+          {
+            "value": "center",
+            "label": "center"
+          },
+          {
+            "value": "right",
+            "label": "right"
+          }
+        ],
+        "default": "left"
+      }
+    ]
+  },
+  {
+          "type": "spacer-block",
+          "name": "Spacer",
+          "settings": [
+            {
+              "type": "range",
+              "id": "spacer-height",
+              "label": "Spacer Height",
+              "min": 0,
+              "max": 200,
+              "step": 5,
+              "unit": "px",
+              "default": 30
+            }
+          ]
+  }
+],
+
+"presets": [
+{
+  "category": "content",
+  "name": "double-image-text",
   "blocks": [
     {
-      "type": "image",
-      "name": "Image",
-      "settings": [
-       {
-        "type": "image_picker",
-        "id": "image",
-        "label": "Image"
-       },
-        {
-          "type": "richtext",
-          "id": "text-content",
-          "label": "Change text block",
-          "default": "<p>Model wears Whiting Shirt Cosmic Papaya Check with Dean T Shirt Black and Pleat Trousers Black</p>"
-        },
-        {
-          "type": "range",
-          "id": "font-size",
-          "label": "Font size",
-          "min": 12,
-          "max": 50,
-          "step": 1,
-          "unit": "px",
-          "default": 16
-        },
-        {
-          "type": "range",
-          "id": "mobile-font-size",
-          "label": "Mobile Font size",
-          "min": 12,
-          "max": 50,
-          "step": 1,
-          "unit": "px",
-          "default": 16
-        },
-        {
-          "type": "range",
-          "id": "line-height",
-          "label": "Line height",
-          "min": 10,
-          "max": 100,
-          "step": 1,
-          "unit": "px",
-          "default": 37
-        },
-        {
-          "type": "range",
-          "id": "mobile-line-height",
-          "label": "Mobile Line height",
-          "min": 10,
-          "max": 100,
-          "step": 1,
-          "unit": "px",
-          "default": 37
-        },
-        {
-         "type": "font",
-         "id": "font",
-         "label": "Font Family"
-        },
-        {
-          "type": "color",
-          "label": "Text color",
-          "id": "text-color",
-          "default": "#000000"
-        },
-        {
-          "type": "select",
-          "id": "text-align",
-          "label": "text-align",
-          "options": [
-            {
-              "value": "left",
-              "label": "left"
-            },
-            {
-              "value": "center",
-              "label": "center"
-            },
-            {
-              "value": "right",
-              "label": "right"
-            }
-          ],
-          "default": "left"
-        }
-      ]
+      "type": "image"
     },
     {
-      "type": "spacer-block",
-      "name": "Spacer",
-      "settings": [
-        {
-          "type": "range",
-          "id": "spacer-height",
-          "label": "Spacer Height",
-          "min": 0,
-          "max": 200,
-          "step": 5,
-          "unit": "px",
-          "default": 10
-        }
-      ]
-    }
-    
-  ],
-  "presets": [
-    {
-      "category": "content",
-      "name": "single-image",
-      "blocks": [
-        {
-          "type": "image"
-        }
-      ]
+      "type": "spacer-block"
     }
   ]
+}
+]  
+
 }
 {% endschema %}
 

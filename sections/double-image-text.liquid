@@ -5,36 +5,40 @@
           <div class="image-wrapper {{ block.settings.block-width }}">
                 <div class="left-image-wrapper image">
                    <div class="left-image {% if block.settings.full-image == true %}full-image{% endif %}">
-                      {% if block.settings.first-image %}
-                      <img
-                        src=" {{ block.settings.first-image | img_url: 'master' }} "
-                        alt=""
-                        height=""
-                        width=""
-                        loading="lazy">
-                      {%- else -%}
-                        {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
-                    
-                      {% endif %}
+                      <div class="inner-image-block left">
+                          {% if block.settings.first-image %}
+                          <img
+                            src=" {{ block.settings.first-image | img_url: 'master' }} "
+                            alt=""
+                            height=""
+                            width=""
+                            loading="lazy">
+                          {%- else -%}
+                            {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
+                        
+                          {% endif %}
+                      </div>
                   </div>
                     <div class="text-block {{ block.settings.text-align }} {% if block.settings.hide-text == true %}hide-text{% endif %}">
-                    {{ block.settings.text }}
+                     {{ block.settings.text }}
                   </div> 
                 </div>
 
                 <div class="right-image-wrapper image">
                   <div class="right-image">
-                      {% if block.settings.second-image %}
-                      <img
-                        src=" {{ block.settings.second-image | img_url: 'master' }} "
-                        alt=""
-                        height=""
-                        width= ""
-                        loading="lazy">
-                      {%- else -%}
-                        {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
-                    
-                      {% endif %}
+                    <div class="inner-image-block-right">
+                          {% if block.settings.second-image %}
+                          <img
+                            src=" {{ block.settings.second-image | img_url: 'master' }} "
+                            alt=""
+                            height=""
+                            width= ""
+                            loading="lazy">
+                          {%- else -%}
+                            {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
+                        
+                          {% endif %}
+                    </div>
                   </div>
                   <div class="text-block {{ block.settings.text-align }} {% if block.settings.hide-text == true %}hide-text{% endif %}">
                     {{ block.settings.text }}
@@ -73,8 +77,14 @@
         background: {{ block.settings.background-color }};
         flex: 1;
       }
+
       .section-wrapper-{{ section.id }} .image-wrapper .image .right-image{
         height: 100%;
+
+      .section-wrapper-{{ section.id }} .image-wrapper .image .left-image,
+      .section-wrapper-{{ section.id }} .image-wrapper .image .right-image{
+        height: 100%;
+
       }
       .section-wrapper-{{ section.id }} .image-wrapper img{
         width: 100%;
@@ -84,8 +94,7 @@
       .section-wrapper-{{ section.id }} .image-wrapper .image .left-image{
         width: 228px;
         height: 285px;
-        margin: 45px auto;
-        
+        margin: 45px auto;       
       }
       .section-wrapper-{{ section.id }} .image-wrapper.small .image .left-image.full image{
 
