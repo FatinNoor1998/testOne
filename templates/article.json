@@ -304,7 +304,7 @@
             "full-image": false,
             "swap": true,
             "gap": 0,
-            "background-color": "#C1BEB4",
+            "background-color": "#c1beb4",
             "text-first": "<p>hello<\/p>",
             "text-second": "<p>hello<\/p>",
             "font": "",
@@ -340,7 +340,7 @@
             "full-image": true,
             "swap": false,
             "gap": 16,
-            "background-color": "#C1BEB4",
+            "background-color": "#c1beb4",
             "text-first": "<p>hello<\/p>",
             "text-second": "<p>hello<\/p>",
             "font": "",
@@ -376,7 +376,7 @@
             "full-image": false,
             "swap": false,
             "gap": 16,
-            "background-color": "#C1BEB4",
+            "background-color": "#c1beb4",
             "text-first": "<p>hello<\/p>",
             "text-second": "<p>hello<\/p>",
             "font": "",
@@ -441,7 +441,7 @@
             "full-image": false,
             "swap": true,
             "gap": 0,
-            "background-color": "#C1BEB4",
+            "background-color": "#c1beb4",
             "text-first": "<p>hello<\/p>",
             "text-second": "<p>hello<\/p>",
             "font": "",
@@ -506,7 +506,7 @@
             "full-image": false,
             "swap": false,
             "gap": 0,
-            "background-color": "#C1BEB4",
+            "background-color": "#c1beb4",
             "text-first": "<p>Model wears <a href=\"\/products\/nike-crackle-print-tb-tee\" title=\"NIKE | CRACKLE PRINT TB TEE\">Whiting Shirt Cosmic Papaya Check<\/a> with Dean T Shirt Black and Pleat Trousers Black<\/p>",
             "text-second": "<p>Model wears Oz Shirt Grey and Yellow Check with <a href=\"\/products\/adidas-classic-backpack\" title=\"ADIDAS | CLASSIC BACKPACK\">Fisherman Beanie Khaki <\/a>and Pleat Trousers Black<\/p>",
             "font": "",
@@ -545,7 +545,7 @@
         "heading-font-size": 24,
         "heading-font-size-mobile": 16,
         "heading-font": "",
-        "heading-color": "#FFFFFF",
+        "heading-color": "#ffffff",
         "heading-text-align": "left",
         "description-content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eu euismod ante, quis finibus odio. Aenean scelerisque consectetur pharetra. In condimentum est eu eros malesuada aliquam. Aenean iaculis ligula a quam vehicula mattis. Nulla fringilla bibendum erat id molestie. Quisque id arcu in libero euismod rutrum sed ut libero. Nunc et dolor non ex elementum varius vel ut ligula. Sed id felis ex. Aenean tristique lobortis est, vitae consequat turpis sagittis varius. Quisque pharetra, dui ornare iaculis consectetur, magna velit condimentum nulla, non tristique nisl lorem ac risus. Cras accumsan eu est in dignissim. Aenean ligula felis, rutrum in augue quis, consectetur porta libero. Nunc faucibus ornare risus nec accumsan. Donec sed nisi rutrum, mattis diam a, tempus risus. Morbi at lectus elementum, laoreet orci sit amet, rutrum ipsum. Integer vel aliquet risus, sed pharetra justo. Pellentesque commodo eu quam vel hendrerit. Mauris non turpis fermentum, faucibus nulla quis, convallis nulla. Ut efficitur metus eros, quis consequat nunc tincidunt et. Sed eleifend arcu vel porta cursus. Mauris ultrices mauris vel lacus hendrerit sodales. Quisque a mattis turpis. Sed nisl purus, malesuada ac ultricies iaculis, iaculis id tellus. Morbi hendrerit ipsum sit amet lacus convallis tincidunt. Praesent quis libero rutrum, pharetra ex non, tincidunt justo. Nulla facilisi.<\/p>",
         "description-font-size": 16,
@@ -591,7 +591,7 @@
         "heading-font-size": 24,
         "heading-font-size-mobile": 16,
         "heading-font": "",
-        "heading-color": "#FFFFFF",
+        "heading-color": "#ffffff",
         "heading-text-align": "left",
         "description-content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eu euismod ante, quis finibus odio. Aenean scelerisque consectetur pharetra. In condimentum est eu eros malesuada aliquam. Aenean iaculis ligula a quam vehicula mattis. Nulla fringilla bibendum erat id molestie. Quisque id arcu in libero euismod rutrum sed ut libero. Nunc et dolor non ex elementum varius vel ut ligula. Sed id felis ex. Aenean tristique lobortis est, vitae consequat turpis sagittis varius. Quisque pharetra, dui ornare iaculis consectetur, magna velit condimentum nulla, non tristique nisl lorem ac risus. Cras accumsan eu est in dignissim. Aenean ligula felis, rutrum in augue quis, consectetur porta libero. Nunc faucibus ornare risus nec accumsan. Donec sed nisi rutrum, mattis diam a, tempus risus. Morbi at lectus elementum, laoreet orci sit amet, rutrum ipsum. Integer vel aliquet risus, sed pharetra justo. Pellentesque <\/p>",
         "description-font-size": 16,
@@ -604,6 +604,76 @@
         "hide-button": false,
         "button-text": "Shop The Look",
         "button-url": ""
+      }
+    },
+    "7de081bf-3bf8-4929-8e92-4fbafbfc43cd": {
+      "type": "faq-section",
+      "blocks": {
+        "template--17540903534868__7de081bf-3bf8-4929-8e92-4fbafbfc43cd-1674570876c89d71be-0": {
+          "type": "question-block",
+          "settings": {
+            "qus-text-content": "<p>This is the question, commodo eu quam vel hendrerit. Mauris non turpis fermentum, faucibus nulla quis, convallis nulla?<\/p>",
+            "qus-font-size": 15,
+            "qus-mobile-font-size": 15,
+            "qus-line-height": 22,
+            "qus-mobile-line-height": 22,
+            "qus-font": "",
+            "qus-text-color": "#E37730"
+          }
+        },
+        "template--17540903534868__7de081bf-3bf8-4929-8e92-4fbafbfc43cd-1674570876c89d71be-1": {
+          "type": "answer-block",
+          "settings": {
+            "ans-text-content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eu euismod ante, quis finibus odio. Aenean scelerisque consectetur pharetra. In condimentum est eu eros malesuada aliquam. Aenean iaculis ligula a quam vehicula mattis. Nulla fringilla bibendum erat id molestie. Quisque id arcu in libero euismod rutrum sed ut libero. Nunc et dolor non ex elementum varius vel ut ligula. Sed id felis ex. Aenean tristique lobortis est, vitae consequat turpis sagittis varius. Quisque pharetra, dui ornare iaculis consectetur, magna velit condimentum nulla, non tristique nisl lorem ac risus. Cras accumsan eu est in dignissim. Aenean ligula felis, rutrum in augue quis, consectetur porta libero. Nunc faucibus ornare risus nec accumsan. Donec sed nisi rutrum, mattis diam a, tempus risus. Morbi at lectus elementum, laoreet orci sit amet, rutrum ipsum. Integer vel aliquet risus, sed pharetra justo. <br> Pellentesque commodo eu quam vel hendrerit. Mauris non turpis fermentum, faucibus nulla quis, convallis nulla. Ut efficitur metus eros, quis consequat nunc tincidunt et. Sed eleifend arcu vel porta cursus. Mauris ultrices mauris vel lacus hendrerit sodales. Quisque a mattis turpis. Sed nisl purus, malesuada ac ultricies iaculis, iaculis id tellus. Morbi hendrerit ipsum sit amet lacus convallis tincidunt. Praesent quis libero rutrum, pharetra ex non, tincidunt justo. Nulla facilisi.<\/p>",
+            "ans-font-size": 15,
+            "ans-mobile-font-size": 15,
+            "ans-line-height": 22,
+            "ans-mobile-line-height": 22,
+            "ans-font": "",
+            "ans-text-color": "#333333",
+            "border-color": "#E6C1A9"
+          }
+        },
+        "a69ed7a9-ac75-44ff-b48e-b41a688a38a8": {
+          "type": "spacer-block",
+          "settings": {
+            "spacer-height": 30
+          }
+        },
+        "c039caa4-bb4f-4e44-a3a5-f3cc32ad90aa": {
+          "type": "question-block",
+          "settings": {
+            "qus-text-content": "<p>This is the question, commodo eu quam vel hendrerit. Mauris non turpis fermentum, faucibus nulla quis, convallis nulla?<\/p>",
+            "qus-font-size": 15,
+            "qus-mobile-font-size": 15,
+            "qus-line-height": 22,
+            "qus-mobile-line-height": 22,
+            "qus-font": "Helvetica, Arial, sans-serif",
+            "qus-text-color": "#E37730"
+          }
+        },
+        "e774ae00-7e29-45f8-ae89-d7be8a263b5d": {
+          "type": "answer-block",
+          "settings": {
+            "ans-text-content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eu euismod ante, quis finibus odio. Aenean scelerisque consectetur pharetra. In condimentum est eu eros malesuada aliquam. <\/p>",
+            "ans-font-size": 15,
+            "ans-mobile-font-size": 15,
+            "ans-line-height": 22,
+            "ans-mobile-line-height": 22,
+            "ans-font": "Helvetica, Arial, sans-serif",
+            "ans-text-color": "#333333",
+            "border-color": "#E6C1A9"
+          }
+        }
+      },
+      "block_order": [
+        "template--17540903534868__7de081bf-3bf8-4929-8e92-4fbafbfc43cd-1674570876c89d71be-0",
+        "template--17540903534868__7de081bf-3bf8-4929-8e92-4fbafbfc43cd-1674570876c89d71be-1",
+        "a69ed7a9-ac75-44ff-b48e-b41a688a38a8",
+        "c039caa4-bb4f-4e44-a3a5-f3cc32ad90aa",
+        "e774ae00-7e29-45f8-ae89-d7be8a263b5d"
+      ],
+      "settings": {
       }
     }
   },
@@ -628,6 +698,7 @@
     "3bf84eaa-0c83-4c21-8362-8c49c89c7481",
     "68d30fe5-8005-4419-be72-86fc4d182219",
     "22bcb4fe-ea57-4636-a7ce-319dc6254681",
-    "b8a217f3-6660-4e32-ba91-098b949225d0"
+    "b8a217f3-6660-4e32-ba91-098b949225d0",
+    "7de081bf-3bf8-4929-8e92-4fbafbfc43cd"
   ]
 }
