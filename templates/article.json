@@ -609,6 +609,12 @@
     "7de081bf-3bf8-4929-8e92-4fbafbfc43cd": {
       "type": "faq-section",
       "blocks": {
+        "4bc6bcc3-c15a-4064-91af-0c3157e90c95": {
+          "type": "spacer-block",
+          "settings": {
+            "spacer-height": 55
+          }
+        },
         "template--17540903534868__7de081bf-3bf8-4929-8e92-4fbafbfc43cd-1674570876c89d71be-0": {
           "type": "question-block",
           "settings": {
@@ -673,6 +679,7 @@
         }
       },
       "block_order": [
+        "4bc6bcc3-c15a-4064-91af-0c3157e90c95",
         "template--17540903534868__7de081bf-3bf8-4929-8e92-4fbafbfc43cd-1674570876c89d71be-0",
         "template--17540903534868__7de081bf-3bf8-4929-8e92-4fbafbfc43cd-1674570876c89d71be-1",
         "a69ed7a9-ac75-44ff-b48e-b41a688a38a8",
