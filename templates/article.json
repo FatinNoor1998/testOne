@@ -133,105 +133,6 @@
       "settings": {
       }
     },
-    "79bc8bd5-e0a5-4fcf-b460-93c1785d35d6": {
-      "type": "single-image",
-      "blocks": {
-        "template--17540903534868__79bc8bd5-e0a5-4fcf-b460-93c1785d35d6-16740550899262ede1-0": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/04-10-2022-WAX1465-Square.jpg",
-            "text-content": "<p>Model wears Whiting Shirt Cosmic Papaya Check with Dean T Shirt Black and Pleat Trousers Black<\/p>",
-            "font-size": 12,
-            "mobile-font-size": 16,
-            "line-height": 22,
-            "mobile-line-height": 37,
-            "font": "",
-            "text-color": "#000000",
-            "text-align": "left"
-          }
-        },
-        "e8b26a03-8fbd-4aca-804e-dc93d01bab49": {
-          "type": "spacer-block",
-          "settings": {
-            "spacer-height": 35
-          }
-        }
-      },
-      "block_order": [
-        "template--17540903534868__79bc8bd5-e0a5-4fcf-b460-93c1785d35d6-16740550899262ede1-0",
-        "e8b26a03-8fbd-4aca-804e-dc93d01bab49"
-      ],
-      "settings": {
-        "section-width": "small",
-        "custom-section-width": 900
-      }
-    },
-    "0a3faecc-1b9a-4c2e-97f7-248648dcee03": {
-      "type": "single-image",
-      "blocks": {
-        "template--17540903534868__0a3faecc-1b9a-4c2e-97f7-248648dcee03-1674204462afcb4406-0": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/04-10-2022-WAX1465-Square.jpg",
-            "text-content": "<p>Model wears Whiting Shirt Cosmic Papaya Check with Dean T Shirt Black and Pleat Trousers Black<\/p>",
-            "font-size": 14,
-            "mobile-font-size": 16,
-            "line-height": 22,
-            "mobile-line-height": 37,
-            "font": "",
-            "text-color": "#000000",
-            "text-align": "left"
-          }
-        },
-        "7ac66bf0-8234-44b8-95ac-136723aa3ef8": {
-          "type": "spacer-block",
-          "settings": {
-            "spacer-height": 35
-          }
-        }
-      },
-      "block_order": [
-        "template--17540903534868__0a3faecc-1b9a-4c2e-97f7-248648dcee03-1674204462afcb4406-0",
-        "7ac66bf0-8234-44b8-95ac-136723aa3ef8"
-      ],
-      "settings": {
-        "section-width": "medium",
-        "custom-section-width": 900
-      }
-    },
-    "c58cc746-e3be-40d7-baf6-a716a965359f": {
-      "type": "single-image",
-      "blocks": {
-        "template--17540903534868__c58cc746-e3be-40d7-baf6-a716a965359f-1674204462afcb4406-0": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/04-10-2022-WAX1465-Square.jpg",
-            "text-content": "<p>Model wears Whiting Shirt Cosmic Papaya Check with Dean T Shirt Black and Pleat Trousers Black<\/p>",
-            "font-size": 16,
-            "mobile-font-size": 16,
-            "line-height": 22,
-            "mobile-line-height": 37,
-            "font": "",
-            "text-color": "#000000",
-            "text-align": "center"
-          }
-        },
-        "016f5bc4-e556-4049-a493-66c436e4cb2f": {
-          "type": "spacer-block",
-          "settings": {
-            "spacer-height": 35
-          }
-        }
-      },
-      "block_order": [
-        "template--17540903534868__c58cc746-e3be-40d7-baf6-a716a965359f-1674204462afcb4406-0",
-        "016f5bc4-e556-4049-a493-66c436e4cb2f"
-      ],
-      "settings": {
-        "section-width": "full",
-        "custom-section-width": 900
-      }
-    },
     "096f5e82-a588-4008-b695-394b4cdb317d": {
       "type": "double-image-text",
       "blocks": {
@@ -240,22 +141,23 @@
           "settings": {
             "first-image": "shopify:\/\/shop_images\/04-10-2022-WAX1465-Square_2ab5c0f0-5eff-4119-b7db-7df313e95bfb.jpg",
             "second-image": "shopify:\/\/shop_images\/04-10-2022-WAX1307.jpg",
-            "block-width": "small",
-            "gap": 48,
-            "background-color": "#e22120",
-            "text": "",
+            "block-width": "medium",
+            "full-image": false,
+            "gap": 0,
+            "background-color": "#c1beb4",
+            "text-first": "<p>hello <a href=\"\/collections\/all\" target=\"_blank\" title=\"All products\">first<\/a><\/p>",
+            "text-second": "<p>hello <a href=\"\/collections\/all\" target=\"_blank\" title=\"All products\">second<\/a><\/p>",
             "font": "",
-            "font-size": 14,
-            "text-color": "#FFFFFF",
-            "line-height": 0,
+            "font-size": 16,
+            "text-color": "#000000",
             "hide-text": false,
-            "text-align": "left"
+            "text-align": "center"
           }
         },
         "template--17540903534868__096f5e82-a588-4008-b695-394b4cdb317d-1674485400c993eb83-1": {
           "type": "spacer-block",
           "settings": {
-            "spacer-height": 0
+            "spacer-height": 40
           }
         }
       },
@@ -272,9 +174,6 @@
     "7a9084b0-7bdd-4ca3-9b1e-e61e98be5640",
     "33f08f80-f410-4ef0-b249-c466c80b4b1b",
     "f1088849-632e-47b3-9fe3-1cd8678520f0",
-    "79bc8bd5-e0a5-4fcf-b460-93c1785d35d6",
-    "0a3faecc-1b9a-4c2e-97f7-248648dcee03",
-    "c58cc746-e3be-40d7-baf6-a716a965359f",
     "096f5e82-a588-4008-b695-394b4cdb317d"
   ]
 }
