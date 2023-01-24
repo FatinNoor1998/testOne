@@ -178,7 +178,7 @@
             "block-width": "small",
             "full-image": false,
             "gap": 0,
-            "background-color": "#FFFFFF",
+            "background-color": "#f5a0a0",
             "text": "<p>hello<\/p>",
             "font": "",
             "font-size": 14,
