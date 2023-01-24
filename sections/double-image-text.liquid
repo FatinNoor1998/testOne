@@ -4,40 +4,44 @@
         {% when 'image' %}
           <div class="image-wrapper {{ block.settings.block-width }}">
                 <div class="left-image-wrapper image">
-                  <div class="left-image">
-                      {% if block.settings.first-image %}
-                      <img
-                        src=" {{ block.settings.first-image | img_url: 'master' }} "
-                        alt=""
-                        height=""
-                        width=""
-                        loading="lazy">
-                      {%- else -%}
-                        {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
-                    
-                      {% endif %}
+                   <div class="left-image">
+                      <div class="inner-image-block-left {% if block.settings.full-image == true %}full-image{% endif %}">
+                          {% if block.settings.first-image %}
+                          <img
+                            src=" {{ block.settings.first-image | img_url: 'master' }} "
+                            alt=""
+                            height=""
+                            width=""
+                            loading="lazy">
+                          {%- else -%}
+                            {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
+                        
+                          {% endif %}
+                      </div>
                   </div>
                     <div class="text-block {{ block.settings.text-align }} {% if block.settings.hide-text == true %}hide-text{% endif %}">
-                    {{ section.settings.text }}
+                     {{ block.settings.text }}
                   </div> 
                 </div>
 
                 <div class="right-image-wrapper image">
                   <div class="right-image">
-                      {% if block.settings.second-image %}
-                      <img
-                        src=" {{ block.settings.second-image | img_url: 'master' }} "
-                        alt=""
-                        height=""
-                        width= ""
-                        loading="lazy">
-                      {%- else -%}
-                        {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
-                    
-                      {% endif %}
+                    <div class="inner-image-block-right">
+                          {% if block.settings.second-image %}
+                          <img
+                            src=" {{ block.settings.second-image | img_url: 'master' }} "
+                            alt=""
+                            height=""
+                            width= ""
+                            loading="lazy">
+                          {%- else -%}
+                            {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
+                        
+                          {% endif %}
+                    </div>
                   </div>
                   <div class="text-block {{ block.settings.text-align }} {% if block.settings.hide-text == true %}hide-text{% endif %}">
-                    {{ section.settings.text }}
+                    {{ block.settings.text }}
                  </div> 
                 </div>       
          </div>
@@ -69,26 +73,40 @@
         gap: {{ block.settings.gap }}px;
         line-height: 0px;
       }
-      .section-wrapper-{{ section.id }} .image-wrapper .image{
-        background: {{ block.settings.background-color }};
+      .section-wrapper-{{ section.id }} .image-wrapper .image{       
         flex: 1;
       }
-      .section-wrapper-{{ section.id }} .image-wrapper .image .left-image,
+      .section-wrapper-{{ section.id }} .image-wrapper .left-image-wrapper .left-image{
+        background: {{ block.settings.background-color }};
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+      }
+      .section-wrapper-{{ section.id }} .image-wrapper .left-image-wrapper .left-image .inner-image-block-left{
+        width: 228px;
+        height: 285px;
+      }
       .section-wrapper-{{ section.id }} .image-wrapper .image .right-image{
         height: 100%;
-
       }
-      .section-wrapper-{{ section.id }} .image-wrapper img{
+      .section-wrapper-{{ section.id }} .image-wrapper .image img{
         width: 100%;
         height: 100%;
         object-fit: cover;
+      }
+      .section-wrapper-{{ section.id }} .image-wrapper.small .image .left-image.full image{
+
       }
        .section-wrapper-{{ section.id }} .image-wrapper .image .text-block p{
         font-size: {{ block.settings.font-size | append: 'px' }};
         font-family: {{ block.settings.font }};
         color: {{ block.settings.text-color }};
-        margin: 0px;
       }
+      .section-wrapper-{{ section.id }} .image-wrapper .image .text-block.hide-text{
+        display: none;
+      }
+
 
       {% when 'spacer-block' %}
         .section-wrapper-{{ section.id }} .spacer-{{ block.id }}{
@@ -132,7 +150,12 @@
         ],
         "default": "small"
       },
-
+      {
+        "type": "checkbox",
+        "id": "full-image",
+        "label": "Full Image",
+        "default": false
+      },
       {
         "type": "range",
         "id": "gap",
