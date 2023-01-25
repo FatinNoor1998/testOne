@@ -1,7 +1,143 @@
+<Section class="section-wrapper-{{ section.id }} width-{{ section.settings.section-width }}">
+  {% for block in section.blocks %}
+    {% case block.type %}
+      {% when 'list' %}
+        <div class="ordered list-block-{{ block.id }}">
+          <ol>
+            <li><p> {{ block.settings.list-item-title }} <span>{{ block.settings.list-item-description }}</span></p></li>
+          </ol>
+        </div>
+ 
+
+        {% when 'spacer-block' %}
+          <div class="spacer-{{ block.id }}">
+              
+          </div>
+
+    {% endcase %}
+  {% endfor %}
+</Section>
+
+
 {% schema %}
   {
-    "name": "Section name",
-    "settings": []
+    "name": "ordered-list",
+    "tag": "section",
+    "settings": [
+    {      
+     "type": "select",
+      "id": "section-width",
+      "label": "Section Width",
+      "options": [
+        {
+          "value": "small",
+          "label": "Small"
+        },
+        {
+          "value": "medium",
+          "label": "Medium"
+        },
+        {
+          "value": "custom",
+          "label": "Custom"
+        }
+      ],
+      "default": "small"
+    },
+    {
+      "type": "range",
+      "id": "custom-section-width",
+      "label": "Custom Section width",
+      "min": 400,
+      "max": 1000,
+      "step": 10,
+      "unit": "px",
+      "default": 400
+      }
+    ],
+    "blocks": [
+      {
+        "name": "list",
+        "type": "list",
+        "settings": [
+          {
+            "type": "richtext",
+            "id": "list-item-title",
+            "label": "List Item Title",
+            "default": "<p>Young Again</p>"
+          },
+          {
+            "type": "range",
+            "id": "title-font-size",
+            "label": "Title Font size",
+            "min": 12,
+            "max": 50,
+            "step": 1,
+            "unit": "px",
+            "default": 15
+        },
+        {
+            "type": "font",
+            "id": "title-font",
+            "label": "Title Font"
+        },
+        {
+              "type": "color",
+              "label": "list title color",
+              "id": "title-color",
+              "default": "#333333"
+        },
+        {
+            "type": "richtext",
+            "id": "list-item-description",
+            "label": "List Item Description",
+            "default": "<p>hello world</p>"
+        },
+        {
+            "type": "range",
+            "id": "description-font-size",
+            "label": "Description Font size",
+            "min": 24,
+            "max": 50,
+            "step": 1,
+            "unit": "px",
+            "default": 24
+        },
+        {
+            "type": "font",
+            "id": "description-font",
+            "label": "Description Font"
+        },
+        {
+              "type": "color",
+              "label": "Description color",
+              "id": "description-color",
+              "default": "#333333"
+        },
+        {
+          "type": "range",
+          "id": "line-height",
+          "label": "Line height",
+          "min": 0,
+          "max": 50,
+          "step": 1,
+          "unit": "px",
+          "default": 22
+        }
+        ]
+      }
+    ],
+    "presets": [
+    {
+      "category": "content",
+      "name": "ordered-list",
+      "blocks": [
+        {
+          "type": "list"
+        }
+      ]
+    }
+  ] 
   }
 {% endschema %}
 
