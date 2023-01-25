@@ -1,91 +1,58 @@
-<Section class="section-wrapper-{{ section.id }} width-{{ section.settings.section-width }} {{ section.settings.align-items }}{% if section.settings.swap == true %} row-reverse{% endif %}">
-  {% if section.settings.image %}
-  <img
-    src=" {{ section.settings.image | img_url: 'master' }} "
-    alt=""
-    height=""
-    width= ""
-    loading="lazy">
-{%- else -%}
-    {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
+<Section class="section-wrapper-{{ section.id }} width-{{ section.settings.section-width }}">
+  {% for block in section.blocks %}
+    {% case block.type %}
+      {% when 'image-text' %}
 
-{% endif %}
+        <div class="block-wrapper-{{ block.id }} {{ block.settings.align-items }}{% if block.settings.swap == true %} row-reverse{% endif %}">
+          <div class="image-section">
+            {% if block.settings.image %}
+            <img
+              src=" {{ block.settings.image | img_url: 'master' }} "
+              alt=""
+              height=""
+              width= ""
+              loading="lazy">
+            {%- else -%}
+                {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
+      
+            {% endif %}
+          </div>
+          
+          <div class="text-section {{ block.settings.text-align }} ">
+              <div class="heading">
+                      <h2>{{ block.settings.heading }}</h2>
+              </div>
+              <div class="description">
+                        {{ block.settings.description-content}}
+              </div>
+              <div class="button{% if block.settings.hide-button == true %} hide-btn{% endif %}" >
+                <a href="#" type="button">{{ block.settings.button-text }} </a>
+              </div>
+          </div>  
+        </div>
 
-<div class="text-section">
-  <div class="heading {{ section.settings.heading-text-align }}">
-          <h2>{{ section.settings.heading }}</h2>
-  </div>
-  <div class="description {{ section.settings.description-text-align }} ">
-            {{ section.settings.description-content}}
-  </div>
-   <div class="button{% if section.settings.hide-button == true %} hide-btn{% endif %}" >
-     <a href="#" type="button">{{ section.settings.button-text }} </a>
-   </div>
-</div>   
+    {% endcase %}
+  {% endfor %}
 </Section>
 
 <style>
-section .section-wrapper-{{ section.id }}.row-reverse{
-flex-direction: row-reverse;
-}
-section .section-wrapper-{{ section.id }} .text-section .button.hide-btn{
-display: none;
-}
-section .section-wrapper-{{ section.id }}{
-display: flex;
-justify-content: space-between;
-align-items: {{ section.settings.align-item }};
-gap: {{ section.settings.gap }}px;
-background: {{ section.settings.background-color }};
-}
-section .section-wrapper-{{ section.id }}.width-small{
-  max-width: 600px;
-  margin: 0 auto;
-}
-section .section-wrapper-{{ section.id }}.width-medium{
-  max-width: 900px;
-  margin: 0 auto;
-}
-section .section-wrapper-{{ section.id }}.width-full{
-  max-width: 100%;
-}
-section .section-wrapper-{{ section.id }}.width-custom{
-  max-width: {{ section.settings.custom-section-width | append: "px" }};
-  margin: 0 auto;
-}
-.section-wrapper-{{ section.id }} img{
-  max-width: {{ section.settings.custom-image-width }}px;
-} 
-.section-wrapper-{{ section.id }} .text-section{
-  padding-left: 55px;
-}
-.section-wrapper-{{ section.id }} .text-section .heading p{
-  font-size: {{ section.settings.heading-font-size | append: 'px' }};
-  font-family: {{ section.settings.heading-font }};
-  color: {{ section.settings.heading-color }};
-  margin-top: 0px;
-}
-.section-wrapper-{{ section.id }} .text-section .heading h2{
-  margin-top: 0px;
-}
-.section-wrapper-{{ section.id }} .text-section .description p{
-  font-size: {{ section.settings.description-font-size | append: 'px' }};
-  font-family: {{ section.settings.description-font }};
-  color: {{ section.settings.description-text-color }};
-  line-height: {{ section.settings.line-height }}px;
-  margin-top: 0px;
-} 
-.section-wrapper-{{ section.id }} .text-section .button{
-  border-radius: 100px;
-  background: #333333;
-  --border-offset: none;     
-}
-.section-wrapper-{{ section.id }} .text-section .button a{
-  color: #FFFFFF;
-  text-decoration: none;
-}
+    
+      section .section-wrapper-{{ section.id }}.width-small{
+        max-width: 968px;
+        margin: 0 auto;
+      }
+      section .section-wrapper-{{ section.id }}.width-medium{
+        max-width: 1156px;
+        margin: 0 auto;
+      }
+     
+  {% for block in section.blocks %}
+    {% case block.type %}
+    {% when 'image-text' %}
 
 
+    {% endcase %}
+  {% endfor %}
 </style>
 
 {% schema %}
@@ -105,247 +72,210 @@ section .section-wrapper-{{ section.id }}.width-custom{
         {
           "value": "medium",
           "label": "Medium"
-        },
-        {
-          "value": "full",
-          "label": "Full"
-        },
-        {
-          "value": "custom",
-          "label": "Custom"
         }
       ],
-      "default": "medium"
-},
-{
-  "type": "checkbox",
-  "id": "swap",
-  "label": "Swap",
-  "default": false
-},
-{
-      "type": "range",
-      "id": "custom-section-width",
-      "label": "Custom Section width",
-      "min": 600,
-      "max": 1200,
-      "step": 15,
-      "unit": "px",
-      "default": 975
-},
-{
-      "type": "select",
-      "id": "align-item",
-      "label": "Align Item",
-      "options": [
-        {
-          "value": "start",
-          "label": "Start"
-        },
-        {
-          "value": "center",
-          "label": "Center"
-        },
-        {
-          "value": "end",
-          "label": "End"
-        }
-      ],
-      "default": "start"
-},
-{
-  "type": "range",
-  "id": "gap",
-  "label": "Gap between",
-  "min": 0,
-  "max": 100,
-  "step": 2,
-  "unit": "px",
-  "default": 56
-},
-{
-  "type": "color",
-  "id": "background-color",
-  "label": "Background color",
-  "default": "#4E4E3F"
-},
-{
+      "default": "small"
+}
+],
+"blocks":[
+  {
+    "name": "image-text",
+    "type": "image-text",
+    "settings": [
+      {
       "type": "image_picker",
       "id": "image",
       "label": "Image"
-},
-{
+      },
+      {
+        "type": "checkbox",
+        "id": "swap",
+        "label": "Swap",
+        "default": false
+      },
+      {
       "type": "range",
       "id": "custom-image-width",
       "label": "Custom Image width",
-      "min": 400,
-      "max": 1000,
+      "min": 410,
+      "max": 995,
       "step": 15,
       "unit": "px",
-      "default": 475
-},
-{
-      "type": "richtext",
-      "id": "heading",
-      "label": "Change Heading",
-      "default": "<p>Whiting Overshirt</p>"
-},
-{
-      "type": "range",
-      "id": "heading-font-size",
-      "label": "Heading Font size",
-      "min": 24,
-      "max": 50,
-      "step": 1,
-      "unit": "px",
-      "default": 24
-},
-{
-      "type": "range",
-      "id": "heading-font-size-mobile",
-      "label": "Mobile Heading Font size",
-      "min": 12,
-      "max": 50,
-      "step": 1,
-      "unit": "px",
-      "default": 16
-},
-{
-     "type": "font",
-     "id": "heading-font",
-     "label": "Heading Font Family"
-},
-{
-      "type": "color",
-      "label": "Heading color",
-      "id": "heading-color",
-      "default": "#FFFFFF"
-},
-    {
-      "type": "select",
-      "id": "heading-text-align",
-      "label": "Heading Text align",
-      "options": [
-        {
-          "value": "left",
-          "label": "left"
+      "default": 485
+      },
+      {
+        "type": "select",
+        "id": "align-item",
+        "label": "Align Item",
+        "options": [
+          {
+            "value": "start",
+            "label": "Start"
+          },
+          {
+            "value": "center",
+            "label": "Center"
+          },
+          {
+            "value": "end",
+            "label": "End"
+          }
+        ],
+        "default": "start"
+       },
+       {
+          "type": "select",
+          "id": "text-align",
+          "label": "Text align",
+          "options": [
+            {
+              "value": "left",
+              "label": "left"
+            },
+            {
+              "value": "center",
+              "label": "center"
+            },
+            {
+              "value": "right",
+              "label": "right"
+            }
+          ],
+          "default": "left"
         },
         {
-          "value": "center",
-          "label": "center"
+          "type": "color",
+          "id": "background-color",
+          "label": "Background color",
+          "default": "#4E4E3F"
         },
         {
-          "value": "right",
-          "label": "right"
-        }
-      ],
-      "default": "left"
-    },
-    {
-      "type": "richtext",
-      "id": "description-content",
-      "label": "Description",
-      "default": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eu euismod ante, quis finibus odio. Aenean scelerisque consectetur pharetra. In condimentum est eu eros malesuada aliquam. Aenean iaculis ligula a quam vehicula mattis. Nulla fringilla bibendum erat id molestie. Quisque id arcu in libero euismod rutrum sed ut libero. Nunc et dolor non ex elementum varius vel ut ligula. Sed id felis ex. Aenean tristique lobortis est, vitae consequat turpis sagittis varius. Quisque pharetra, dui ornare iaculis consectetur, magna velit condimentum nulla, non tristique nisl lorem ac risus. Cras accumsan eu est in dignissim. Aenean ligula felis, rutrum in augue quis, consectetur porta libero. Nunc faucibus ornare risus nec accumsan. Donec sed nisi rutrum, mattis diam a, tempus risus. Morbi at lectus elementum, laoreet orci sit amet, rutrum ipsum. Integer vel aliquet risus, sed pharetra justo. Pellentesque commodo eu quam vel hendrerit. Mauris non turpis fermentum, faucibus nulla quis, convallis nulla. Ut efficitur metus eros, quis consequat nunc tincidunt et. Sed eleifend arcu vel porta cursus. Mauris ultrices mauris vel lacus hendrerit sodales. Quisque a mattis turpis. Sed nisl purus, malesuada ac ultricies iaculis, iaculis id tellus. Morbi hendrerit ipsum sit amet lacus convallis tincidunt. Praesent quis libero rutrum, pharetra ex non, tincidunt justo. Nulla facilisi.</p>"
-    },       
-    {
-      "type": "range",
-      "id": "description-font-size",
-      "label": "Description Font size",
-      "min": 12,
-      "max": 50,
-      "step": 1,
-      "unit": "px",
-      "default": 16
-    },
-    {
-      "type": "range",
-      "id": "description-mobile-font-size",
-      "label": "Description Font size Mobile ",
-      "min": 12,
-      "max": 50,
-      "step": 1,
-      "unit": "px",
-      "default": 16
-    },
-    {
-      "type": "range",
-      "id": "line-height",
-      "label": "Line height",
-      "min": 10,
-      "max": 100,
-      "step": 1,
-      "unit": "px",
-      "default": 22
-    },
-    {
-      "type": "range",
-      "id": "mobile-line-height",
-      "label": "Mobile Line height",
-      "min": 10,
-      "max": 100,
-      "step": 1,
-      "unit": "px",
-      "default": 22
-    },
-    {
-     "type": "font",
-     "id": "description-font",
-     "label": "Description Font Family"
-    },
-    {
-      "type": "color",
-      "label": "Description Text color",
-      "id": "description-text-color",
-      "default": "#000000"
-    },
-    {
-      "type": "select",
-      "id": "description-text-align",
-      "label": "Description text align",
-      "options": [
-        {
-          "value": "left",
-          "label": "left"
+          "type": "richtext",
+          "id": "heading",
+          "label": "Change Heading",
+          "default": "<p>Whiting Overshirt</p>"
         },
         {
-          "value": "center",
-          "label": "center"
+            "type": "range",
+            "id": "heading-font-size",
+            "label": "Heading Font size",
+            "min": 24,
+            "max": 50,
+            "step": 1,
+            "unit": "px",
+            "default": 24
         },
         {
-          "value": "right",
-          "label": "right"
-        }
-      ],
-      "default": "left"
-    },
-    {
-      "type": "checkbox",
-      "id": "hide-button",
-      "label": "hide Button",
-      "default": false
-    },
-    {
-      "type": "text",
-      "id": "button-text",
-      "label": "Buton Label",
-      "default": "Shop The Look"
-    },
-    {
-      "type": "url",
-      "id": "button-url",
-      "label": "Button Link"
-    }
+            "type": "range",
+            "id": "heading-font-size-mobile",
+            "label": "Mobile Heading Font size",
+            "min": 12,
+            "max": 50,
+            "step": 1,
+            "unit": "px",
+            "default": 16
+        },
+        {
+            "type": "font",
+            "id": "heading-font",
+            "label": "Heading Font Family"
+        },
+        {
+              "type": "color",
+              "label": "Heading color",
+              "id": "heading-color",
+              "default": "#FFFFFF"
+        },
 
+          {
+            "type": "richtext",
+            "id": "description-content",
+            "label": "Description",
+            "default": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eu euismod ante, quis finibus odio. Aenean scelerisque consectetur pharetra. In condimentum est eu eros malesuada aliquam. Aenean iaculis ligula a quam vehicula mattis. Nulla fringilla bibendum erat id molestie. Quisque id arcu in libero euismod rutrum sed ut libero. Nunc et dolor non ex elementum varius vel ut ligula. Sed id felis ex. Aenean tristique lobortis est, vitae consequat turpis sagittis varius. Quisque pharetra, dui ornare iaculis consectetur, magna velit condimentum nulla, non tristique nisl lorem ac risus. Cras accumsan eu est in dignissim. Aenean ligula felis, rutrum in augue quis, consectetur porta libero. Nunc faucibus ornare risus nec accumsan. Donec sed nisi rutrum, mattis diam a, tempus risus. Morbi at lectus elementum, laoreet orci sit amet, rutrum ipsum. Integer vel aliquet risus, sed pharetra justo. Pellentesque commodo eu quam vel hendrerit. Mauris non turpis fermentum, faucibus nulla quis, convallis nulla. Ut efficitur metus eros, quis consequat nunc tincidunt et. Sed eleifend arcu vel porta cursus. Mauris ultrices mauris vel lacus hendrerit sodales. Quisque a mattis turpis. Sed nisl purus, malesuada ac ultricies iaculis, iaculis id tellus. Morbi hendrerit ipsum sit amet lacus convallis tincidunt. Praesent quis libero rutrum, pharetra ex non, tincidunt justo. Nulla facilisi.</p>"
+          },       
+          {
+            "type": "range",
+            "id": "description-font-size",
+            "label": "Description Font size",
+            "min": 12,
+            "max": 50,
+            "step": 1,
+            "unit": "px",
+            "default": 16
+          },
+          {
+            "type": "range",
+            "id": "description-mobile-font-size",
+            "label": "Description Font size Mobile ",
+            "min": 12,
+            "max": 50,
+            "step": 1,
+            "unit": "px",
+            "default": 16
+          },
+          {
+            "type": "range",
+            "id": "line-height",
+            "label": "Line height",
+            "min": 10,
+            "max": 100,
+            "step": 1,
+            "unit": "px",
+            "default": 22
+          },
+          {
+            "type": "range",
+            "id": "mobile-line-height",
+            "label": "Mobile Line height",
+            "min": 10,
+            "max": 100,
+            "step": 1,
+            "unit": "px",
+            "default": 22
+          },
+          {
+          "type": "font",
+          "id": "description-font",
+          "label": "Description Font Family"
+          },
+          {
+            "type": "color",
+            "label": "Description Text color",
+            "id": "description-text-color",
+            "default": "#000000"
+          },
+          {
+            "type": "checkbox",
+            "id": "hide-button",
+            "label": "hide Button",
+            "default": false
+          },
+          {
+            "type": "text",
+            "id": "button-text",
+            "label": "Buton Label",
+            "default": "Shop The Look"
+          },
+          {
+            "type": "url",
+            "id": "button-url",
+            "label": "Button Link"
+          }
+
+    ]
+  }
 ],
-
-
-"presets": [
-{
-  "category": "content",
-  "name": "sc-text-image"
-}
-]
-
+  "presets": [
+    {
+      "category": "content",
+      "name": "sc-text-image",
+      "blocks": [
+        {
+          "type": "image-text"
+        }
+      ]
+    }
+  ]
 }
 {% endschema %}
 
