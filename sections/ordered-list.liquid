@@ -5,7 +5,7 @@
               {% case block.type %}
                 {% when 'text' %}
 
-                    <li>{{ block.settings.list-item-title }} <span class="item-list"> -{{ block.settings.list-item-description }}</span></li>
+                    <li><span class="title">{{ block.settings.list-item-title }}</span> <span class="item-list"> -{{ block.settings.list-item-description }}</span></li>
 
                   {% endcase %}
                 {% endfor %}
@@ -30,7 +30,7 @@
   {% for block in section.blocks %}
     {% case block.type %}
     {% when 'text' %}
-      .section-wrapper-{{ section.id }} .ordered-list ol {
+/*       .section-wrapper-{{ section.id }} .ordered-list ol {
         counter-reset: li;
         }
         .section-wrapper-{{ section.id }} .ordered-list ol li::before{
@@ -41,7 +41,13 @@
         }  
         .section-wrapper-{{ section.id }} .ordered-list ol li{
           counter-increment: li;
-        }
+        } */
+  .section-wrapper-{{ section.id }} .ordered-list ol li{
+    color: red;
+  }
+  .section-wrapper-{{ section.id }} .ordered-list ol li span .title{
+    color: black;
+  }
 
  
     {% endcase %}
