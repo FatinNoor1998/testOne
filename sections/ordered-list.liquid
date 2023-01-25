@@ -1,28 +1,52 @@
 <Section class="section-wrapper-{{ section.id }} width-{{ section.settings.section-width }}">
         <div class="ordered-list">
-          <ol class="list-item-block-{{ section.id }}">
-
+          <ol>
             {% for block in section.blocks %}
               {% case block.type %}
                 {% when 'text' %}
 
-                    <li><p>{{ block.settings.list-item-title }} <span> -{{ block.settings.list-item-description }}</span></p></li>
+                    <li><p>{{ block.settings.list-item-title }} <span class="item-list"> -{{ block.settings.list-item-description }}</span></p></li>
+
                   {% endcase %}
                 {% endfor %}
           </ol>
         </div>
- 
-
-
-
 </Section>
 
 
 <style>
-  .list-item-block-{{ section.id }}{
-    list-style-type: decimal;
+  .section-wrapper-{{ section.id }}.width-small{
+    max-width: 400px;
+    margin: 0 auto;
   }
+  .section-wrapper-{{ section.id }}.width-medium{
+    max-width: 700px;
+    margin: 0 auto;
+  }
+  .section-wrapper-{{ section.id }}.width-custom{
+    max-width: {{ block.settings.section-width }}px;
+    margin: 0 auto;
+  }
+  {% for block in section.blocks %}
+    {% case block.type %}
+    {% when 'text' %}
+      .section-wrapper-{{ section.id }} .ordered-list ol {
+        list-style: none; 
+        counter-reset: li;
+        }
+        .section-wrapper-{{ section.id }} .ordered-list ol li::before{
+          content:  counter(li);
+          color: red;
+          display: inline-block;
+          width: 1em;
+        }  
+        .section-wrapper-{{ section.id }} .ordered-list ol li{
+          counter-increment: li;
+        }
 
+ 
+    {% endcase %}
+  {% endfor %}
 </style>
 {% schema %}
   {
