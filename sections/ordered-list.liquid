@@ -1,10 +1,10 @@
 <Section class="section-wrapper-{{ section.id }} width-{{ section.settings.section-width }}">
-  {% for block in section.blocks %}
-    {% case block.type %}
-      {% when 'list' %}
-        <div class="ordered list-block-{{ block.id }}">
+        <div class="ordered-list">
           <ol>
-            <li><p> {{ block.settings.list-item-title }} <span>{{ block.settings.list-item-description }}</span></p></li>
+            {% for block in section.blocks %}
+              {% case block.type %}
+                {% when 'list' %}
+            <li class="list-item-block-{{ block.id }}"> {{ block.settings.list-item-title }} <span>{{ block.settings.list-item-description }}</span></li>
           </ol>
         </div>
  
