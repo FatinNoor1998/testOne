@@ -784,11 +784,26 @@
             "description-color": "#333333",
             "line-height": 22
           }
+        },
+        "c4b7a7fd-6bc7-4817-b840-0a980f4b4136": {
+          "type": "text",
+          "settings": {
+            "list-item-title": "Young Again",
+            "title-font-size": 15,
+            "title-font": "Helvetica, Arial, sans-serif",
+            "title-color": "#333333",
+            "list-item-description": "hello world",
+            "description-font-size": 24,
+            "description-font": "Helvetica, Arial, sans-serif",
+            "description-color": "#333333",
+            "line-height": 22
+          }
         }
       },
       "block_order": [
         "template--17540903534868__1b196109-fa0d-4a9d-92e6-c7573f362639-1674657720abe35976-0",
-        "ead55bc7-6bba-4b88-a207-a2d62ba5c1dd"
+        "ead55bc7-6bba-4b88-a207-a2d62ba5c1dd",
+        "c4b7a7fd-6bc7-4817-b840-0a980f4b4136"
       ],
       "settings": {
         "section-width": "small",
