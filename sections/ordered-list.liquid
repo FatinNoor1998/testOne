@@ -1,10 +1,14 @@
 <Section class="section-wrapper-{{ section.id }} width-{{ section.settings.section-width }}">
         <div class="ordered-list">
           <ol>
+
             {% for block in section.blocks %}
               {% case block.type %}
                 {% when 'list' %}
-            <li class="list-item-block-{{ block.id }}"> {{ block.settings.list-item-title }} <span>{{ block.settings.list-item-description }}</span></li>
+                  <div class="list-item-block-{{ block.id }}">
+                    <li><p>{{ block.settings.list-item-title }} <span>{{ block.settings.list-item-description }}</span></p></li>
+                  </div>
+                
           </ol>
         </div>
  
@@ -61,10 +65,10 @@
         "type": "list",
         "settings": [
           {
-            "type": "richtext",
+            "type": "text",
             "id": "list-item-title",
             "label": "List Item Title",
-            "default": "<p>Young Again</p>"
+            "default": "Young Again"
           },
           {
             "type": "range",
@@ -88,10 +92,10 @@
               "default": "#333333"
         },
         {
-            "type": "richtext",
+            "type": "text",
             "id": "list-item-description",
             "label": "List Item Description",
-            "default": "<p>hello world</p>"
+            "default": "hello world"
         },
         {
             "type": "range",
