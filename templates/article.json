@@ -664,7 +664,7 @@
             "image": "shopify:\/\/shop_images\/04-10-2022-WAX1334.jpg",
             "swap": false,
             "custom-image-width": 485,
-            "align-self": "start",
+            "align-self": "center",
             "text-align": "left",
             "background-color": "#c1beb4",
             "heading": "<p>Whiting Overshirt<\/p>",
