@@ -59,7 +59,6 @@
       .section-wrapper-{{ section.id }} .block-wrapper-{{ block.id }}{
       display: flex;
       justify-content: space-between;
-      align-items: {{ block.settings.align-item }};
       background: {{ block.settings.background-color }};
       }
       .section-wrapper-{{ section.id }} .block-wrapper-{{ block.id }} .image-section{
@@ -68,10 +67,12 @@
       .section-wrapper-{{ section.id }} .block-wrapper-{{ block.id }} .image-section img{
         max-width: 100%;
         max-height: 100%;
+        object-fit: cover;
       }
       .section-wrapper-{{ section.id }} .block-wrapper-{{ block.id }} .text-section{
         padding-left: {{ block.settings.padding-left }}px;
         padding-right: {{ block.settings.padding-right }}px;
+        flex: 1;
       }
       .section-wrapper-{{ section.id }} .block-wrapper-{{ block.id }} .text-section .heading p{
         font-size: {{ section.settings.heading-font-size | append: 'px' }};
