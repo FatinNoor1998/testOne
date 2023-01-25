@@ -4,7 +4,7 @@
 
             {% for block in section.blocks %}
               {% case block.type %}
-                {% when 'list' %}
+                {% when 'text' %}
                   <div class="list-item-block-{{ block.id }}">
                     <li><p>{{ block.settings.list-item-title }} <span>{{ block.settings.list-item-description }}</span></p></li>
                   </div>
@@ -61,8 +61,8 @@
     ],
     "blocks": [
       {
-        "name": "list",
-        "type": "list",
+        "name": "text",
+        "type": "text",
         "settings": [
           {
             "type": "text",
@@ -137,7 +137,7 @@
       "name": "ordered-list",
       "blocks": [
         {
-          "type": "list"
+          "type": "text"
         }
       ]
     }
