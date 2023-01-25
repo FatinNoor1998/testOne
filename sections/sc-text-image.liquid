@@ -50,7 +50,55 @@
     {% case block.type %}
     {% when 'image-text' %}
 
-
+      .section-wrapper-{{ section.id }} .block-wrapper-{{ block.id }}.row-reverse{
+      flex-direction: row-reverse;
+      }
+      section .section-wrapper-{{ section.id }} .text-section .button.hide-btn{
+         display: none;
+      }
+      .section-wrapper-{{ section.id }} .block-wrapper-{{ block.id }}{
+      display: flex;
+      justify-content: space-between;
+      align-items: {{ block.settings.align-item }};
+      background: {{ block.settings.background-color }};
+      }
+      .section-wrapper-{{ section.id }} .block-wrapper-{{ block.id }} .image-section{
+        width: {{ block.settings.custom-image-width }}px;
+      }
+      .section-wrapper-{{ section.id }} .block-wrapper-{{ block.id }} .image-section img{
+        max-width: 100%;
+        max-height: 100%;
+      }
+      .section-wrapper-{{ section.id }} .block-wrapper-{{ block.id }} .text-section{
+        padding-left: {{ block.settings.padding-left }}px;
+        padding-right: {{ block.settings.padding-right }}px;
+      }
+      .section-wrapper-{{ section.id }} .block-wrapper-{{ block.id }} .text-section .heading p{
+        font-size: {{ section.settings.heading-font-size | append: 'px' }};
+        font-family: {{ section.settings.heading-font }};
+        color: {{ section.settings.heading-color }};
+        margin: 0px;
+      }
+      .section-wrapper-{{ section.id }} .block-wrapper-{{ block.id }} .text-section .description p{
+        font-size: {{ section.settings.description-font-size | append: 'px' }};
+        font-family: {{ section.settings.description-font }};
+        color: {{ section.settings.description-text-color }};
+        line-height: {{ section.settings.line-height }}px;
+        margin-top: 0px;
+      } 
+      .section-wrapper-{{ section.id }} .block-wrapper-{{ block.id }} .text-section .button{
+        border-radius: 100px;
+        background: #333333;
+        --border-offset: none;    
+        padding-bottom: 10px;
+      }
+      .section-wrapper-{{ section.id }} .block-wrapper-{{ block.id }} .text-section .button:hover{
+        --border-opacity: none;
+      }
+      .section-wrapper-{{ section.id }} .text-section .button a{
+        color: #FFFFFF;
+        text-decoration: none;
+      }
     {% endcase %}
   {% endfor %}
 </style>
@@ -260,6 +308,26 @@
             "type": "url",
             "id": "button-url",
             "label": "Button Link"
+          },
+          {
+            "type": "range",
+            "id": "padding-left",
+            "label": "Padding left",
+            "min": 0,
+            "max": 80,
+            "step": 1,
+            "unit": "px",
+            "default": 56 
+          },
+          {
+            "type": "range",
+            "id": "padding-right",
+            "label": "Padding Right",
+            "min": 0,
+            "max": 80,
+            "step": 1,
+            "unit": "px",
+            "default": 56 
           }
 
     ]
