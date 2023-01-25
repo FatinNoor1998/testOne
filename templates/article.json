@@ -763,11 +763,11 @@
             "list-item-title": "Young Again",
             "title-font-size": 15,
             "title-font": "",
-            "title-color": "#333333",
+            "title-color": "#e22120",
             "list-item-description": "hello world bhjbjhbjb jnjknknkk  njkhnjknhj",
             "description-font-size": 12,
             "description-font": "",
-            "description-color": "#121212",
+            "description-color": "#e22120",
             "number-color": "#e37730",
             "line-height": 22
           }
@@ -783,7 +783,7 @@
             "description-font-size": 24,
             "description-font": "Helvetica, Arial, sans-serif",
             "description-color": "#333333",
-            "number-color": "#E37730",
+            "number-color": "#e37730",
             "line-height": 22
           }
         },
@@ -798,7 +798,7 @@
             "description-font-size": 24,
             "description-font": "Helvetica, Arial, sans-serif",
             "description-color": "#333333",
-            "number-color": "#E37730",
+            "number-color": "#e37730",
             "line-height": 22
           }
         },
@@ -813,7 +813,7 @@
             "description-font-size": 15,
             "description-font": "Helvetica, Arial, sans-serif",
             "description-color": "#333333",
-            "number-color": "#E37730",
+            "number-color": "#e37730",
             "line-height": 22
           }
         },
@@ -828,7 +828,7 @@
             "description-font-size": 15,
             "description-font": "Helvetica, Arial, sans-serif",
             "description-color": "#333333",
-            "number-color": "#E37730",
+            "number-color": "#e37730",
             "line-height": 24
           }
         }
