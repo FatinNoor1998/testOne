@@ -1,6 +1,6 @@
 <Section class="section-wrapper-{{ section.id }} width-{{ section.settings.section-width }}">
         <div class="ordered-list">
-          <ol class="list-item-block-{{ block.id }}">
+          <ol class="list-item-block-{{ section.id }}">
 
             {% for block in section.blocks %}
               {% case block.type %}
@@ -22,6 +22,12 @@
 </Section>
 
 
+<style>
+  .list-item-block-{{ section.id }}{
+    list-style-type: decimal;
+  }
+
+</style>
 {% schema %}
   {
     "name": "ordered-list",
