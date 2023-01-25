@@ -7,13 +7,14 @@
                 {% when 'text' %}
 
                     <li><p>{{ block.settings.list-item-title }} <span>{{ block.settings.list-item-description }}</span></p></li>
-                
+                  {% endcase %}
+                {% endfor %}
           </ol>
         </div>
  
 
-    {% endcase %}
-  {% endfor %}
+
+
 </Section>
 
 
