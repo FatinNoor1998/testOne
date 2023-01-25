@@ -816,13 +816,45 @@
             "number-color": "#E37730",
             "line-height": 22
           }
+        },
+        "6a202d79-a04d-4a03-9277-a9485b344679": {
+          "type": "text",
+          "settings": {
+            "list-item-title": "Young Again",
+            "title-font-size": 15,
+            "title-font": "Helvetica, Arial, sans-serif",
+            "title-color": "#333333",
+            "list-item-description": "hello world",
+            "description-font-size": 15,
+            "description-font": "Helvetica, Arial, sans-serif",
+            "description-color": "#333333",
+            "number-color": "#E37730",
+            "line-height": 22
+          }
+        },
+        "6e45be3f-8c1c-4e13-8f43-fd9fe2bb0cb2": {
+          "type": "text",
+          "settings": {
+            "list-item-title": "Young Again",
+            "title-font-size": 15,
+            "title-font": "Helvetica, Arial, sans-serif",
+            "title-color": "#333333",
+            "list-item-description": "hello world",
+            "description-font-size": 15,
+            "description-font": "Helvetica, Arial, sans-serif",
+            "description-color": "#333333",
+            "number-color": "#e37730",
+            "line-height": 22
+          }
         }
       },
       "block_order": [
         "template--17540903534868__5ae64b78-c454-477d-a2d4-769f228776c5-16746611719e6556da-0",
         "63726a66-5a36-4bf2-8bef-7b01df5b6190",
         "2b7d1da9-5135-4fac-864f-ed352ddb9f47",
-        "54cb1a02-be95-48c9-be94-f41de6359634"
+        "54cb1a02-be95-48c9-be94-f41de6359634",
+        "6a202d79-a04d-4a03-9277-a9485b344679",
+        "6e45be3f-8c1c-4e13-8f43-fd9fe2bb0cb2"
       ],
       "settings": {
         "section-width": "small",
