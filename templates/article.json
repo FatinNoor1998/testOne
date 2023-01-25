@@ -511,7 +511,7 @@
             "text-second": "<p>Model wears Oz Shirt Grey and Yellow Check with <a href=\"\/products\/adidas-classic-backpack\" title=\"ADIDAS | CLASSIC BACKPACK\">Fisherman Beanie Khaki <\/a>and Pleat Trousers Black<\/p>",
             "font": "",
             "font-size": 14,
-            "text-color": "#000000",
+            "text-color": "#121212",
             "hide-text": false,
             "text-align": "left"
           }
@@ -767,8 +767,8 @@
             "list-item-description": "hello world bhjbjhbjb jnjknknkk  njkhnjknhj",
             "description-font-size": 12,
             "description-font": "",
-            "description-color": "#333333",
-            "number-color": "#E37730",
+            "description-color": "#121212",
+            "number-color": "#e37730",
             "line-height": 22
           }
         },
