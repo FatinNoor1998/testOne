@@ -530,36 +530,6 @@
       "settings": {
       }
     },
-    "68d30fe5-8005-4419-be72-86fc4d182219": {
-      "type": "sc-text-image",
-      "settings": {
-        "section-width": "medium",
-        "swap": false,
-        "custom-section-width": 975,
-        "align-item": "start",
-        "gap": 0,
-        "background-color": "#ffffff",
-        "image": "shopify:\/\/shop_images\/04-10-2022-WAX1307.jpg",
-        "custom-image-width": 475,
-        "heading": "",
-        "heading-font-size": 24,
-        "heading-font-size-mobile": 16,
-        "heading-font": "",
-        "heading-color": "#ffffff",
-        "heading-text-align": "left",
-        "description-content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eu euismod ante, quis finibus odio. Aenean scelerisque consectetur pharetra. In condimentum est eu eros malesuada aliquam. Aenean iaculis ligula a quam vehicula mattis. Nulla fringilla bibendum erat id molestie. Quisque id arcu in libero euismod rutrum sed ut libero. Nunc et dolor non ex elementum varius vel ut ligula. Sed id felis ex. Aenean tristique lobortis est, vitae consequat turpis sagittis varius. Quisque pharetra, dui ornare iaculis consectetur, magna velit condimentum nulla, non tristique nisl lorem ac risus. Cras accumsan eu est in dignissim. Aenean ligula felis, rutrum in augue quis, consectetur porta libero. Nunc faucibus ornare risus nec accumsan. Donec sed nisi rutrum, mattis diam a, tempus risus. Morbi at lectus elementum, laoreet orci sit amet, rutrum ipsum. Integer vel aliquet risus, sed pharetra justo. Pellentesque commodo eu quam vel hendrerit. Mauris non turpis fermentum, faucibus nulla quis, convallis nulla. Ut efficitur metus eros, quis consequat nunc tincidunt et. Sed eleifend arcu vel porta cursus. Mauris ultrices mauris vel lacus hendrerit sodales. Quisque a mattis turpis. Sed nisl purus, malesuada ac ultricies iaculis, iaculis id tellus. Morbi hendrerit ipsum sit amet lacus convallis tincidunt. Praesent quis libero rutrum, pharetra ex non, tincidunt justo. Nulla facilisi.<\/p>",
-        "description-font-size": 16,
-        "description-mobile-font-size": 16,
-        "line-height": 22,
-        "mobile-line-height": 22,
-        "description-font": "",
-        "description-text-color": "#000000",
-        "description-text-align": "left",
-        "hide-button": true,
-        "button-text": "Shop The Look",
-        "button-url": ""
-      }
-    },
     "22bcb4fe-ea57-4636-a7ce-319dc6254681": {
       "type": "spacer",
       "blocks": {
@@ -579,31 +549,7 @@
     "b8a217f3-6660-4e32-ba91-098b949225d0": {
       "type": "sc-text-image",
       "settings": {
-        "section-width": "medium",
-        "swap": true,
-        "custom-section-width": 975,
-        "align-item": "center",
-        "gap": 22,
-        "background-color": "#73735d",
-        "image": "shopify:\/\/shop_images\/04-10-2022-WAX1342.jpg",
-        "custom-image-width": 475,
-        "heading": "<p>Whiting Overshirt<\/p>",
-        "heading-font-size": 24,
-        "heading-font-size-mobile": 16,
-        "heading-font": "",
-        "heading-color": "#ffffff",
-        "heading-text-align": "left",
-        "description-content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eu euismod ante, quis finibus odio. Aenean scelerisque consectetur pharetra. In condimentum est eu eros malesuada aliquam. Aenean iaculis ligula a quam vehicula mattis. Nulla fringilla bibendum erat id molestie. Quisque id arcu in libero euismod rutrum sed ut libero. Nunc et dolor non ex elementum varius vel ut ligula. Sed id felis ex. Aenean tristique lobortis est, vitae consequat turpis sagittis varius. Quisque pharetra, dui ornare iaculis consectetur, magna velit condimentum nulla, non tristique nisl lorem ac risus. Cras accumsan eu est in dignissim. Aenean ligula felis, rutrum in augue quis, consectetur porta libero. Nunc faucibus ornare risus nec accumsan. Donec sed nisi rutrum, mattis diam a, tempus risus. Morbi at lectus elementum, laoreet orci sit amet, rutrum ipsum. Integer vel aliquet risus, sed pharetra justo. Pellentesque <\/p>",
-        "description-font-size": 16,
-        "description-mobile-font-size": 16,
-        "line-height": 22,
-        "mobile-line-height": 22,
-        "description-font": "",
-        "description-text-color": "#000000",
-        "description-text-align": "left",
-        "hide-button": false,
-        "button-text": "Shop The Look",
-        "button-url": ""
+        "section-width": "medium"
       }
     },
     "7de081bf-3bf8-4929-8e92-4fbafbfc43cd": {
@@ -624,7 +570,7 @@
             "qus-line-height": 22,
             "qus-mobile-line-height": 22,
             "qus-font": "",
-            "qus-text-color": "#E37730"
+            "qus-text-color": "#e37730"
           }
         },
         "template--17540903534868__7de081bf-3bf8-4929-8e92-4fbafbfc43cd-1674570876c89d71be-1": {
@@ -637,7 +583,7 @@
             "ans-mobile-line-height": 22,
             "ans-font": "",
             "ans-text-color": "#333333",
-            "border-color": "#E6C1A9"
+            "border-color": "#e6c1a9"
           }
         },
         "a69ed7a9-ac75-44ff-b48e-b41a688a38a8": {
@@ -655,7 +601,7 @@
             "qus-line-height": 22,
             "qus-mobile-line-height": 22,
             "qus-font": "Helvetica, Arial, sans-serif",
-            "qus-text-color": "#E37730"
+            "qus-text-color": "#e37730"
           }
         },
         "e774ae00-7e29-45f8-ae89-d7be8a263b5d": {
@@ -668,7 +614,7 @@
             "ans-mobile-line-height": 22,
             "ans-font": "Helvetica, Arial, sans-serif",
             "ans-text-color": "#333333",
-            "border-color": "#E6C1A9"
+            "border-color": "#e6c1a9"
           }
         },
         "df8019b4-659d-4556-90c3-05874febdf9e": {
@@ -699,7 +645,7 @@
             "button-text": "LIsten Now",
             "button-url": "",
             "button-color": "#333333",
-            "text-color": "#FFFFFF"
+            "text-color": "#ffffff"
           }
         }
       },
@@ -707,6 +653,43 @@
         "template--17540903534868__792ee03b-2f33-47de-96bb-5c1f75587cdf-16745709085e02fa2c-0"
       ],
       "settings": {
+      }
+    },
+    "51b9ad80-3418-4ae9-bfcc-b116143174b7": {
+      "type": "sc-text-image",
+      "blocks": {
+        "template--17540903534868__51b9ad80-3418-4ae9-bfcc-b116143174b7-1674645256816687a7-0": {
+          "type": "image-text",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/04-10-2022-WAX1334.jpg",
+            "swap": false,
+            "custom-image-width": 485,
+            "align-item": "start",
+            "text-align": "left",
+            "background-color": "#4E4E3F",
+            "heading": "<p>Whiting Overshirt<\/p>",
+            "heading-font-size": 24,
+            "heading-font-size-mobile": 16,
+            "heading-font": "",
+            "heading-color": "#FFFFFF",
+            "description-content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eu euismod ante, quis finibus odio. Aenean scelerisque consectetur pharetra. In condimentum est eu eros malesuada aliquam. Aenean iaculis ligula a quam vehicula mattis. Nulla fringilla bibendum erat id molestie. Quisque id arcu in libero euismod rutrum sed ut libero. Nunc et dolor non ex elementum varius vel ut ligula. Sed id felis ex. Aenean tristique lobortis est, vitae consequat turpis sagittis varius. Quisque pharetra, dui ornare iaculis consectetur, magna velit condimentum nulla, non tristique nisl lorem ac risus. Cras accumsan eu est in dignissim. Aenean ligula felis, rutrum in augue quis, consectetur porta libero. Nunc faucibus ornare risus nec accumsan. Donec sed nisi rutrum, mattis diam a, tempus risus. Morbi at lectus elementum, laoreet orci sit amet, rutrum ipsum. Integer vel aliquet risus, sed pharetra justo. Pellentesque commodo eu quam vel hendrerit. Mauris non turpis fermentum, faucibus nulla quis, convallis nulla. Ut efficitur metus eros, quis consequat nunc tincidunt et. Sed eleifend arcu vel porta cursus. Mauris ultrices mauris vel lacus hendrerit sodales. Quisque a mattis turpis. Sed nisl purus, malesuada ac ultricies iaculis, iaculis id tellus. Morbi hendrerit ipsum sit amet lacus convallis tincidunt. Praesent quis libero rutrum, pharetra ex non, tincidunt justo. Nulla facilisi.<\/p>",
+            "description-font-size": 16,
+            "description-mobile-font-size": 16,
+            "line-height": 22,
+            "mobile-line-height": 22,
+            "description-font": "",
+            "description-text-color": "#000000",
+            "hide-button": false,
+            "button-text": "Shop The Look",
+            "button-url": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--17540903534868__51b9ad80-3418-4ae9-bfcc-b116143174b7-1674645256816687a7-0"
+      ],
+      "settings": {
+        "section-width": "small"
       }
     }
   },
@@ -729,10 +712,10 @@
     "40758450-9a8e-441c-8728-210b8be980ef",
     "646a7249-a971-4384-8242-cdbdba7e2f22",
     "3bf84eaa-0c83-4c21-8362-8c49c89c7481",
-    "68d30fe5-8005-4419-be72-86fc4d182219",
     "22bcb4fe-ea57-4636-a7ce-319dc6254681",
     "b8a217f3-6660-4e32-ba91-098b949225d0",
     "7de081bf-3bf8-4929-8e92-4fbafbfc43cd",
-    "792ee03b-2f33-47de-96bb-5c1f75587cdf"
+    "792ee03b-2f33-47de-96bb-5c1f75587cdf",
+    "51b9ad80-3418-4ae9-bfcc-b116143174b7"
   ]
 }
