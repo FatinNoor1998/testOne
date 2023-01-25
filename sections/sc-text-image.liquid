@@ -3,7 +3,7 @@
     {% case block.type %}
       {% when 'image-text' %}
 
-        <div class="block-wrapper-{{ block.id }} {{ block.settings.align-items }}{% if block.settings.swap == true %} row-reverse{% endif %}">
+        <div class="block-wrapper-{{ block.id }}{% if block.settings.swap == true %} row-reverse{% endif %}">
           <div class="image-section">
             {% if block.settings.image %}
             <img
@@ -18,7 +18,7 @@
             {% endif %}
           </div>
           
-          <div class="text-section {{ block.settings.align-self }} ">
+          <div class="text-section {{ block.settings.text-align }} ">
               <div class="heading">
                       <h2>{{ block.settings.heading }}</h2>
               </div>
@@ -73,6 +73,7 @@
         padding-left: {{ block.settings.padding-left }}px;
         padding-right: {{ block.settings.padding-right }}px;
         flex: 1;
+        align-self: {{ block.settings.align-self }};
       }
       .section-wrapper-{{ section.id }} .block-wrapper-{{ block.id }} .text-section .heading p{
         font-size: {{ section.settings.heading-font-size | append: 'px' }};
@@ -170,7 +171,7 @@
             "label": "End"
           }
         ],
-        "default": "start"
+        "default": "center"
        },
        {
           "type": "select",
