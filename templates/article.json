@@ -764,10 +764,11 @@
             "title-font-size": 15,
             "title-font": "",
             "title-color": "#333333",
-            "list-item-description": "hello world",
-            "description-font-size": 24,
+            "list-item-description": "hello world bhjbjhbjb jnjknknkk  njkhnjknhj",
+            "description-font-size": 12,
             "description-font": "",
             "description-color": "#333333",
+            "number-color": "#E37730",
             "line-height": 22
           }
         },
@@ -782,6 +783,7 @@
             "description-font-size": 24,
             "description-font": "Helvetica, Arial, sans-serif",
             "description-color": "#333333",
+            "number-color": "#E37730",
             "line-height": 22
           }
         },
@@ -796,14 +798,47 @@
             "description-font-size": 24,
             "description-font": "Helvetica, Arial, sans-serif",
             "description-color": "#333333",
+            "number-color": "#E37730",
             "line-height": 22
+          }
+        },
+        "71e99de8-d831-484e-9e83-6f27672ad915": {
+          "type": "text",
+          "settings": {
+            "list-item-title": "Young Again",
+            "title-font-size": 15,
+            "title-font": "Helvetica, Arial, sans-serif",
+            "title-color": "#333333",
+            "list-item-description": "hello world",
+            "description-font-size": 15,
+            "description-font": "Helvetica, Arial, sans-serif",
+            "description-color": "#333333",
+            "number-color": "#E37730",
+            "line-height": 22
+          }
+        },
+        "1b193208-4f7d-476a-8648-8fb96936bf7f": {
+          "type": "text",
+          "settings": {
+            "list-item-title": "Young Again",
+            "title-font-size": 15,
+            "title-font": "Helvetica, Arial, sans-serif",
+            "title-color": "#333333",
+            "list-item-description": "hello world",
+            "description-font-size": 15,
+            "description-font": "Helvetica, Arial, sans-serif",
+            "description-color": "#333333",
+            "number-color": "#E37730",
+            "line-height": 24
           }
         }
       },
       "block_order": [
         "template--17540903534868__1b196109-fa0d-4a9d-92e6-c7573f362639-1674657720abe35976-0",
         "ead55bc7-6bba-4b88-a207-a2d62ba5c1dd",
-        "c4b7a7fd-6bc7-4817-b840-0a980f4b4136"
+        "c4b7a7fd-6bc7-4817-b840-0a980f4b4136",
+        "71e99de8-d831-484e-9e83-6f27672ad915",
+        "1b193208-4f7d-476a-8648-8fb96936bf7f"
       ],
       "settings": {
         "section-width": "small",
