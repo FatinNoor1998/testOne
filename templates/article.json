@@ -757,22 +757,22 @@
     "e7de43b8-3dd8-4481-8736-d8d873642ecf": {
       "type": "ordered-list",
       "blocks": {
-        "template--17540903534868__e7de43b8-3dd8-4481-8736-d8d873642ecf-16746566068fe44e38-0": {
-          "type": "list",
+        "53ed7363-251d-4aa9-ac25-9c41c78174a5": {
+          "type": "text",
           "settings": {
             "list-item-title": "Young Again",
             "title-font-size": 15,
-            "title-font": "",
+            "title-font": "Helvetica, Arial, sans-serif",
             "title-color": "#333333",
             "list-item-description": "hello world",
             "description-font-size": 24,
-            "description-font": "",
+            "description-font": "Helvetica, Arial, sans-serif",
             "description-color": "#333333",
             "line-height": 22
           }
         },
-        "f0805f20-c982-447b-aa31-0d8fb9da8d61": {
-          "type": "list",
+        "680eccc5-3769-4d8d-8f07-b8fb4ca5c59a": {
+          "type": "text",
           "settings": {
             "list-item-title": "Young Again",
             "title-font-size": 15,
@@ -787,8 +787,8 @@
         }
       },
       "block_order": [
-        "template--17540903534868__e7de43b8-3dd8-4481-8736-d8d873642ecf-16746566068fe44e38-0",
-        "f0805f20-c982-447b-aa31-0d8fb9da8d61"
+        "53ed7363-251d-4aa9-ac25-9c41c78174a5",
+        "680eccc5-3769-4d8d-8f07-b8fb4ca5c59a"
       ],
       "settings": {
         "section-width": "small",
