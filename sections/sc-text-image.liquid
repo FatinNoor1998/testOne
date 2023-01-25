@@ -82,16 +82,16 @@
         align-self: {{ block.settings.align-self }};
       }
       .section-wrapper-{{ section.id }} .block-wrapper-{{ block.id }} .text-section .heading p{
-        font-size: {{ section.settings.heading-font-size | append: 'px' }};
-        font-family: {{ section.settings.heading-font }};
-        color: {{ section.settings.heading-color }};
+        font-size: {{ block.settings.heading-font-size | append: 'px' }};
+        font-family: {{ block.settings.heading-font }};
+        color: {{ block.settings.heading-color }};
         margin: 0px;
       }
       .section-wrapper-{{ section.id }} .block-wrapper-{{ block.id }} .text-section .description p{
-        font-size: {{ section.settings.description-font-size | append: 'px' }};
-        font-family: {{ section.settings.description-font }};
-        color: {{ section.settings.description-text-color }};
-        line-height: {{ section.settings.line-height }}px;
+        font-size: {{ block.settings.description-font-size | append: 'px' }};
+        font-family: {{ block.settings.description-font }};
+        color: {{ block.settings.description-text-color }};
+        line-height: {{ block.settings.line-height }}px;
         margin-top: 0px;
       } 
       .section-wrapper-{{ section.id }} .block-wrapper-{{ block.id }} .text-section .button{
