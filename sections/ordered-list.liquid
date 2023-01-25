@@ -5,7 +5,7 @@
               {% case block.type %}
                 {% when 'text' %}
 
-                    <li><span class="title">{{ block.settings.list-item-title }}</span> <span class="item-list"> -{{ block.settings.list-item-description }}</span></li>
+                    <li><b><span class="title">{{ block.settings.list-item-title }}</span></b> <span class="item-list"> -{{ block.settings.list-item-description }}</span></li>
 
                   {% endcase %}
                 {% endfor %}
@@ -30,24 +30,21 @@
   {% for block in section.blocks %}
     {% case block.type %}
     {% when 'text' %}
-/*       .section-wrapper-{{ section.id }} .ordered-list ol {
-        counter-reset: li;
-        }
-        .section-wrapper-{{ section.id }} .ordered-list ol li::before{
-          content:  counter(li);
-          color: red;
-          display: inline-block;
-          width: 1em;
-        }  
-        .section-wrapper-{{ section.id }} .ordered-list ol li{
-          counter-increment: li;
-        } */
   .section-wrapper-{{ section.id }} .ordered-list ol li{
-    color: red;
+    color: {{ block.settings.number-color }};
+    line-height: {{ block.settings.line-height }}px;
   }
   .section-wrapper-{{ section.id }} .ordered-list ol li .title{
-    color: black;
+    color: {{ block.settings.title-color }};
+    font: {{ block.settings.title-font }};
+    font-size: {{ block.settings.title-font-size }}px;
   }
+  .section-wrapper-{{ section.id }} .ordered-list ol li .item-list{
+    color: {{ block.settings.description-color }};
+    font: {{ block.settings.description-font }};
+    font-size: {{ block.settings.description-font-size }}px;
+  }
+  
 
  
     {% endcase %}
@@ -147,6 +144,12 @@
               "label": "Description color",
               "id": "description-color",
               "default": "#333333"
+        },
+        {
+              "type": "color",
+              "label": "Number color",
+              "id": "number-color",
+              "default": "#E37730"
         },
         {
           "type": "range",
