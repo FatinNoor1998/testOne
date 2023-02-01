@@ -1,7 +1,8 @@
-{% stylesheet %}
+{%- style -%}
   .section-wrapper-{{ section.id }}.single-column-text{
-width: 100%;
-margin-bottom: 40px;
+    width: 100%;
+    margin-bottom: 40px;
+    padding: 0px 30px;  
 }
  
 {% for block in section.blocks %}
@@ -19,8 +20,8 @@ margin-bottom: 40px;
    max-width: 100%;
  }
 
- .section-wrapper-{{ section.id }}.single-column-text .text-block-{{ block.id }}.width-{{ block.settings.block-width }} .text p{
-   font-size: {{ block.settings.font-size | append: 'px' }};
+ .section-wrapper-{{ section.id }}.single-column-text .text-block-{{ block.id }}.width-{{ block.settings.block-width }} p{
+   font-size: {{ block.settings.font-size }}px;
    font-family: {{ block.settings.font }};
    color: {{ block.settings.text-color }};
    line-height: {{ block.settings.line-height }}px;
@@ -32,19 +33,18 @@ margin-bottom: 40px;
  }
 {% endcase %}
 {% endfor %}
-{% endstylesheet %}
+{%- endstyle -%}
 
 
 <div class="section-wrapper-{{ section.id }} single-column-text">
 {% for block in section.blocks %}
 {% case block.type %}
  {% when 'text-block' %}
+   {% if block.settings.text-content != "" %}
    <div class="text-block-{{ block.id }} width-{{ block.settings.block-width }}">
-     <div class="text">
-      {{ block.settings.text-content }} 
-     </div>        
-         
-   </div>   
+      {{ block.settings.text-content }}              
+   </div>  
+   {% endif %} 
    
    {% when 'spacer-block' %}
      <div class="spacer-{{ block.id }}">
@@ -53,6 +53,8 @@ margin-bottom: 40px;
 {% endcase %}
 {% endfor %}
 </div>
+
+
 
 
 {% schema %}
@@ -90,6 +92,7 @@ margin-bottom: 40px;
      "id": "text-content",
      "label": "Change text block",
      "default": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eu euismod ante, quis finibus odio. Aenean scelerisque consectetur pharetra. In condimentum est eu eros malesuada aliquam.</p>"
+     
    },
    {
      "type": "range",
@@ -141,27 +144,8 @@ margin-bottom: 40px;
      "label": "Text color",
      "id": "text-color",
      "default": "#000000"
-   },
-   {
-     "type": "select",
-     "id": "text-align",
-     "label": "text-align",
-     "options": [
-       {
-         "value": "left",
-         "label": "left"
-       },
-       {
-         "value": "center",
-         "label": "center"
-       },
-       {
-         "value": "right",
-         "label": "right"
-       }
-     ],
-     "default": "left"
-   } 
+   }
+   
  ]
 },
       {
