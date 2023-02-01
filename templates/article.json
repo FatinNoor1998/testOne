@@ -511,7 +511,7 @@
             "text-second": "<p>Model wears Oz Shirt Grey and Yellow Check with <a href=\"\/products\/adidas-classic-backpack\" title=\"ADIDAS | CLASSIC BACKPACK\">Fisherman Beanie Khaki <\/a>and Pleat Trousers Black<\/p>",
             "font": "",
             "font-size": 14,
-            "text-color": "#000000",
+            "text-color": "#121212",
             "hide-text": false,
             "text-align": "left"
           }
@@ -753,6 +753,113 @@
       "settings": {
         "section-width": "small"
       }
+    },
+    "5ae64b78-c454-477d-a2d4-769f228776c5": {
+      "type": "ordered-list",
+      "blocks": {
+        "template--17540903534868__5ae64b78-c454-477d-a2d4-769f228776c5-16746611719e6556da-0": {
+          "type": "text",
+          "settings": {
+            "list-item-title": "Young Again",
+            "title-font-size": 15,
+            "title-font": "",
+            "title-color": "#333333",
+            "list-item-description": "hello world",
+            "description-font-size": 15,
+            "description-font": "",
+            "description-color": "#333333",
+            "number-color": "#121212",
+            "line-height": 22
+          }
+        },
+        "63726a66-5a36-4bf2-8bef-7b01df5b6190": {
+          "type": "text",
+          "settings": {
+            "list-item-title": "Young Again",
+            "title-font-size": 15,
+            "title-font": "Helvetica, Arial, sans-serif",
+            "title-color": "#333333",
+            "list-item-description": "hello world",
+            "description-font-size": 15,
+            "description-font": "Helvetica, Arial, sans-serif",
+            "description-color": "#333333",
+            "number-color": "#E37730",
+            "line-height": 22
+          }
+        },
+        "2b7d1da9-5135-4fac-864f-ed352ddb9f47": {
+          "type": "text",
+          "settings": {
+            "list-item-title": "Young Again",
+            "title-font-size": 15,
+            "title-font": "Helvetica, Arial, sans-serif",
+            "title-color": "#333333",
+            "list-item-description": "hello world",
+            "description-font-size": 15,
+            "description-font": "Helvetica, Arial, sans-serif",
+            "description-color": "#333333",
+            "number-color": "#E37730",
+            "line-height": 22
+          }
+        },
+        "54cb1a02-be95-48c9-be94-f41de6359634": {
+          "type": "text",
+          "settings": {
+            "list-item-title": "Young Again",
+            "title-font-size": 15,
+            "title-font": "Helvetica, Arial, sans-serif",
+            "title-color": "#333333",
+            "list-item-description": "hello world",
+            "description-font-size": 15,
+            "description-font": "Helvetica, Arial, sans-serif",
+            "description-color": "#333333",
+            "number-color": "#E37730",
+            "line-height": 22
+          }
+        },
+        "6a202d79-a04d-4a03-9277-a9485b344679": {
+          "type": "text",
+          "settings": {
+            "list-item-title": "Young Again",
+            "title-font-size": 15,
+            "title-font": "Helvetica, Arial, sans-serif",
+            "title-color": "#333333",
+            "list-item-description": "hello world",
+            "description-font-size": 15,
+            "description-font": "Helvetica, Arial, sans-serif",
+            "description-color": "#333333",
+            "number-color": "#E37730",
+            "line-height": 22
+          }
+        },
+        "6e45be3f-8c1c-4e13-8f43-fd9fe2bb0cb2": {
+          "type": "text",
+          "settings": {
+            "list-item-title": "Young Again",
+            "title-font-size": 15,
+            "title-font": "Helvetica, Arial, sans-serif",
+            "title-color": "#333333",
+            "list-item-description": "hello world",
+            "description-font-size": 15,
+            "description-font": "Helvetica, Arial, sans-serif",
+            "description-color": "#333333",
+            "number-color": "#e37730",
+            "line-height": 22
+          }
+        }
+      },
+      "block_order": [
+        "template--17540903534868__5ae64b78-c454-477d-a2d4-769f228776c5-16746611719e6556da-0",
+        "63726a66-5a36-4bf2-8bef-7b01df5b6190",
+        "2b7d1da9-5135-4fac-864f-ed352ddb9f47",
+        "54cb1a02-be95-48c9-be94-f41de6359634",
+        "6a202d79-a04d-4a03-9277-a9485b344679",
+        "6e45be3f-8c1c-4e13-8f43-fd9fe2bb0cb2"
+      ],
+      "settings": {
+        "section-width": "small",
+        "custom-section-width": 400
+      }
     }
   },
   "order": [
@@ -779,6 +886,7 @@
     "7de081bf-3bf8-4929-8e92-4fbafbfc43cd",
     "792ee03b-2f33-47de-96bb-5c1f75587cdf",
     "51b9ad80-3418-4ae9-bfcc-b116143174b7",
-    "090b15a4-0246-46d3-9c4d-2276b199f8e3"
+    "090b15a4-0246-46d3-9c4d-2276b199f8e3",
+    "5ae64b78-c454-477d-a2d4-769f228776c5"
   ]
 }
