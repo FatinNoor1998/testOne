@@ -1,53 +1,67 @@
-<Section class="section-wrapper-{{ section.id }} width-{{ section.settings.section-width }}">
+<div class="section-wrapper-{{ section.id }} single-image">
   {% for block in section.blocks %}
     {% case block.type %}
       {% when 'image' %}
-        {% if block.settings.image %}
-              <img
-                src=" {{ block.settings.image | img_url: 'master' }} "
-                alt=""
-                height=""
-                width= 600px
-                loading="lazy">
-          {%- else -%}
-                {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
-
-      {% endif %}
-                <div class="block-{{ block.id }} {{ block.settings.text-align }}">
-                  {{ block.settings.text-content }}
-              </div>
+        <div class="image-block-wrapper-{{ block.id }} width-{{ block.settings.block-width }}">
+           <div class="image">
+                {% if block.settings.image %}
+                <img
+                  src=" {{ block.settings.image | img_url: 'master' }} "
+                  alt=""
+                  height= 400px
+                  width= 600px
+                  loading="lazy">
+                 {%- else -%}
+                  {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
+      
+                {% endif %}
+           </div>
+          
+          <div class="text {{ block.settings.text-align }}">
+              {{ block.settings.text-content }}
+          </div>
+        </div>
+        
     {% endcase %}
   {% endfor %}
-</Section>
+</div>
 
 
 <style>
-    section .section-wrapper-{{ section.id }}.width-small{
-      max-width: 600px;
-      margin: 0 auto;
-    }
-    section .section-wrapper-{{ section.id }}.width-medium{
-      max-width: 967px;
-      margin: 0 auto;
-    }
-    section .section-wrapper-{{ section.id }}.width-full{
-      max-width: 100%;
-    }
 
   {% for block in section.blocks %}
     {% case block.type %}
     {% when 'image' %}
 
-    .section-wrapper-{{ section.id }} .block-{{ block.id }} p{
+    .section-wrapper-{{ section.id }}.single-image .image-block-wrapper-{{ block.id }}.width-small{
+      max-width: 600px;
+      margin: 0 auto;
+    }
+    .section-wrapper-{{ section.id }}.single-image .image-block-wrapper-{{ block.id }}.width-medium{
+      max-width: 967px;
+      margin: 0 auto;
+    }
+    .section-wrapper-{{ section.id }}.single-image .image-block-wrapper-{{ block.id }}.width-full{
+      max-width: 100%;
+    }
+    .section-wrapper-{{ section.id }}.single-image .image-block-wrapper-{{ block.id }}{
+      padding-bottom: 40px;
+    }
+    .section-wrapper-{{ section.id }}.single-image .image-block-wrapper-{{ block.id }} .image img{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .section-wrapper-{{ section.id }}.single-image .image-block-wrapper-{{ block.id }} .text p{
       font-size: {{ block.settings.font-size | append: 'px' }};
       font-family: {{ block.settings.font }};
       color: {{ block.settings.text-color }};
-      line-height: {{ block.settings.line-height }}px;
+      line-height: 18px;
       margin: 0px;
     }
-    .section-wrapper-{{ section.id }} img{
-      width: 100%;
-    } 
+    .section-wrapper-{{ section.id }}.single-image .image-block-wrapper-{{ block.id }} .text p a{
+      color: {{ block.settings.text-color }};
+    }
 
       {% endcase %}
       {% endfor %}
@@ -60,10 +74,17 @@
   "name": "single-image",
   "tag": "section",
   "settings": [
-    {      
+    
+  ],
+  "blocks": [
+    {
+      "type": "image",
+      "name": "Image",
+      "settings": [
+        {      
          "type": "select",
-          "id": "section-width",
-          "label": "Width",
+          "id": "block-width",
+          "label": "Image Width",
           "options": [
             {
               "value": "small",
@@ -79,14 +100,9 @@
             }
           ],
           "default": "medium"
-    }
-  ],
-  "blocks": [
-    {
-      "type": "image",
-      "name": "Image",
-      "settings": [
+       },
        {
+        
         "type": "image_picker",
         "id": "image",
         "label": "Image"
@@ -94,7 +110,7 @@
         {
           "type": "richtext",
           "id": "text-content",
-          "label": "Change text block",
+          "label": "Change text",
           "default": "<p>Model wears Whiting Shirt Cosmic Papaya Check with Dean T Shirt Black and Pleat Trousers Black</p>"
         },
         {
@@ -105,7 +121,7 @@
           "max": 50,
           "step": 1,
           "unit": "px",
-          "default": 16
+          "default": 12
         },
         {
           "type": "range",
@@ -115,27 +131,7 @@
           "max": 50,
           "step": 1,
           "unit": "px",
-          "default": 16
-        },
-        {
-          "type": "range",
-          "id": "line-height",
-          "label": "Line height",
-          "min": 10,
-          "max": 100,
-          "step": 1,
-          "unit": "px",
-          "default": 37
-        },
-        {
-          "type": "range",
-          "id": "mobile-line-height",
-          "label": "Mobile Line height",
-          "min": 10,
-          "max": 100,
-          "step": 1,
-          "unit": "px",
-          "default": 37
+          "default": 12
         },
         {
          "type": "font",
