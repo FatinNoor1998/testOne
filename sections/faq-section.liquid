@@ -4,7 +4,7 @@
       {% when 'question-block' %}
 
   
-        
+        {% if block.settings.qus-text-content != '' %}
           <div class="question-text-block-{{ block.id }}">
             
               <div class="text-block">
@@ -12,7 +12,7 @@
               </div>
             
           </div>
-        
+        {% endif %}
 
   
         {% when 'answer-block' %}
