@@ -1,3 +1,39 @@
+{% stylesheet %}
+       .section-wrapper-{{ section.id }}.single-column-text{
+     width: 100%;
+     margin-bottom: 40px;
+   }
+      
+  {% for block in section.blocks %}
+    {% case block.type %}
+    {% when 'text-block' %}
+      .section-wrapper-{{ section.id }}.single-column-text .text-block-{{ block.id }}.width-small{
+        max-width: 600px;
+        margin: 0 auto;
+      }
+      .section-wrapper-{{ section.id }}.single-column-text .text-block-{{ block.id }}.width-medium{
+        max-width: 967px;
+        margin: 0 auto;
+      }
+      .section-wrapper-{{ section.id }}.single-column-text .text-block-{{ block.id }}.width-full{
+        max-width: 100%;
+      }
+
+      .section-wrapper-{{ section.id }}.single-column-text .text-block-{{ block.id }} p{
+        font-size: {{ block.settings.font-size | append: 'px' }};
+        font-family: {{ block.settings.font }};
+        color: {{ block.settings.text-color }};
+        line-height: {{ block.settings.line-height }}px;
+    }
+
+     {% when 'spacer-block' %}
+      .section-wrapper-{{ section.id }} .spacer-{{ block.id }}{
+         height: {{ block.settings.spacer-height }}px;
+      }
+    {% endcase %}
+  {% endfor %}
+{% endstylesheet %}
+
 
 <div class="section-wrapper-{{ section.id }} single-column-text">
   {% for block in section.blocks %}
@@ -25,7 +61,7 @@
         "name": "text-block",
         "type": "text-block",
         "settings": [
-                {
+          {
           "type": "select",
           "id": "block-width",
           "label": "Block width",
@@ -48,7 +84,7 @@
             }
           ],
           "default": "medium"
-        },
+          },
         {
           "type": "richtext",
           "id": "text-content",
@@ -166,41 +202,7 @@
 }
 {% endschema %}
 
-{% stylesheet %}
-       .section-wrapper-{{ section.id }}.single-column-text{
-     width: 100%;
-     margin-bottom: 40px;
-   }
-      
-  {% for block in section.blocks %}
-    {% case block.type %}
-    {% when 'text-block' %}
-      .section-wrapper-{{ section.id }}.single-column-text .text-block-{{ block.id }}.width-small{
-        max-width: 600px;
-        margin: 0 auto;
-      }
-      .section-wrapper-{{ section.id }}.single-column-text .text-block-{{ block.id }}.width-medium{
-        max-width: 967px;
-        margin: 0 auto;
-      }
-      .section-wrapper-{{ section.id }}.single-column-text .text-block-{{ block.id }}.width-full{
-        max-width: 100%;
-      }
 
-      .section-wrapper-{{ section.id }}.single-column-text .text-block-{{ block.id }} p{
-        font-size: {{ block.settings.font-size | append: 'px' }};
-        font-family: {{ block.settings.font }};
-        color: {{ block.settings.text-color }};
-        line-height: {{ block.settings.line-height }}px;
-    }
-
-     {% when 'spacer-block' %}
-      .section-wrapper-{{ section.id }} .spacer-{{ block.id }}{
-         height: {{ block.settings.spacer-height }}px;
-      }
-    {% endcase %}
-  {% endfor %}
-{% endstylesheet %}
 
 {% javascript %}
 {% endjavascript %}
