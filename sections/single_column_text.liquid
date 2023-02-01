@@ -17,41 +17,37 @@
 
 
 <style>
-    section .section-wrapper-{{ section.id }}.width-small{
-      max-width: 400px;
-      margin: 0 auto;
-    }
-    section .section-wrapper-{{ section.id }}.width-medium{
-      max-width: 600px;
-      margin: 0 auto;
-    }
-    section .section-wrapper-{{ section.id }}.width-full{
-      max-width: 100%;
-    }
-    section .section-wrapper-{{ section.id }}.width-custom{
-      max-width: {{ section.settings.custom-section-width | append: "px" }};
-      margin: 0 auto;
-    }
-    section .section-wrapper-{{ section.id }}{
-      padding-top: {{ section.settings.padding-top }}PX;
-      padding-bottom: {{ section.settings.padding-bottom }}PX;
-    }
+     .section-wrapper-{{ section.id }}.single-column-text{
+     width: 100%;
+     margin-bottom: 40px;
+   }
       
   {% for block in section.blocks %}
     {% case block.type %}
     {% when 'text-block' %}
+      .section-wrapper-{{ section.id }}.single-column-text .text-block-{{ block.id }}.width-small{
+        max-width: 600px;
+        margin: 0 auto;
+      }
+      .section-wrapper-{{ section.id }}.single-column-text .text-block-{{ block.id }}.width-medium{
+        max-width: 967px;
+        margin: 0 auto;
+      }
+      .section-wrapper-{{ section.id }}.single-column-text .text-block-{{ block.id }}.width-full{
+        max-width: 100%;
+      }
 
-    .section-wrapper-{{ section.id }} .text-block-{{ block.id }} .block-{{ block.id }}{
-      padding-top: {{ block.settings.padding-top }}PX;
-      padding-bottom: {{ block.settings.padding-bottom }}PX;
+      .section-wrapper-{{ section.id }}.single-column-text .text-block-{{ block.id }} p{
+        font-size: {{ block.settings.font-size | append: 'px' }};
+        font-family: {{ block.settings.font }};
+        color: {{ block.settings.text-color }};
+        line-height: {{ block.settings.line-height }}px;
     }
-    .section-wrapper-{{ section.id }}.width-{{ section.settings.section-width }} .text-block-{{ block.id }} .block-{{ block.id }} p{
-      font-size: {{ block.settings.font-size | append: 'px' }};
-      font-family: {{ block.settings.font }};
-      color: {{ block.settings.text-color }};
-      line-height: {{ block.settings.line-height }}px;
-    }
-  
+
+     {% when 'spacer-block' %}
+      .section-wrapper-{{ section.id }} .spacer-{{ block.id }}{
+         height: {{ block.settings.spacer-height }}px;
+      }
     {% endcase %}
   {% endfor %}
 </style>
