@@ -2,13 +2,15 @@
   {% for block in section.blocks %}
     {% case block.type %}
       {% when 'question-block' %}
+        {% if block.settings.qus-text-content != '' %}
         <div class="question-text-block-{{ block.id }}">
-          {% if block.settings.qus-text-content != '' %}
+          
             <div class="text-block">
                 {{ block.settings.qus-text-content }}              
             </div>
-          {% endif %}
+          
         </div>
+        {% endif %}
         {% when 'answer-block' %}
           <div class="answer-text-block-{{ block.id }}">
             <div class="text-block">
