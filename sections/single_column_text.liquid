@@ -19,7 +19,7 @@ margin-bottom: 40px;
    max-width: 100%;
  }
 
- .section-wrapper-{{ section.id }}.single-column-text .text-block-{{ block.id }}.width-{{ block.settings.block-width }} p{
+ .section-wrapper-{{ section.id }}.single-column-text .text-block-{{ block.id }}.width-{{ block.settings.block-width }} .text p{
    font-size: {{ block.settings.font-size | append: 'px' }};
    font-family: {{ block.settings.font }};
    color: {{ block.settings.text-color }};
@@ -39,8 +39,11 @@ margin-bottom: 40px;
 {% for block in section.blocks %}
 {% case block.type %}
  {% when 'text-block' %}
-   <div class="text-block-{{ block.id }} width-{{ block.settings.block-width }}">        
-         {{ block.settings.text-content }} 
+   <div class="text-block-{{ block.id }} width-{{ block.settings.block-width }}">
+     <div class="text">
+      {{ block.settings.text-content }} 
+     </div>        
+         
    </div>   
    
    {% when 'spacer-block' %}
