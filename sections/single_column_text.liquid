@@ -1,17 +1,19 @@
-<Section class="section-wrapper-{{ section.id }} width-{{ section.settings.section-width }}">
+
+<div class="section-wrapper-{{ section.id }} single-column-text">
   {% for block in section.blocks %}
     {% case block.type %}
       {% when 'text-block' %}
-        <div class="text-block-{{ block.id }}">
-          <div class="block-{{ block.id }} {{ block.settings.text-align }}">
-              {{ block.settings.text-content }}
+        <div class="text-block-{{ block.id }} width-{{ block.settings.block-width }}">        
+              {{ block.settings.text-content }} 
+        </div>   
+        
+        {% when 'spacer-block' %}
+          <div class="spacer-{{ block.id }}">
               
           </div>
-        </div>
-        
     {% endcase %}
   {% endfor %}
-</Section>
+</div>
 
 
 <style>
