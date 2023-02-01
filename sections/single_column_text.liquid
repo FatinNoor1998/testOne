@@ -1,197 +1,197 @@
 {% stylesheet %}
-       .section-wrapper-{{ section.id }}.single-column-text{
-     width: 100%;
-     margin-bottom: 40px;
-   }
-      
-  {% for block in section.blocks %}
-    {% case block.type %}
-    {% when 'text-block' %}
-      .section-wrapper-{{ section.id }}.single-column-text .text-block-{{ block.id }}.width-small{
-        max-width: 600px;
-        margin: 0 auto;
-      }
-      .section-wrapper-{{ section.id }}.single-column-text .text-block-{{ block.id }}.width-medium{
-        max-width: 967px;
-        margin: 0 auto;
-      }
-      .section-wrapper-{{ section.id }}.single-column-text .text-block-{{ block.id }}.width-full{
-        max-width: 100%;
-      }
+  .section-wrapper-{{ section.id }}.single-column-text{
+width: 100%;
+margin-bottom: 40px;
+}
+ 
+{% for block in section.blocks %}
+{% case block.type %}
+{% when 'text-block' %}
+ .section-wrapper-{{ section.id }}.single-column-text .text-block-{{ block.id }}.width-small{
+   max-width: 600px;
+   margin: 0 auto;
+ }
+ .section-wrapper-{{ section.id }}.single-column-text .text-block-{{ block.id }}.width-medium{
+   max-width: 967px;
+   margin: 0 auto;
+ }
+ .section-wrapper-{{ section.id }}.single-column-text .text-block-{{ block.id }}.width-full{
+   max-width: 100%;
+ }
 
-      .section-wrapper-{{ section.id }}.single-column-text .text-block-{{ block.id }} p{
-        font-size: {{ block.settings.font-size | append: 'px' }};
-        font-family: {{ block.settings.font }};
-        color: {{ block.settings.text-color }};
-        line-height: {{ block.settings.line-height }}px;
-    }
+ .section-wrapper-{{ section.id }}.single-column-text .text-block-{{ block.id }}.width-{{ block.settings.block-width }} p{
+   font-size: {{ block.settings.font-size | append: 'px' }};
+   font-family: {{ block.settings.font }};
+   color: {{ block.settings.text-color }};
+   line-height: {{ block.settings.line-height }}px;
+}
 
-     {% when 'spacer-block' %}
-      .section-wrapper-{{ section.id }} .spacer-{{ block.id }}{
-         height: {{ block.settings.spacer-height }}px;
-      }
-    {% endcase %}
-  {% endfor %}
+{% when 'spacer-block' %}
+ .section-wrapper-{{ section.id }} .spacer-{{ block.id }}{
+    height: {{ block.settings.spacer-height }}px;
+ }
+{% endcase %}
+{% endfor %}
 {% endstylesheet %}
 
 
 <div class="section-wrapper-{{ section.id }} single-column-text">
-  {% for block in section.blocks %}
-    {% case block.type %}
-      {% when 'text-block' %}
-        <div class="text-block-{{ block.id }} width-{{ block.settings.block-width }}">        
-              {{ block.settings.text-content }} 
-        </div>   
-        
-        {% when 'spacer-block' %}
-          <div class="spacer-{{ block.id }}">
-              
-          </div>
-    {% endcase %}
-  {% endfor %}
+{% for block in section.blocks %}
+{% case block.type %}
+ {% when 'text-block' %}
+   <div class="text-block-{{ block.id }} width-{{ block.settings.block-width }}">        
+         {{ block.settings.text-content }} 
+   </div>   
+   
+   {% when 'spacer-block' %}
+     <div class="spacer-{{ block.id }}">
+         
+     </div>
+{% endcase %}
+{% endfor %}
 </div>
 
 
 {% schema %}
-  {
-    "name": "single-column-text",
-    "tag": "section",
-    "blocks": [
+{
+"name": "single-column-text",
+"tag": "section",
+"blocks": [
+ {
+   "name": "text-block",
+   "type": "text-block",
+   "settings": [
+     {
+     "type": "select",
+     "id": "block-width",
+     "label": "Block width",
+     "options": [
+       {
+         "value": "small",
+         "label": "Small"
+       },
+       {
+         "value": "medium",
+         "label": "Medium"
+       },
+       {
+         "value": "full",
+         "label": "Full"
+       }
+
+     ],
+     "default": "small"
+     },
+   {
+     "type": "richtext",
+     "id": "text-content",
+     "label": "Change text block",
+     "default": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eu euismod ante, quis finibus odio. Aenean scelerisque consectetur pharetra. In condimentum est eu eros malesuada aliquam.</p>"
+   },
+   {
+     "type": "range",
+     "id": "font-size",
+     "label": "Font size",
+     "min": 12,
+     "max": 50,
+     "step": 1,
+     "unit": "px",
+     "default": 16
+   },
+   {
+     "type": "range",
+     "id": "mobile-font-size",
+     "label": "Mobile Font size",
+     "min": 12,
+     "max": 50,
+     "step": 1,
+     "unit": "px",
+     "default": 16
+   },
+   {
+     "type": "range",
+     "id": "line-height",
+     "label": "Line height",
+     "min": 10,
+     "max": 100,
+     "step": 1,
+     "unit": "px",
+     "default": 30
+   },
+   {
+     "type": "range",
+     "id": "mobile-line-height",
+     "label": "Mobile Line height",
+     "min": 10,
+     "max": 100,
+     "step": 1,
+     "unit": "px",
+     "default": 30
+   },
+   {
+    "type": "font",
+    "id": "font",
+    "label": "Font Family"
+   },
+   {
+     "type": "color",
+     "label": "Text color",
+     "id": "text-color",
+     "default": "#000000"
+   },
+   {
+     "type": "select",
+     "id": "text-align",
+     "label": "text-align",
+     "options": [
+       {
+         "value": "left",
+         "label": "left"
+       },
+       {
+         "value": "center",
+         "label": "center"
+       },
+       {
+         "value": "right",
+         "label": "right"
+       }
+     ],
+     "default": "left"
+   } 
+ ]
+},
       {
-        "name": "text-block",
-        "type": "text-block",
-        "settings": [
-          {
-          "type": "select",
-          "id": "block-width",
-          "label": "Block width",
-          "options": [
-            {
-              "value": "small",
-              "label": "Small"
-            },
-            {
-              "value": "medium",
-              "label": "Medium"
-            },
-            {
-              "value": "full",
-              "label": "Full"
-            }
+     "type": "spacer-block",
+     "name": "Spacer",
+     "settings": [
+       {
+         "type": "range",
+         "id": "spacer-height",
+         "label": "Spacer Height",
+         "min": 0,
+         "max": 200,
+         "step": 5,
+         "unit": "px",
+         "default": 30
+       }
+     ]
+ }  
+ 
 
-          ],
-          "default": "small"
-          },
-        {
-          "type": "richtext",
-          "id": "text-content",
-          "label": "Change text block",
-          "default": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eu euismod ante, quis finibus odio. Aenean scelerisque consectetur pharetra. In condimentum est eu eros malesuada aliquam.</p>"
-        },
-        {
-          "type": "range",
-          "id": "font-size",
-          "label": "Font size",
-          "min": 12,
-          "max": 50,
-          "step": 1,
-          "unit": "px",
-          "default": 16
-        },
-        {
-          "type": "range",
-          "id": "mobile-font-size",
-          "label": "Mobile Font size",
-          "min": 12,
-          "max": 50,
-          "step": 1,
-          "unit": "px",
-          "default": 16
-        },
-        {
-          "type": "range",
-          "id": "line-height",
-          "label": "Line height",
-          "min": 10,
-          "max": 100,
-          "step": 1,
-          "unit": "px",
-          "default": 30
-        },
-        {
-          "type": "range",
-          "id": "mobile-line-height",
-          "label": "Mobile Line height",
-          "min": 10,
-          "max": 100,
-          "step": 1,
-          "unit": "px",
-          "default": 30
-        },
-        {
-         "type": "font",
-         "id": "font",
-         "label": "Font Family"
-        },
-        {
-          "type": "color",
-          "label": "Text color",
-          "id": "text-color",
-          "default": "#000000"
-        },
-        {
-          "type": "select",
-          "id": "text-align",
-          "label": "text-align",
-          "options": [
-            {
-              "value": "left",
-              "label": "left"
-            },
-            {
-              "value": "center",
-              "label": "center"
-            },
-            {
-              "value": "right",
-              "label": "right"
-            }
-          ],
-          "default": "left"
-        } 
-      ]
-    },
-           {
-          "type": "spacer-block",
-          "name": "Spacer",
-          "settings": [
-            {
-              "type": "range",
-              "id": "spacer-height",
-              "label": "Spacer Height",
-              "min": 0,
-              "max": 200,
-              "step": 5,
-              "unit": "px",
-              "default": 30
-            }
-          ]
-      }  
-      
 
-    
-    ],
-    "presets": [
-    {
-      "category": "content",
-      "name": "single-column-text",
-      "blocks": [
-        {
-          "type": "text-block"
-        }
-      ]
-    }
-  ] 
+],
+"presets": [
+{
+ "category": "content",
+ "name": "single-column-text",
+ "blocks": [
+   {
+     "type": "text-block"
+   }
+ ]
+}
+] 
 }
 {% endschema %}
 
