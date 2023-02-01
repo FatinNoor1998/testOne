@@ -620,6 +620,18 @@
           "settings": {
             "spacer-height": 30
           }
+        },
+        "4699c604-729b-48c1-9924-88137f2ccb5d": {
+          "type": "question-block",
+          "settings": {
+            "qus-text-content": "",
+            "qus-font-size": 15,
+            "qus-mobile-font-size": 15,
+            "qus-line-height": 22,
+            "qus-mobile-line-height": 22,
+            "qus-font": "Helvetica, Arial, sans-serif",
+            "qus-text-color": "#E37730"
+          }
         }
       },
       "block_order": [
@@ -629,7 +641,8 @@
         "a69ed7a9-ac75-44ff-b48e-b41a688a38a8",
         "c039caa4-bb4f-4e44-a3a5-f3cc32ad90aa",
         "e774ae00-7e29-45f8-ae89-d7be8a263b5d",
-        "df8019b4-659d-4556-90c3-05874febdf9e"
+        "df8019b4-659d-4556-90c3-05874febdf9e",
+        "4699c604-729b-48c1-9924-88137f2ccb5d"
       ],
       "settings": {
       }
