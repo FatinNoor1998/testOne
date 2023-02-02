@@ -2,12 +2,17 @@
   {% for block in section.blocks %}
     {% case block.type %}
       {% when 'question-block' %}
-        <div class="question-text-block-{{ block.id }}">
-          <div class="text-block">
-              {{ block.settings.qus-text-content }}
-              
+
+        {% if block.settings.qus-text-content != '' %}
+          <div class="question-text-block-{{ block.id }}">
+            
+              <div class="text-block">
+                  {{ block.settings.qus-text-content }}              
+              </div>
+            
           </div>
-        </div>
+        {% endif %}
+      
         {% when 'answer-block' %}
           <div class="answer-text-block-{{ block.id }}">
             <div class="text-block">

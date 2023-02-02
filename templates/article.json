@@ -36,36 +36,35 @@
         "bf1caaca-5dff-4b41-8c47-261c46fea0e6": {
           "type": "text-block",
           "settings": {
+            "block-width": "small",
             "text-content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eu euismod ante, quis finibus odio. Aenean scelerisque consectetur pharetra. In condimentum est eu eros malesuada aliquam.<\/p>",
-            "font-size": 24,
+            "font-size": 34,
             "mobile-font-size": 13,
             "line-height": 30,
             "mobile-line-height": 37,
             "font": "Georgia, Utopia, 'Times New Roman', Times, serif",
             "text-color": "#000000",
-            "text-align": "left",
-            "padding-top": 0,
-            "padding-bottom": 2
+            "text-align": "left"
           }
         },
         "8074adb6-0012-4f49-af90-8aa107807dca": {
           "type": "text-block",
           "settings": {
-            "text-content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eu euismod ante, quis finibus odio. Aenean scelerisque consectetur pharetra. In condimentum est eu eros malesuada aliquam. Aenean iaculis ligula a quam vehicula mattis. Nulla fringilla bibendum erat id molestie. Quisque id arcu in libero euismod rutrum sed ut libero. Nunc et dolor non ex elementum varius vel ut ligula. Sed id felis ex. Aenean tristique lobortis est, vitae consequat turpis sagittis varius. Quisque pharetra, dui ornare iaculis consectetur, magna velit condimentum nulla, non tristique nisl lorem ac risus. Cras accumsan eu est in dignissim. Aenean ligula felis, rutrum in augue quis, consectetur porta libero.<\/p>",
+            "block-width": "small",
+            "text-content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eu euismod ante, quis finibus odio. Aenean scelerisque consectetur pharetra. In condimentum est eu eros malesuada aliquam. <\/p><p>Aenean iaculis ligula a quam vehicula mattis. Nulla fringilla bibendum erat id molestie. Quisque id arcu in libero euismod rutrum sed ut libero. Nunc et dolor non ex elementum varius vel ut ligula. Sed id felis ex. Aenean tristique lobortis est, vitae consequat turpis sagittis varius. Quisque pharetra, dui ornare iaculis consectetur, magna velit condimentum nulla, non tristique nisl lorem ac risus. Cras accumsan eu est in dignissim. Aenean ligula felis, rutrum in augue quis, consectetur porta libero.<\/p>",
             "font-size": 15,
             "mobile-font-size": 16,
             "line-height": 22,
             "mobile-line-height": 30,
             "font": "Helvetica, Arial, sans-serif",
             "text-color": "#000000",
-            "text-align": "left",
-            "padding-top": 0,
-            "padding-bottom": 4
+            "text-align": "left"
           }
         },
         "b429e53d-0dff-45c4-8c19-44b33dcf215f": {
           "type": "text-block",
           "settings": {
+            "block-width": "small",
             "text-content": "<p>Nunc faucibus ornare risus nec accumsan. Donec sed nisi rutrum, mattis diam a, tempus risus. Morbi at lectus elementum, laoreet orci sit amet, rutrum ipsum. Integer vel aliquet risus, sed pharetra justo. Pellentesque commodo eu quam vel hendrerit. Mauris non turpis fermentum, faucibus nulla quis, convallis nulla. Ut efficitur metus eros, quis consequat nunc tincidunt et. Sed eleifend arcu vel porta cursus. Mauris ultrices mauris vel lacus hendrerit sodales. Quisque a mattis turpis. Sed nisl purus, malesuada.<\/p>",
             "font-size": 15,
             "mobile-font-size": 16,
@@ -73,22 +72,31 @@
             "mobile-line-height": 30,
             "font": "Helvetica, Arial, sans-serif",
             "text-color": "#000000",
-            "text-align": "left",
-            "padding-top": 0,
-            "padding-bottom": 0
+            "text-align": "left"
+          }
+        },
+        "b28d4be0-2940-47f5-9627-32803c4a6813": {
+          "type": "text-block",
+          "settings": {
+            "block-width": "small",
+            "text-content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eu euismod ante, quis finibus odio. Aenean scelerisque consectetur pharetra. In condimentum est eu eros malesuada aliquam.<\/p>",
+            "font-size": 30,
+            "mobile-font-size": 16,
+            "line-height": 30,
+            "mobile-line-height": 30,
+            "font": "Helvetica, Arial, sans-serif",
+            "text-color": "#000000",
+            "text-align": "left"
           }
         }
       },
       "block_order": [
         "bf1caaca-5dff-4b41-8c47-261c46fea0e6",
         "8074adb6-0012-4f49-af90-8aa107807dca",
-        "b429e53d-0dff-45c4-8c19-44b33dcf215f"
+        "b429e53d-0dff-45c4-8c19-44b33dcf215f",
+        "b28d4be0-2940-47f5-9627-32803c4a6813"
       ],
       "settings": {
-        "section-width": "medium",
-        "custom-section-width": 800,
-        "padding-top": 20,
-        "padding-bottom": 20
       }
     },
     "33f08f80-f410-4ef0-b249-c466c80b4b1b": {
@@ -406,6 +414,7 @@
         "template--17540903534868__02ef450f-464b-438d-869c-4272c8f127a7-16745698980cbb05df-0": {
           "type": "text-block",
           "settings": {
+            "block-width": "small",
             "text-content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam mollis, nulla at tempus feugiat, ligula diam tempus velit, quis semper urna sapien eu nunc. Nullam volutpat tellus ac quam convallis, sit amet tincidunt turpis hendrerit. Donec id blandit enim. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Integer sed ipsum et diam tincidunt scelerisque. Integer gravida quam nibh, nec sollicitudin metus mollis nec. In vulputate, neque id fermentum scelerisque, nisi neque porttitor velit, id scelerisque purus libero ut nulla. Praesent fringilla convallis egestas. Sed maximus malesuada nibh sed ultrices.<\/p>",
             "font-size": 20,
             "mobile-font-size": 16,
@@ -413,9 +422,7 @@
             "mobile-line-height": 30,
             "font": "",
             "text-color": "#000000",
-            "text-align": "left",
-            "padding-top": 0,
-            "padding-bottom": 0
+            "text-align": "left"
           }
         }
       },
@@ -423,10 +430,6 @@
         "template--17540903534868__02ef450f-464b-438d-869c-4272c8f127a7-16745698980cbb05df-0"
       ],
       "settings": {
-        "section-width": "custom",
-        "custom-section-width": 950,
-        "padding-top": 20,
-        "padding-bottom": 20
       }
     },
     "40758450-9a8e-441c-8728-210b8be980ef": {
@@ -471,6 +474,7 @@
         "template--17540903534868__646a7249-a971-4384-8242-cdbdba7e2f22-16745698980cbb05df-0": {
           "type": "text-block",
           "settings": {
+            "block-width": "small",
             "text-content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eu euismod ante, quis finibus odio. Aenean scelerisque consectetur pharetra. In condimentum est eu eros malesuada aliquam.<\/p>",
             "font-size": 22,
             "mobile-font-size": 16,
@@ -478,9 +482,7 @@
             "mobile-line-height": 30,
             "font": "",
             "text-color": "#000000",
-            "text-align": "left",
-            "padding-top": 0,
-            "padding-bottom": 0
+            "text-align": "left"
           }
         }
       },
@@ -488,10 +490,6 @@
         "template--17540903534868__646a7249-a971-4384-8242-cdbdba7e2f22-16745698980cbb05df-0"
       ],
       "settings": {
-        "section-width": "medium",
-        "custom-section-width": 800,
-        "padding-top": 20,
-        "padding-bottom": 20
       }
     },
     "3bf84eaa-0c83-4c21-8362-8c49c89c7481": {
@@ -622,6 +620,18 @@
           "settings": {
             "spacer-height": 30
           }
+        },
+        "4699c604-729b-48c1-9924-88137f2ccb5d": {
+          "type": "question-block",
+          "settings": {
+            "qus-text-content": "",
+            "qus-font-size": 15,
+            "qus-mobile-font-size": 15,
+            "qus-line-height": 22,
+            "qus-mobile-line-height": 22,
+            "qus-font": "Helvetica, Arial, sans-serif",
+            "qus-text-color": "#E37730"
+          }
         }
       },
       "block_order": [
@@ -631,7 +641,8 @@
         "a69ed7a9-ac75-44ff-b48e-b41a688a38a8",
         "c039caa4-bb4f-4e44-a3a5-f3cc32ad90aa",
         "e774ae00-7e29-45f8-ae89-d7be8a263b5d",
-        "df8019b4-659d-4556-90c3-05874febdf9e"
+        "df8019b4-659d-4556-90c3-05874febdf9e",
+        "4699c604-729b-48c1-9924-88137f2ccb5d"
       ],
       "settings": {
       }
@@ -783,7 +794,7 @@
             "description-font-size": 15,
             "description-font": "Helvetica, Arial, sans-serif",
             "description-color": "#333333",
-            "number-color": "#E37730",
+            "number-color": "#e37730",
             "line-height": 22
           }
         },
@@ -798,7 +809,7 @@
             "description-font-size": 15,
             "description-font": "Helvetica, Arial, sans-serif",
             "description-color": "#333333",
-            "number-color": "#E37730",
+            "number-color": "#e37730",
             "line-height": 22
           }
         },
@@ -813,7 +824,7 @@
             "description-font-size": 15,
             "description-font": "Helvetica, Arial, sans-serif",
             "description-color": "#333333",
-            "number-color": "#E37730",
+            "number-color": "#e37730",
             "line-height": 22
           }
         },
@@ -828,7 +839,7 @@
             "description-font-size": 15,
             "description-font": "Helvetica, Arial, sans-serif",
             "description-color": "#333333",
-            "number-color": "#E37730",
+            "number-color": "#e37730",
             "line-height": 22
           }
         },
