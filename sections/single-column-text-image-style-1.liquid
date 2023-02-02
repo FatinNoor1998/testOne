@@ -1,8 +1,234 @@
+<Section class="section-wrapper-{{ section.id }} width-{{ section.settings.section-width }} single-column-text-image">
+  {% for block in section.blocks %}
+    {% case block.type %}
+      {% when 'image-text' %}
+
+        <div class="block-wrapper-{{ block.id }}{% if block.settings.swap == true %} row-reverse{% endif %}">
+          <div class="image-section">
+            {% if block.settings.image %}
+            <img
+              src=" {{ block.settings.image | img_url: 'master' }} "
+              alt=""
+              height=""
+              width= ""
+              loading="lazy">
+            {%- else -%}
+                {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
+      
+            {% endif %}
+          </div>
+
+          {% if block.settings.description-content != '' %}
+              <div class="text-section {{ block.settings.text-align }}">
+                      {{ block.settings.description-content}}
+              </div> 
+          {% endif %} 
+        </div>
+
+        {% when 'spacer-block' %}
+          <div class="spacer-{{ block.id }}">
+              
+          </div>
+
+    {% endcase %}
+  {% endfor %}
+</Section>
+
+<style> 
+      section .section-wrapper-{{ section.id }}.width-small{
+        max-width: 968px;
+        margin: 0 auto;
+      }
+      section .section-wrapper-{{ section.id }}.width-medium{
+        max-width: 1156px;
+        margin: 0 auto;
+      }
+      .section-wrapper-{{ section.id }}.width-{{ section.settings.section-width }}.single-column-text-image{
+        padding-left: 30px;
+        padding-right: 30px;
+      } 
+     
+  {% for block in section.blocks %}
+    {% case block.type %}
+    {% when 'image-text' %}
+
+      .section-wrapper-{{ section.id }} .block-wrapper-{{ block.id }}.row-reverse{
+      flex-direction: row-reverse;
+      }
+      .section-wrapper-{{ section.id }} .block-wrapper-{{ block.id }}{
+          display: flex;
+          justify-content: space-between;
+          align-items: stretch;
+          gap: 20px;
+      }
+      .section-wrapper-{{ section.id }} .block-wrapper-{{ block.id }} .image-section{
+         width: {{ block.settings.custom-image-width }}%;
+      }
+      .section-wrapper-{{ section.id }} .block-wrapper-{{ block.id }} .image-section img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      .section-wrapper-{{ section.id }} .block-wrapper-{{ block.id }} .text-section{
+        flex: 1;
+        align-self: {{ block.settings.align-self }};
+      }
+      .section-wrapper-{{ section.id }} .block-wrapper-{{ block.id }} .text-section p{
+        font-size: {{ block.settings.description-font-size | append: 'px' }};
+        font-family: {{ block.settings.description-font }};
+        color: {{ block.settings.description-text-color }};
+        line-height: 22px;
+        margin-top: 0px;
+      } 
+
+      {% when 'spacer-block' %}
+        .section-wrapper-{{ section.id }} .spacer-{{ block.id }}{
+          height: {{ block.settings.spacer-height }}px;
+        }
+    {% endcase %}
+  {% endfor %}
+</style>
+
 {% schema %}
+{
+"name": "one-image-text-style-1",
+"tag": "section",
+"settings": [
+{      
+     "type": "select",
+      "id": "section-width",
+      "label": "Section Width",
+      "options": [
+        {
+          "value": "small",
+          "label": "Small"
+        },
+        {
+          "value": "medium",
+          "label": "Medium"
+        }
+      ],
+      "default": "small"
+}
+],
+"blocks":[
   {
-    "name": "Section name",
-    "settings": []
+    "name": "image-text",
+    "type": "image-text",
+    "settings": [
+      {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Image"
+      },
+      {
+        "type": "checkbox",
+        "id": "swap",
+        "label": "Swap",
+        "default": false
+      },
+      {
+      "type": "range",
+      "id": "custom-image-width",
+      "label": "Custom Image width",
+      "min": 20,
+      "max": 100,
+      "step": 5,
+      "unit": "%",
+      "default": 50
+      },
+      {
+        "type": "header",
+        "content": "Description Text"
+      },
+      {
+            "type": "richtext",
+            "id": "description-content",
+            "label": "Description",
+            "default": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eu euismod ante, quis finibus odio. Aenean scelerisque consectetur pharetra. In condimentum est eu eros malesuada aliquam. Aenean iaculis ligula a quam vehicula mattis. Nulla fringilla bibendum erat id molestie. Quisque id arcu in libero euismod rutrum sed ut libero. Nunc et dolor non ex elementum varius vel ut ligula. Sed id felis ex. Aenean tristique lobortis est, vitae consequat turpis sagittis varius. Quisque pharetra, dui ornare iaculis consectetur, magna velit condimentum nulla, non tristique nisl lorem ac risus. Cras accumsan eu est in dignissim. Aenean ligula felis, rutrum in augue quis, consectetur porta libero. Nunc faucibus ornare risus nec accumsan. Donec sed nisi rutrum, mattis diam a, tempus risus. Morbi at lectus elementum, laoreet orci sit amet, rutrum ipsum. Integer vel aliquet risus, sed pharetra justo. Pellentesque commodo eu quam vel hendrerit. Mauris non turpis fermentum, faucibus nulla quis, convallis nulla. Ut efficitur metus eros, quis consequat nunc tincidunt et. Sed eleifend arcu vel porta cursus. Mauris ultrices mauris vel lacus hendrerit sodales. Quisque a mattis turpis. Sed nisl purus, malesuada ac ultricies iaculis, iaculis id tellus. Morbi hendrerit ipsum sit amet lacus convallis tincidunt. Praesent quis libero rutrum, pharetra ex non, tincidunt justo. Nulla facilisi.</p>"
+          }, 
+       {
+          "type": "select",
+          "id": "text-align",
+          "label": "Text align",
+          "options": [
+            {
+              "value": "left",
+              "label": "left"
+            },
+            {
+              "value": "center",
+              "label": "center"
+            },
+            {
+              "value": "right",
+              "label": "right"
+            }
+          ],
+          "default": "left"
+        },    
+          {
+            "type": "range",
+            "id": "description-font-size",
+            "label": "Font size",
+            "min": 12,
+            "max": 50,
+            "step": 1,
+            "unit": "px",
+            "default": 16
+          },
+          {
+            "type": "range",
+            "id": "description-mobile-font-size",
+            "label": "Font size Mobile",
+            "min": 12,
+            "max": 50,
+            "step": 1,
+            "unit": "px",
+            "default": 16
+          },
+          {
+          "type": "font",
+          "id": "description-font",
+          "label": "Font Family"
+          },
+          {
+            "type": "color",
+            "label": "Text color",
+            "id": "description-text-color",
+            "default": "#000000"
+          }
+    ]
+  },
+  {
+          "type": "spacer-block",
+          "name": "Spacer",
+          "settings": [
+            {
+              "type": "range",
+              "id": "spacer-height",
+              "label": "Spacer Height",
+              "min": 0,
+              "max": 200,
+              "step": 5,
+              "unit": "px",
+              "default": 30
+            }
+          ]
   }
+],
+  "presets": [
+    {
+      "category": "content",
+      "name": "one-image-text-style-1",
+      "blocks": [
+        {
+          "type": "image-text"
+        }
+      ]
+    }
+  ]
+}
 {% endschema %}
 
 {% stylesheet %}
