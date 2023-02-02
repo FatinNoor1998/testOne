@@ -1,4 +1,4 @@
-<Section class="section-wrapper-{{ section.id }}">
+<Section class="section-wrapper-{{ section.id }} double-image">
     {% for block in section.blocks %}
       {% case block.type %}
         {% when 'image' %}
@@ -55,7 +55,10 @@
 </Section>
 
 <style>
-
+  .section-wrapper-{{ section.id }}.double-image{
+    padding-left: 15px;
+    padding-right: 15px;
+  }
   {% for block in section.blocks %}
     {% case block.type %}
     {% when 'image' %}
@@ -77,11 +80,11 @@
       }
       .section-wrapper-{{ section.id }} .image-wrapper.small .image{       
         flex: 1;
-        height: 375px;
+        {% comment %} height: 375px; {% endcomment %}
       }
       .section-wrapper-{{ section.id }} .image-wrapper.medium .image{       
         flex: 1;
-        height: 605px;
+        {% comment %} height: 605px; {% endcomment %}
       }
       .section-wrapper-{{ section.id }} .image-wrapper .left-image-wrapper .left-image{
         background: {{ block.settings.background-color }};
@@ -91,12 +94,15 @@
         height: 100%;
       }
       .section-wrapper-{{ section.id }} .image-wrapper.small .left-image-wrapper .left-image .inner-image-block-left{
-        width: 228px;
-        height: 285px;
+        {% comment %} width: 228px;
+        height: 285px; {% endcomment %}
+
+        width: 76%;
+        height: 74%;
       }
       .section-wrapper-{{ section.id }} .image-wrapper.medium .left-image-wrapper .left-image .inner-image-block-left{
-        width: 373px;
-        height: 465px;
+        width: 77%;
+        height: 76%;
       }
       .section-wrapper-{{ section.id }} .image-wrapper .left-image-wrapper .left-image .inner-image-block-left.full-image{
         width: 100%;
@@ -128,7 +134,13 @@
       .section-wrapper-{{ section.id }} .image-wrapper .image .text-block.hide-text p{
         display: none;
       }
-
+     @media screen and (max-width: 600px) {
+      .section-wrapper-{{ section.id }} .image-wrapper.medium{
+        flex-wrap: wrap;
+        gap: 15px;
+        flex-direction: column;
+      }
+     }
 
       {% when 'spacer-block' %}
         .section-wrapper-{{ section.id }} .spacer-{{ block.id }}{

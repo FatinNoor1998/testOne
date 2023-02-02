@@ -2,7 +2,7 @@
   .section-wrapper-{{ section.id }}.single-column-text{
     width: 100%;
     margin-bottom: 40px;
-    padding: 0px 30px;  
+    padding: 0px 15px;  
 }
  
 {% for block in section.blocks %}
@@ -26,6 +26,14 @@
    color: {{ block.settings.text-color }};
    line-height: {{ block.settings.line-height }}px;
 }
+
+@media screen and (max-width: 400px){
+  .section-wrapper-{{ section.id }}.single-column-text .text-block-{{ block.id }}.width-{{ block.settings.block-width }} p{
+   font-size: {{ block.settings.mobile-font-size }}px;
+   line-height: {{ block.settings.mobile-line-height }}px;
+}
+}
+
 
 {% when 'spacer-block' %}
  .section-wrapper-{{ section.id }} .spacer-{{ block.id }}{

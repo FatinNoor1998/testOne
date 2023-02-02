@@ -13,13 +13,17 @@
           </div>
         {% endif %}
       
+       
         {% when 'answer-block' %}
+          {% if block.settings.ans-text-content != '' %}
           <div class="answer-text-block-{{ block.id }}">
             <div class="text-block">
                 {{ block.settings.ans-text-content }}
                 
             </div>
         </div>
+      {% endif %}
+
         {% when 'spacer-block' %}
           <div class="spacer-{{ block.id }}">
               
@@ -34,6 +38,8 @@
     .section-wrapper-{{ section.id }}{
       max-width: 600px;
       margin: 0 auto;
+      padding-left: 15px;
+      padding-right: 15px;
     }   
   {% for block in section.blocks %}
     {% case block.type %}
