@@ -1,8 +1,344 @@
+<Section class="section-wrapper-{{ section.id }} width-{{ section.settings.section-width }} single-column-text-image">
+  {% for block in section.blocks %}
+    {% case block.type %}
+      {% when 'image-text' %}
+
+        <div class="block-wrapper-{{ block.id }}{% if block.settings.swap == true %} row-reverse{% endif %}">
+          <div class="image-section">
+            {% if block.settings.image %}
+            <img
+              src=" {{ block.settings.image | img_url: 'master' }} "
+              alt=""
+              height=""
+              width= ""
+              loading="lazy">
+            {%- else -%}
+                {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
+      
+            {% endif %}
+          </div>
+          
+          
+          <div class="text-section {{ block.settings.text-align }} ">
+            {% if block.settings.heading != '' %}
+              <div class="heading">
+                      <h2>{{ block.settings.heading }}</h2>
+              </div>
+            {% endif %}
+
+            {% if block.settings.description-content != '' %}
+              <div class="description">
+                        {{ block.settings.description-content }}
+              </div>
+            {% endif %} 
+              <div class="button{% if block.settings.hide-button == true %} hide-btn{% endif %}" >
+                <a href="#" type="button">{{ block.settings.button-text }} </a>
+              </div>
+          </div> 
+        </div>
+
+        {% when 'spacer-block' %}
+          <div class="spacer-{{ block.id }}">
+              
+          </div>
+
+    {% endcase %}
+  {% endfor %}
+</Section>
+
+<style>
+    
+      section .section-wrapper-{{ section.id }}.width-small{
+        max-width: 967px;
+        margin: 0 auto;
+      }
+      section .section-wrapper-{{ section.id }}.width-medium{
+        max-width: 1156px;
+        margin: 0 auto;
+      }
+      .section-wrapper-{{ section.id }}.single-column-text-image{
+        padding-left: 20px;
+        padding-right: 20px;
+      }
+
+  {% for block in section.blocks %}
+    {% case block.type %}
+    {% when 'image-text' %}
+      .section-wrapper-{{ section.id }} .block-wrapper-{{ block.id }}.row-reverse{
+      flex-direction: row-reverse;
+      }
+      section .section-wrapper-{{ section.id }} .text-section .button.hide-btn{
+         display: none;
+      }
+      .section-wrapper-{{ section.id }} .block-wrapper-{{ block.id }}{
+      display: flex;
+      justify-content: space-between;
+      background: {{ block.settings.background-color }};
+      align-items: stretch;
+      }
+      .section-wrapper-{{ section.id }} .block-wrapper-{{ block.id }} .image-section{
+        flex: 1.3;
+      }
+      .section-wrapper-{{ section.id }} .block-wrapper-{{ block.id }} .image-section img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      .section-wrapper-{{ section.id }} .block-wrapper-{{ block.id }} .text-section{
+        padding-left: 55px;
+        padding-right: 55px;
+        flex: 1;
+        align-self: {{ block.settings.align-self }};
+      }
+      .section-wrapper-{{ section.id }} .block-wrapper-{{ block.id }} .text-section .heading p{
+        font-size: {{ block.settings.heading-font-size | append: 'px' }};
+        font-family: {{ block.settings.heading-font }};
+        color: {{ block.settings.heading-color }};
+
+      }
+      .section-wrapper-{{ section.id }} .block-wrapper-{{ block.id }} .text-section .description p{
+        font-size: {{ block.settings.description-font-size | append: 'px' }};
+        font-family: {{ block.settings.description-font }};
+        color: {{ block.settings.description-text-color }};
+        line-height: 22px;
+
+      } 
+      .section-wrapper-{{ section.id }} .block-wrapper-{{ block.id }} .text-section .button{
+        border-radius: 100px;
+        background: #333333;
+        --border-offset: none;    
+        padding-bottom: 10px;
+      }
+      .section-wrapper-{{ section.id }} .block-wrapper-{{ block.id }} .text-section .button:hover{
+        --border-opacity: none;
+      }
+      .section-wrapper-{{ section.id }} .text-section .button a{
+        color: #FFFFFF;
+        text-decoration: none;
+      }
+
+      {% when 'spacer-block' %}
+        .section-wrapper-{{ section.id }} .spacer-{{ block.id }}{
+          height: {{ block.settings.spacer-height }}px;
+        }
+    {% endcase %}
+  {% endfor %}
+</style>
+
 {% schema %}
+{
+"name": "one-image-text-style-2",
+"tag": "section",
+"settings": [
+{      
+     "type": "select",
+      "id": "section-width",
+      "label": "Section Width",
+      "options": [
+        {
+          "value": "small",
+          "label": "Small"
+        },
+        {
+          "value": "medium",
+          "label": "Medium"
+        }
+      ],
+      "default": "small"
+}
+],
+"blocks":[
   {
-    "name": "Section name",
-    "settings": []
+    "name": "image-text",
+    "type": "image-text",
+    "settings": [
+      {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Image"
+      },
+      {
+        "type": "checkbox",
+        "id": "swap",
+        "label": "Swap",
+        "default": false
+      },
+      {
+        "type": "select",
+        "id": "align-self",
+        "label": "Align Item",
+        "options": [
+          {
+            "value": "start",
+            "label": "Start"
+          },
+          {
+            "value": "center",
+            "label": "Center"
+          },
+          {
+            "value": "end",
+            "label": "End"
+          }
+        ],
+        "default": "center"
+       },
+       {
+          "type": "select",
+          "id": "text-align",
+          "label": "Text align",
+          "options": [
+            {
+              "value": "left",
+              "label": "left"
+            },
+            {
+              "value": "center",
+              "label": "center"
+            },
+            {
+              "value": "right",
+              "label": "right"
+            }
+          ],
+          "default": "left"
+        },
+        {
+          "type": "color",
+          "id": "background-color",
+          "label": "Background color",
+          "default": "#4E4E3F"
+        },
+        {
+          "type": "header",
+          "content": "For Heading"
+        },
+        {
+          "type": "richtext",
+          "id": "heading",
+          "label": "Change Heading",
+          "default": "<p>Whiting Overshirt</p>"
+        },
+        {
+            "type": "range",
+            "id": "heading-font-size",
+            "label": "Font size",
+            "min": 24,
+            "max": 50,
+            "step": 1,
+            "unit": "px",
+            "default": 24
+        },
+        {
+            "type": "range",
+            "id": "heading-font-size-mobile",
+            "label": "Mobile Font size",
+            "min": 12,
+            "max": 50,
+            "step": 1,
+            "unit": "px",
+            "default": 16
+        },
+        {
+            "type": "font",
+            "id": "heading-font",
+            "label": "Font Family"
+        },
+        {
+              "type": "color",
+              "label": "color",
+              "id": "heading-color",
+              "default": "#FFFFFF"
+        },
+        {
+          "type": "header",
+          "content": "For Description"
+        },
+          {
+            "type": "richtext",
+            "id": "description-content",
+            "label": "Description",
+            "default": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eu euismod ante, quis finibus odio. Aenean scelerisque consectetur pharetra. In condimentum est eu eros malesuada aliquam. Aenean iaculis ligula a quam vehicula mattis. Nulla fringilla bibendum erat id molestie. Quisque id arcu in libero euismod rutrum sed ut libero. Nunc et dolor non ex elementum varius vel ut ligula. Sed id felis ex. Aenean tristique lobortis est, vitae consequat turpis sagittis varius. Quisque pharetra, dui ornare iaculis consectetur, magna velit condimentum nulla, non tristique nisl lorem ac risus. Cras accumsan eu est in dignissim. Aenean ligula felis, rutrum in augue quis, consectetur porta libero. Nunc faucibus ornare risus nec accumsan. Donec sed nisi rutrum, mattis diam a, tempus risus. Morbi at lectus elementum, laoreet orci sit amet, rutrum ipsum. Integer vel aliquet risus, sed pharetra justo. Pellentesque commodo eu quam vel hendrerit. Mauris non turpis fermentum, faucibus nulla quis, convallis nulla. Ut efficitur metus eros, quis consequat nunc tincidunt et. Sed eleifend arcu vel porta cursus. Mauris ultrices mauris vel lacus hendrerit sodales. Quisque a mattis turpis. Sed nisl purus, malesuada ac ultricies iaculis, iaculis id tellus. Morbi hendrerit ipsum sit amet lacus convallis tincidunt. Praesent quis libero rutrum, pharetra ex non, tincidunt justo. Nulla facilisi.</p>"
+          },       
+          {
+            "type": "range",
+            "id": "description-font-size",
+            "label": "Font size",
+            "min": 12,
+            "max": 50,
+            "step": 1,
+            "unit": "px",
+            "default": 16
+          },
+          {
+            "type": "range",
+            "id": "description-mobile-font-size",
+            "label": "Font size Mobile ",
+            "min": 12,
+            "max": 50,
+            "step": 1,
+            "unit": "px",
+            "default": 16
+          },
+          {
+          "type": "font",
+          "id": "description-font",
+          "label": "Font Family"
+          },
+          {
+            "type": "color",
+            "label": "Text color",
+            "id": "description-text-color",
+            "default": "#000000"
+          },
+          {
+            "type": "checkbox",
+            "id": "hide-button",
+            "label": "hide Button",
+            "default": false
+          },
+          {
+            "type": "text",
+            "id": "button-text",
+            "label": "Buton Label",
+            "default": "Shop The Look"
+          },
+          {
+            "type": "url",
+            "id": "button-url",
+            "label": "Button Link"
+          }
+    ]
+  },
+  {
+          "type": "spacer-block",
+          "name": "Spacer",
+          "settings": [
+            {
+              "type": "range",
+              "id": "spacer-height",
+              "label": "Spacer Height",
+              "min": 0,
+              "max": 200,
+              "step": 5,
+              "unit": "px",
+              "default": 30
+            }
+          ]
   }
+],
+  "presets": [
+    {
+      "category": "content",
+      "name": "one-image-text-style-2",
+      "blocks": [
+        {
+          "type": "image-text"
+        }
+      ]
+    }
+  ]
+}
 {% endschema %}
 
 {% stylesheet %}
