@@ -199,14 +199,14 @@
             "first-image": "shopify:\/\/shop_images\/04-10-2022-WAX1517.jpg",
             "second-image": "shopify:\/\/shop_images\/04-10-2022-WAX1307.jpg",
             "block-width": "small",
-            "full-image": true,
+            "full-image": false,
             "swap": false,
-            "gap": 56,
-            "background-color": "#C1BEB4",
-            "text-first": "<p>hello<\/p>",
-            "text-second": "<p>hello<\/p>",
+            "gap": 0,
+            "background-color": "#c1beb4",
+            "text-first": "<p>Model wears <a href=\"\/collections\/adidas\" title=\"ADIDAS\">Whiting Shirt Cosmic Papaya Check <\/a>with Dean T Shirt Black and Pleat Trousers Black<\/p>",
+            "text-second": "<p>Model wears Oz Shirt Grey and Yellow Check with F<a href=\"\/collections\/caps\" title=\"Caps\">isherman Beanie Khaki and Pleat<\/a> Trousers Black<\/p>",
             "font": "Helvetica, Arial, sans-serif",
-            "font-size": 14,
+            "font-size": 12,
             "text-color": "#000000",
             "hide-text": false,
             "text-align": "left"
@@ -215,7 +215,32 @@
         "9a8cd3b2-06b2-480e-8065-2e0285c4cf84": {
           "type": "spacer-block",
           "settings": {
-            "spacer-height": 110
+            "spacer-height": 60
+          }
+        },
+        "941f2e27-c59b-41ab-9c82-3eb6cb92b7ac": {
+          "type": "image",
+          "settings": {
+            "first-image": "shopify:\/\/shop_images\/04-10-2022-WAX1307.jpg",
+            "second-image": "shopify:\/\/shop_images\/04-10-2022-WAX1334.jpg",
+            "block-width": "small",
+            "full-image": true,
+            "swap": false,
+            "gap": 20,
+            "background-color": "#C1BEB4",
+            "text-first": "<p>hello<\/p>",
+            "text-second": "<p>hello<\/p>",
+            "font": "Helvetica, Arial, sans-serif",
+            "font-size": 14,
+            "text-color": "#000000",
+            "hide-text": true,
+            "text-align": "left"
+          }
+        },
+        "9ac04cd5-565e-459a-950f-809fb61d56a8": {
+          "type": "spacer-block",
+          "settings": {
+            "spacer-height": 50
           }
         }
       },
@@ -225,15 +250,155 @@
         "13a6b322-0e20-422d-ad4f-64c9d7146f7f",
         "1a6df497-4373-433c-ad66-91ad12631e17",
         "de66bb85-c7fa-400c-912e-e601bcfa4411",
-        "9a8cd3b2-06b2-480e-8065-2e0285c4cf84"
+        "9a8cd3b2-06b2-480e-8065-2e0285c4cf84",
+        "941f2e27-c59b-41ab-9c82-3eb6cb92b7ac",
+        "9ac04cd5-565e-459a-950f-809fb61d56a8"
       ],
       "settings": {
       }
     },
-    "3bf84eaa-0c83-4c21-8362-8c49c89c7481": {
+    "f2cf8e7a-a865-4aae-a855-4c528a76344c": {
       "type": "double-image-text",
       "blocks": {
-        "template--17540903534868__3bf84eaa-0c83-4c21-8362-8c49c89c7481-1674569648713189b2-0": {
+        "template--17540903534868__f2cf8e7a-a865-4aae-a855-4c528a76344c-1675423268eeb067b0-0": {
+          "type": "image",
+          "settings": {
+            "first-image": "shopify:\/\/shop_images\/04-10-2022-WAX1307.jpg",
+            "second-image": "shopify:\/\/shop_images\/04-10-2022-WAX1517.jpg",
+            "block-width": "medium",
+            "full-image": true,
+            "swap": false,
+            "gap": 0,
+            "background-color": "#C1BEB4",
+            "text-first": "<p>hello<\/p>",
+            "text-second": "<p>hello<\/p>",
+            "font": "",
+            "font-size": 14,
+            "text-color": "#000000",
+            "hide-text": true,
+            "text-align": "left"
+          }
+        },
+        "template--17540903534868__f2cf8e7a-a865-4aae-a855-4c528a76344c-1675423268eeb067b0-1": {
+          "type": "spacer-block",
+          "settings": {
+            "spacer-height": 30
+          }
+        },
+        "1f51ae88-22cc-4153-ac0a-1f8455d862fb": {
+          "type": "image",
+          "settings": {
+            "first-image": "shopify:\/\/shop_images\/04-10-2022-WAX1307.jpg",
+            "second-image": "shopify:\/\/shop_images\/04-10-2022-WAX1517.jpg",
+            "block-width": "medium",
+            "full-image": true,
+            "swap": false,
+            "gap": 20,
+            "background-color": "#C1BEB4",
+            "text-first": "<p>hello<\/p>",
+            "text-second": "<p>hello<\/p>",
+            "font": "Helvetica, Arial, sans-serif",
+            "font-size": 14,
+            "text-color": "#000000",
+            "hide-text": true,
+            "text-align": "left"
+          }
+        }
+      },
+      "block_order": [
+        "template--17540903534868__f2cf8e7a-a865-4aae-a855-4c528a76344c-1675423268eeb067b0-0",
+        "template--17540903534868__f2cf8e7a-a865-4aae-a855-4c528a76344c-1675423268eeb067b0-1",
+        "1f51ae88-22cc-4153-ac0a-1f8455d862fb"
+      ],
+      "settings": {
+      }
+    },
+    "8d5bb6eb-1c39-4b9b-8dcb-dd776bcd17f6": {
+      "type": "single_column_text",
+      "blocks": {
+        "template--17540903534868__8d5bb6eb-1c39-4b9b-8dcb-dd776bcd17f6-16754233707dbc08af-0": {
+          "type": "text-block",
+          "settings": {
+            "block-width": "medium",
+            "text-content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam mollis, nulla at tempus feugiat, ligula diam tempus velit, quis semper urna sapien eu nunc. Nullam volutpat tellus ac quam convallis, sit amet tincidunt turpis hendrerit. Donec id blandit enim. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Integer sed ipsum et diam tincidunt scelerisque. Integer gravida quam nibh, nec sollicitudin metus mollis nec. In vulputate, neque id fermentum scelerisque, nisi neque porttitor velit, id scelerisque purus libero ut nulla. Praesent fringilla convallis egestas. Sed maximus malesuada nibh sed ultrices.<\/p>",
+            "font-size": 24,
+            "mobile-font-size": 16,
+            "line-height": 30,
+            "mobile-line-height": 30,
+            "font": "Georgia, Utopia, 'Times New Roman', Times, serif",
+            "text-color": "#000000"
+          }
+        }
+      },
+      "block_order": [
+        "template--17540903534868__8d5bb6eb-1c39-4b9b-8dcb-dd776bcd17f6-16754233707dbc08af-0"
+      ],
+      "settings": {
+      }
+    },
+    "d3ad2421-aa56-4431-b03d-18f0c9020de0": {
+      "type": "double-image-text",
+      "blocks": {
+        "template--17540903534868__d3ad2421-aa56-4431-b03d-18f0c9020de0-1675423268eeb067b0-0": {
+          "type": "image",
+          "settings": {
+            "first-image": "shopify:\/\/shop_images\/04-10-2022-WAX1307.jpg",
+            "second-image": "shopify:\/\/shop_images\/04-10-2022-WAX1517.jpg",
+            "block-width": "medium",
+            "full-image": false,
+            "swap": true,
+            "gap": 0,
+            "background-color": "#C1BEB4",
+            "text-first": "<p>hello<\/p>",
+            "text-second": "<p>hello<\/p>",
+            "font": "",
+            "font-size": 14,
+            "text-color": "#000000",
+            "hide-text": true,
+            "text-align": "left"
+          }
+        },
+        "template--17540903534868__d3ad2421-aa56-4431-b03d-18f0c9020de0-1675423268eeb067b0-1": {
+          "type": "spacer-block",
+          "settings": {
+            "spacer-height": 30
+          }
+        }
+      },
+      "block_order": [
+        "template--17540903534868__d3ad2421-aa56-4431-b03d-18f0c9020de0-1675423268eeb067b0-0",
+        "template--17540903534868__d3ad2421-aa56-4431-b03d-18f0c9020de0-1675423268eeb067b0-1"
+      ],
+      "settings": {
+      }
+    },
+    "81eb3a00-fce8-4329-a211-00d92cb7c4df": {
+      "type": "single_column_text",
+      "blocks": {
+        "template--17540903534868__81eb3a00-fce8-4329-a211-00d92cb7c4df-16754233707dbc08af-0": {
+          "type": "text-block",
+          "settings": {
+            "block-width": "small",
+            "text-content": "<p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam mollis, nulla at tempus feugiat, ligula diam tempus velit, quis semper urna sapien eu nunc. Nullam volutpat tellus ac quam convallis, sit amet tincidunt turpis hendrerit. Donec id blandit enim. Sed maximus malesuada nibh sed ultrices.”<\/p>",
+            "font-size": 24,
+            "mobile-font-size": 16,
+            "line-height": 30,
+            "mobile-line-height": 30,
+            "font": "Georgia, Utopia, 'Times New Roman', Times, serif",
+            "text-color": "#000000"
+          }
+        }
+      },
+      "block_order": [
+        "template--17540903534868__81eb3a00-fce8-4329-a211-00d92cb7c4df-16754233707dbc08af-0"
+      ],
+      "settings": {
+      }
+    },
+    "81ffcc9a-9521-4df9-851c-d55a67c74f84": {
+      "type": "double-image-text",
+      "blocks": {
+        "template--17540903534868__81ffcc9a-9521-4df9-851c-d55a67c74f84-1675423268eeb067b0-0": {
           "type": "image",
           "settings": {
             "first-image": "shopify:\/\/shop_images\/04-10-2022-WAX1307.jpg",
@@ -242,17 +407,17 @@
             "full-image": false,
             "swap": false,
             "gap": 0,
-            "background-color": "#c1beb4",
-            "text-first": "<p>Model wears <a href=\"\/products\/nike-crackle-print-tb-tee\" title=\"NIKE | CRACKLE PRINT TB TEE\">Whiting Shirt Cosmic Papaya Check<\/a> with Dean T Shirt Black and Pleat Trousers Black<\/p>",
-            "text-second": "<p>Model wears Oz Shirt Grey and Yellow Check with <a href=\"\/products\/adidas-classic-backpack\" title=\"ADIDAS | CLASSIC BACKPACK\">Fisherman Beanie Khaki <\/a>and Pleat Trousers Black<\/p>",
+            "background-color": "#C1BEB4",
+            "text-first": "<p>Model wears <a href=\"\/collections\/flex-fit\" title=\"FLEX FIT\">Whiting Shirt Cosmic Papaya Check <\/a>with Dean T Shirt Black and Pleat Trousers Black<\/p>",
+            "text-second": "<p>Model wears Whiting Shirt Cosmic Papaya Check with <a href=\"\/products\/converse-chuck-taylor-all-star-lo\" title=\"CONVERSE | CHUCK TAYLOR ALL STAR LO\">Dean T Shirt <\/a>Black and Pleat Trousers Black<\/p>",
             "font": "",
             "font-size": 14,
-            "text-color": "#121212",
+            "text-color": "#000000",
             "hide-text": false,
             "text-align": "left"
           }
         },
-        "template--17540903534868__3bf84eaa-0c83-4c21-8362-8c49c89c7481-1674569648713189b2-1": {
+        "template--17540903534868__81ffcc9a-9521-4df9-851c-d55a67c74f84-1675423268eeb067b0-1": {
           "type": "spacer-block",
           "settings": {
             "spacer-height": 65
@@ -260,26 +425,42 @@
         }
       },
       "block_order": [
-        "template--17540903534868__3bf84eaa-0c83-4c21-8362-8c49c89c7481-1674569648713189b2-0",
-        "template--17540903534868__3bf84eaa-0c83-4c21-8362-8c49c89c7481-1674569648713189b2-1"
+        "template--17540903534868__81ffcc9a-9521-4df9-851c-d55a67c74f84-1675423268eeb067b0-0",
+        "template--17540903534868__81ffcc9a-9521-4df9-851c-d55a67c74f84-1675423268eeb067b0-1"
       ],
       "settings": {
       }
     },
-    "22bcb4fe-ea57-4636-a7ce-319dc6254681": {
-      "type": "spacer",
+    "7370fd3a-5042-46d8-ae64-ee3b29eff77c": {
+      "type": "single-column-text-image-style-1",
       "blocks": {
-        "template--17540903534868__22bcb4fe-ea57-4636-a7ce-319dc6254681-1674569464422dadac-0": {
+        "template--17540903534868__7370fd3a-5042-46d8-ae64-ee3b29eff77c-1675423655f2b8b0a2-0": {
+          "type": "image-text",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/04-10-2022-WAX1307.jpg",
+            "swap": false,
+            "custom-image-width": 55,
+            "description-content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eu euismod ante, quis finibus odio. Aenean scelerisque consectetur pharetra. In condimentum est eu eros malesuada aliquam. Aenean iaculis ligula a quam vehicula mattis. Nulla fringilla bibendum erat id molestie. Quisque id arcu in libero euismod rutrum sed ut libero. Nunc et dolor non ex elementum varius vel ut ligula. Sed id felis ex. Aenean tristique lobortis est, vitae consequat turpis sagittis varius. Quisque pharetra, dui ornare iaculis consectetur, magna velit condimentum nulla, non tristique nisl lorem ac risus. Cras accumsan eu est in dignissim. Aenean ligula felis, rutrum in augue quis, consectetur porta libero. Nunc faucibus ornare risus nec accumsan. Donec sed nisi rutrum, mattis diam a, tempus risus. Morbi at lectus elementum, laoreet orci sit amet, rutrum ipsum. Integer vel aliquet risus, sed pharetra justo. Pellentesque commodo eu quam vel hendrerit. Mauris non turpis fermentum, faucibus nulla quis, convallis nulla. Ut efficitur metus eros, quis consequat nunc tincidunt et. Sed eleifend arcu vel porta cursus. Mauris ultrices mauris vel lacus hendrerit sodales. Quisque a mattis turpis. Sed nisl purus, malesuada ac ultricies iaculis, iaculis id tellus. Morbi hendrerit ipsum sit amet lacus convallis tincidunt. Praesent quis libero rutrum, pharetra ex non, tincidunt justo. Nulla facilisi.<\/p>",
+            "text-align": "left",
+            "description-font-size": 16,
+            "description-mobile-font-size": 16,
+            "description-font": "",
+            "description-text-color": "#000000"
+          }
+        },
+        "5649bc5c-444e-4a46-ace2-cce28c07c8d2": {
           "type": "spacer-block",
           "settings": {
-            "spacer-height": 45
+            "spacer-height": 30
           }
         }
       },
       "block_order": [
-        "template--17540903534868__22bcb4fe-ea57-4636-a7ce-319dc6254681-1674569464422dadac-0"
+        "template--17540903534868__7370fd3a-5042-46d8-ae64-ee3b29eff77c-1675423655f2b8b0a2-0",
+        "5649bc5c-444e-4a46-ace2-cce28c07c8d2"
       ],
       "settings": {
+        "section-width": "small"
       }
     },
     "7de081bf-3bf8-4929-8e92-4fbafbfc43cd": {
@@ -397,113 +578,6 @@
       ],
       "settings": {
       }
-    },
-    "5ae64b78-c454-477d-a2d4-769f228776c5": {
-      "type": "ordered-list",
-      "blocks": {
-        "template--17540903534868__5ae64b78-c454-477d-a2d4-769f228776c5-16746611719e6556da-0": {
-          "type": "text",
-          "settings": {
-            "list-item-title": "Young Again",
-            "title-font-size": 15,
-            "title-font": "",
-            "title-color": "#333333",
-            "list-item-description": "hello world",
-            "description-font-size": 15,
-            "description-font": "",
-            "description-color": "#333333",
-            "number-color": "#121212",
-            "line-height": 22
-          }
-        },
-        "63726a66-5a36-4bf2-8bef-7b01df5b6190": {
-          "type": "text",
-          "settings": {
-            "list-item-title": "Young Again",
-            "title-font-size": 15,
-            "title-font": "Helvetica, Arial, sans-serif",
-            "title-color": "#333333",
-            "list-item-description": "hello world",
-            "description-font-size": 15,
-            "description-font": "Helvetica, Arial, sans-serif",
-            "description-color": "#333333",
-            "number-color": "#e37730",
-            "line-height": 22
-          }
-        },
-        "2b7d1da9-5135-4fac-864f-ed352ddb9f47": {
-          "type": "text",
-          "settings": {
-            "list-item-title": "Young Again",
-            "title-font-size": 15,
-            "title-font": "Helvetica, Arial, sans-serif",
-            "title-color": "#333333",
-            "list-item-description": "hello world",
-            "description-font-size": 15,
-            "description-font": "Helvetica, Arial, sans-serif",
-            "description-color": "#333333",
-            "number-color": "#e37730",
-            "line-height": 22
-          }
-        },
-        "54cb1a02-be95-48c9-be94-f41de6359634": {
-          "type": "text",
-          "settings": {
-            "list-item-title": "Young Again",
-            "title-font-size": 15,
-            "title-font": "Helvetica, Arial, sans-serif",
-            "title-color": "#333333",
-            "list-item-description": "hello world",
-            "description-font-size": 15,
-            "description-font": "Helvetica, Arial, sans-serif",
-            "description-color": "#333333",
-            "number-color": "#e37730",
-            "line-height": 22
-          }
-        },
-        "6a202d79-a04d-4a03-9277-a9485b344679": {
-          "type": "text",
-          "settings": {
-            "list-item-title": "Young Again",
-            "title-font-size": 15,
-            "title-font": "Helvetica, Arial, sans-serif",
-            "title-color": "#333333",
-            "list-item-description": "hello world",
-            "description-font-size": 15,
-            "description-font": "Helvetica, Arial, sans-serif",
-            "description-color": "#333333",
-            "number-color": "#e37730",
-            "line-height": 22
-          }
-        },
-        "6e45be3f-8c1c-4e13-8f43-fd9fe2bb0cb2": {
-          "type": "text",
-          "settings": {
-            "list-item-title": "Young Again",
-            "title-font-size": 15,
-            "title-font": "Helvetica, Arial, sans-serif",
-            "title-color": "#333333",
-            "list-item-description": "hello world",
-            "description-font-size": 15,
-            "description-font": "Helvetica, Arial, sans-serif",
-            "description-color": "#333333",
-            "number-color": "#e37730",
-            "line-height": 22
-          }
-        }
-      },
-      "block_order": [
-        "template--17540903534868__5ae64b78-c454-477d-a2d4-769f228776c5-16746611719e6556da-0",
-        "63726a66-5a36-4bf2-8bef-7b01df5b6190",
-        "2b7d1da9-5135-4fac-864f-ed352ddb9f47",
-        "54cb1a02-be95-48c9-be94-f41de6359634",
-        "6a202d79-a04d-4a03-9277-a9485b344679",
-        "6e45be3f-8c1c-4e13-8f43-fd9fe2bb0cb2"
-      ],
-      "settings": {
-        "section-width": "small",
-        "custom-section-width": 400
-      }
     }
   },
   "order": [
@@ -512,10 +586,13 @@
     "33f08f80-f410-4ef0-b249-c466c80b4b1b",
     "e82f6cb4-3f26-4f82-886b-b89658766ad9",
     "40758450-9a8e-441c-8728-210b8be980ef",
-    "3bf84eaa-0c83-4c21-8362-8c49c89c7481",
-    "22bcb4fe-ea57-4636-a7ce-319dc6254681",
+    "f2cf8e7a-a865-4aae-a855-4c528a76344c",
+    "8d5bb6eb-1c39-4b9b-8dcb-dd776bcd17f6",
+    "d3ad2421-aa56-4431-b03d-18f0c9020de0",
+    "81eb3a00-fce8-4329-a211-00d92cb7c4df",
+    "81ffcc9a-9521-4df9-851c-d55a67c74f84",
+    "7370fd3a-5042-46d8-ae64-ee3b29eff77c",
     "7de081bf-3bf8-4929-8e92-4fbafbfc43cd",
-    "792ee03b-2f33-47de-96bb-5c1f75587cdf",
-    "5ae64b78-c454-477d-a2d4-769f228776c5"
+    "792ee03b-2f33-47de-96bb-5c1f75587cdf"
   ]
 }
