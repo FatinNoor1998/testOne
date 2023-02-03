@@ -177,7 +177,7 @@
             "full-image": false,
             "swap": true,
             "gap": 0,
-            "background-color": "#C1BEB4",
+            "background-color": "#c1beb4",
             "text-first": "<p>hello<\/p>",
             "text-second": "<p>hello<\/p>",
             "font": "Helvetica, Arial, sans-serif",
@@ -193,18 +193,16 @@
             "spacer-height": 30
           }
         },
-        "e8c0991f-4448-4a06-94c3-212fd8244803": {
+        "de66bb85-c7fa-400c-912e-e601bcfa4411": {
           "type": "image",
           "settings": {
-            "first-image": "shopify:\/\/shop_images\/04-10-2022-WAX1307.jpg",
-            "second-image": "shopify:\/\/shop_images\/04-10-2022-WAX1334.jpg",
             "block-width": "small",
             "full-image": false,
             "swap": false,
-            "gap": 0,
+            "gap": 56,
             "background-color": "#C1BEB4",
-            "text-first": "<p>Model wears <a href=\"\/collections\/caps\" title=\"Caps\">Whiting Shirt Cosmic Papaya Check <\/a>with Dean T Shirt Black and Pleat Trousers Black<\/p>",
-            "text-second": "<p>Model wears <a href=\"\/collections\/flex-fit\" title=\"FLEX FIT\">Oz Shirt Grey and Yellow Check <\/a>with Fisherman Beanie Khaki and Pleat Trousers Black<\/p>",
+            "text-first": "<p>hello<\/p>",
+            "text-second": "<p>hello<\/p>",
             "font": "Helvetica, Arial, sans-serif",
             "font-size": 14,
             "text-color": "#000000",
@@ -224,7 +222,7 @@
         "template--17540903534868__40758450-9a8e-441c-8728-210b8be980ef-1674569648713189b2-1",
         "13a6b322-0e20-422d-ad4f-64c9d7146f7f",
         "1a6df497-4373-433c-ad66-91ad12631e17",
-        "e8c0991f-4448-4a06-94c3-212fd8244803",
+        "de66bb85-c7fa-400c-912e-e601bcfa4411",
         "9a8cd3b2-06b2-480e-8065-2e0285c4cf84"
       ],
       "settings": {
