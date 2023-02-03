@@ -37,16 +37,12 @@
 <style> 
       section .section-wrapper-{{ section.id }}.width-small{
         max-width: 968px;
-        margin: 0 auto;
+        margin: 15px auto;
       }
       section .section-wrapper-{{ section.id }}.width-medium{
         max-width: 1156px;
-        margin: 0 auto;
+        margin: 15px auto;
       }
-      .section-wrapper-{{ section.id }}.width-{{ section.settings.section-width }}.single-column-text-image{
-        margin-left: 15px;
-        margin-right: 15px;
-      } 
      
   {% for block in section.blocks %}
     {% case block.type %}
