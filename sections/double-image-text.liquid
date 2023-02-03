@@ -91,12 +91,9 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        height: 100%;
+        height: 90%;
       }
       .section-wrapper-{{ section.id }} .image-wrapper.small .left-image-wrapper .left-image .inner-image-block-left{
-        {% comment %} width: 228px;
-        height: 285px; {% endcomment %}
-
         width: 76%;
         height: 74%;
       }
@@ -108,10 +105,12 @@
         width: 100%;
         height: 100%;
       }
-      .section-wrapper-{{ section.id }} .image-wrapper .image .right-image,
+      .section-wrapper-{{ section.id }} .image-wrapper .image .right-image{
+        height: 90%;
+      }
       .section-wrapper-{{ section.id }} .image-wrapper .image .right-image .inner-image-block-right
       {
-        height: 100%;
+        {% comment %} height: 100%; {% endcomment %}
       }
 
       .section-wrapper-{{ section.id }} .image-wrapper .image img{
