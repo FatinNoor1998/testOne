@@ -171,71 +171,61 @@
         "13a6b322-0e20-422d-ad4f-64c9d7146f7f": {
           "type": "image",
           "settings": {
+            "first-image": "shopify:\/\/shop_images\/04-10-2022-WAX1517.jpg",
+            "second-image": "shopify:\/\/shop_images\/04-10-2022-WAX1307.jpg",
             "block-width": "small",
             "full-image": false,
-            "swap": false,
-            "gap": 56,
+            "swap": true,
+            "gap": 0,
             "background-color": "#C1BEB4",
             "text-first": "<p>hello<\/p>",
             "text-second": "<p>hello<\/p>",
             "font": "Helvetica, Arial, sans-serif",
             "font-size": 14,
             "text-color": "#000000",
+            "hide-text": true,
+            "text-align": "left"
+          }
+        },
+        "1a6df497-4373-433c-ad66-91ad12631e17": {
+          "type": "spacer-block",
+          "settings": {
+            "spacer-height": 30
+          }
+        },
+        "e8c0991f-4448-4a06-94c3-212fd8244803": {
+          "type": "image",
+          "settings": {
+            "first-image": "shopify:\/\/shop_images\/04-10-2022-WAX1307.jpg",
+            "second-image": "shopify:\/\/shop_images\/04-10-2022-WAX1334.jpg",
+            "block-width": "small",
+            "full-image": false,
+            "swap": false,
+            "gap": 0,
+            "background-color": "#C1BEB4",
+            "text-first": "<p>Model wears <a href=\"\/collections\/caps\" title=\"Caps\">Whiting Shirt Cosmic Papaya Check <\/a>with Dean T Shirt Black and Pleat Trousers Black<\/p>",
+            "text-second": "<p>Model wears <a href=\"\/collections\/flex-fit\" title=\"FLEX FIT\">Oz Shirt Grey and Yellow Check <\/a>with Fisherman Beanie Khaki and Pleat Trousers Black<\/p>",
+            "font": "Helvetica, Arial, sans-serif",
+            "font-size": 14,
+            "text-color": "#000000",
             "hide-text": false,
             "text-align": "left"
+          }
+        },
+        "9a8cd3b2-06b2-480e-8065-2e0285c4cf84": {
+          "type": "spacer-block",
+          "settings": {
+            "spacer-height": 110
           }
         }
       },
       "block_order": [
         "template--17540903534868__40758450-9a8e-441c-8728-210b8be980ef-1674569648713189b2-0",
         "template--17540903534868__40758450-9a8e-441c-8728-210b8be980ef-1674569648713189b2-1",
-        "13a6b322-0e20-422d-ad4f-64c9d7146f7f"
-      ],
-      "settings": {
-      }
-    },
-    "02ef450f-464b-438d-869c-4272c8f127a7": {
-      "type": "single_column_text",
-      "blocks": {
-        "template--17540903534868__02ef450f-464b-438d-869c-4272c8f127a7-16745698980cbb05df-0": {
-          "type": "text-block",
-          "settings": {
-            "block-width": "small",
-            "text-content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam mollis, nulla at tempus feugiat, ligula diam tempus velit, quis semper urna sapien eu nunc. Nullam volutpat tellus ac quam convallis, sit amet tincidunt turpis hendrerit. Donec id blandit enim. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Integer sed ipsum et diam tincidunt scelerisque. Integer gravida quam nibh, nec sollicitudin metus mollis nec. In vulputate, neque id fermentum scelerisque, nisi neque porttitor velit, id scelerisque purus libero ut nulla. Praesent fringilla convallis egestas. Sed maximus malesuada nibh sed ultrices.<\/p>",
-            "font-size": 20,
-            "mobile-font-size": 16,
-            "line-height": 30,
-            "mobile-line-height": 30,
-            "font": "",
-            "text-color": "#000000"
-          }
-        }
-      },
-      "block_order": [
-        "template--17540903534868__02ef450f-464b-438d-869c-4272c8f127a7-16745698980cbb05df-0"
-      ],
-      "settings": {
-      }
-    },
-    "646a7249-a971-4384-8242-cdbdba7e2f22": {
-      "type": "single_column_text",
-      "blocks": {
-        "template--17540903534868__646a7249-a971-4384-8242-cdbdba7e2f22-16745698980cbb05df-0": {
-          "type": "text-block",
-          "settings": {
-            "block-width": "small",
-            "text-content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eu euismod ante, quis finibus odio. Aenean scelerisque consectetur pharetra. In condimentum est eu eros malesuada aliquam.<\/p>",
-            "font-size": 22,
-            "mobile-font-size": 16,
-            "line-height": 30,
-            "mobile-line-height": 30,
-            "font": "",
-            "text-color": "#000000"
-          }
-        }
-      },
-      "block_order": [
-        "template--17540903534868__646a7249-a971-4384-8242-cdbdba7e2f22-16745698980cbb05df-0"
+        "13a6b322-0e20-422d-ad4f-64c9d7146f7f",
+        "1a6df497-4373-433c-ad66-91ad12631e17",
+        "e8c0991f-4448-4a06-94c3-212fd8244803",
+        "9a8cd3b2-06b2-480e-8065-2e0285c4cf84"
       ],
       "settings": {
       }
@@ -265,7 +255,7 @@
         "template--17540903534868__3bf84eaa-0c83-4c21-8362-8c49c89c7481-1674569648713189b2-1": {
           "type": "spacer-block",
           "settings": {
-            "spacer-height": 100
+            "spacer-height": 65
           }
         }
       },
@@ -522,8 +512,6 @@
     "33f08f80-f410-4ef0-b249-c466c80b4b1b",
     "e82f6cb4-3f26-4f82-886b-b89658766ad9",
     "40758450-9a8e-441c-8728-210b8be980ef",
-    "02ef450f-464b-438d-869c-4272c8f127a7",
-    "646a7249-a971-4384-8242-cdbdba7e2f22",
     "3bf84eaa-0c83-4c21-8362-8c49c89c7481",
     "22bcb4fe-ea57-4636-a7ce-319dc6254681",
     "7de081bf-3bf8-4929-8e92-4fbafbfc43cd",
