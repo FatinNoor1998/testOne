@@ -1,8 +1,279 @@
-{% schema %}
-  {
-    "name": "Section name",
-    "settings": []
+<div class="section-wrapper-{{ section.id }} double-image-style-2">
+    {% for block in section.blocks %}
+      {% case block.type %}
+        {% when 'image' %}
+          <div class="image-wrapper {{ block.settings.block-width }} {% if block.settings.swap == true %}row-reverse{% endif %}">
+                  <div class="left-image-wrapper image">
+                      <div class="left-image">
+                              {% if block.settings.first-image %}
+                              <img
+                                src=" {{ block.settings.first-image | img_url: 'master' }} "
+                                alt=""
+                                height=""
+                                width=""
+                                loading="lazy">
+                              {%- else -%}
+                                {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
+                            
+                              {% endif %}
+                      </div>
+                      <div class="text-block {{ block.settings.text-align }} {% if block.settings.hide-text == true %}hide-text{% endif %}">
+                      {{ block.settings.text-first }}
+                    </div> 
+                </div>
+
+                <div class="right-image-wrapper image">
+                    <div class="right-image">
+                            {% if block.settings.second-image %}
+                            <img
+                              src=" {{ block.settings.second-image | img_url: 'master' }} "
+                              alt=""
+                              height=""
+                              width= ""
+                              loading="lazy">
+                            {%- else -%}
+                              {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
+                          
+                            {% endif %}
+                    </div>
+                    <div class="text-block {{ block.settings.text-align }} {% if block.settings.hide-text == true %}hide-text{% endif %}">
+                      {{ block.settings.text-second }}
+                  </div> 
+               </div>       
+         </div>
+
+        {% when 'spacer-block' %}
+            <div class="spacer-{{ block.id }}">
+                
+            </div>
+   {% endcase %}
+  {% endfor %}
+</div>
+
+<style>
+  .section-wrapper-{{ section.id }}.double-image-style-2{
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
   }
+  {% for block in section.blocks %}
+    {% case block.type %}
+    {% when 'image' %}
+      .section-wrapper-{{ section.id }} .image-wrapper.medium{
+        max-width: 968px;
+        margin: 0 auto;
+      }
+      .section-wrapper-{{ section.id }} .image-wrapper.big{
+        max-width: 1156px;
+        margin: 0 auto;
+      }
+      .section-wrapper-{{ section.id }} .image-wrapper{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 20px;
+      }
+      .section-wrapper-{{ section.id }} .image-wrapper .left-image-wrapper{
+           height: 100%;
+           width: {{ block.settings.image-width }}%;
+
+     }
+     .section-wrapper-{{ section.id }} .image-wrapper .left-image-wrapper .left-image{
+          height: 90%;
+          {% comment %} width: 100%; {% endcomment %}
+     }
+      .section-wrapper-{{ section.id }} .image-wrapper.row-reverse{
+        flex-direction: row-reverse;
+      }
+      .section-wrapper-{{ section.id }} .image-wrapper .right-image-wrapper{
+        flex: 1;
+      }
+      .section-wrapper-{{ section.id }} .image-wrapper .image img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      .section-wrapper-{{ section.id }} .image-wrapper .image .text-block p{
+        font-size: {{ block.settings.font-size | append: 'px' }};
+        font-family: {{ block.settings.font }};
+        color: {{ block.settings.text-color }};
+        margin: 10px 0px;
+        line-height: 18px;
+      }
+
+      .section-wrapper-{{ section.id }} .image-wrapper .image .text-block p a{
+        color: {{ block.settings.text-color }};
+      }
+      .section-wrapper-{{ section.id }} .image-wrapper .image .text-block.hide-text p{
+        display: none;
+      }
+     @media screen and (max-width: 600px) {
+      .section-wrapper-{{ section.id }} .image-wrapper.medium{
+        gap: 10px;
+        flex-direction: column;
+      }
+      .section-wrapper-{{ section.id }} .image-wrapper .image{
+        width: 100%;
+      }
+
+     }
+
+      {% when 'spacer-block' %}
+        .section-wrapper-{{ section.id }} .spacer-{{ block.id }}{
+          height: {{ block.settings.spacer-height }}px;
+        }
+      {% endcase %}
+    {% endfor %}
+</style>
+
+{% schema %}
+{
+"name": "double-image-style-2",
+"tag": "section",
+"blocks":[
+  {
+    "type": "image",
+    "name": "Image",
+    "settings": [
+      {
+        "type": "image_picker",
+        "id": "first-image",
+        "label": "First Image"
+      },
+      {
+        "type": "image_picker",
+        "id": "second-image",
+        "label": "Second Image"
+      },
+      {
+       "type": "range",
+       "id": "image-width",
+       "label": "First Image Width",
+       "min": 20,
+       "max": 70,
+       "step": 5,
+       "default": 60,
+       "unit": "%"
+      },
+      {
+        "type": "select",
+        "id": "block-width",
+        "label": "Block Width",
+        "options": [
+            {
+              "value": "medium",
+              "label": "Medium"
+            },
+            {
+              "value": "big",
+              "label": "Big"
+            }
+        ],
+        "default": "medium"
+      },
+        {
+          "type": "checkbox",
+          "id": "swap",
+          "label": "Swap",
+          "default": false
+        },
+      {
+        "type": "richtext",
+        "id": "text-first",
+        "label": "Change Text ( First Image)",
+        "default": "<p>hello</p>"
+      },
+      {
+        "type": "richtext",
+        "id": "text-second",
+        "label": "Change Text ( Second Image)",
+        "default": "<p>hello</p>"
+      },
+
+      {
+      "type": "font",
+      "id": "font",
+      "label": "Font Family"
+      },
+      {
+        "type": "range",
+        "id": "font-size",
+        "label": "Font size",
+        "min": 12,
+        "max": 50,
+        "step": 1,
+        "unit": "px",
+        "default": 14
+      },
+      {
+        "type": "color",
+        "label": "Text color",
+        "id": "text-color",
+        "default": "#000000"
+      },
+      {
+        "type": "checkbox",
+        "id": "hide-text",
+        "label": "Hide Text",
+        "default": false
+      },
+      {
+        "type": "select",
+        "id": "text-align",
+        "label": "Text align",
+        "options": [
+          {
+            "value": "left",
+            "label": "left"
+          },
+          {
+            "value": "center",
+            "label": "center"
+          },
+          {
+            "value": "right",
+            "label": "right"
+          }
+        ],
+        "default": "left"
+      }
+    ]
+  },
+  {
+          "type": "spacer-block",
+          "name": "Spacer",
+          "settings": [
+            {
+              "type": "range",
+              "id": "spacer-height",
+              "label": "Spacer Height",
+              "min": 0,
+              "max": 200,
+              "step": 5,
+              "unit": "px",
+              "default": 30
+            }
+          ]
+  }
+],
+
+"presets": [
+{
+  "category": "content",
+  "name": "double-image-style-2",
+  "blocks": [
+    {
+      "type": "image"
+    },
+    {
+      "type": "spacer-block"
+    }
+  ]
+}
+]  
+
+}
 {% endschema %}
 
 {% stylesheet %}

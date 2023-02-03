@@ -107,7 +107,7 @@
         border-radius: 100px;
         background: #333333;
         --border-offset: none;    
-        padding-bottom: 10px;
+        margin-bottom: 20px;
       }
       .section-wrapper-{{ section.id }} .block-wrapper-{{ block.id }} .text-section .button:hover{
         --border-opacity: none;
@@ -117,6 +117,13 @@
         text-decoration: none;
       }
 
+      @media screen and (max-width: 600px) {
+        .section-wrapper-{{ section.id }} .block-wrapper-{{ block.id }}{
+          flex-direction: column;
+          gap: 10px;
+        }
+        
+      }
       {% when 'spacer-block' %}
         .section-wrapper-{{ section.id }} .spacer-{{ block.id }}{
           height: {{ block.settings.spacer-height }}px;

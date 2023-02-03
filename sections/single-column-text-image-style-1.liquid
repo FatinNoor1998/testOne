@@ -81,8 +81,14 @@
         margin-top: 0px;
       } 
 
-      @media screen and (max-width: 400) {
-        
+      @media screen and (max-width: 600px) {
+        .section-wrapper-{{ section.id }} .block-wrapper-{{ block.id }}{
+          flex-direction: column;
+          gap: 10px;
+        }
+        .section-wrapper-{{ section.id }} .block-wrapper-{{ block.id }} .image-section{
+          width: 100%;
+       }
       }
 
       {% when 'spacer-block' %}

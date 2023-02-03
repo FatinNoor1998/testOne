@@ -53,8 +53,12 @@
     {% case block.type %}
       {% when 'text-block' %}
         <div class="text-block-{{ block.id }} width-{{ block.settings.block-width }}">
-              {{ block.settings.first-column-text }}
-              {{ block.settings.second-column-text }}                
+          <div class="left-column column">
+            {{ block.settings.first-column-text }}
+          </div>
+          <div class="right-column column">
+            {{ block.settings.second-column-text }}   
+          </div>                          
         </div>       
     {% endcase %}
   {% endfor %}
