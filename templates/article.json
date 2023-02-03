@@ -196,8 +196,10 @@
         "de66bb85-c7fa-400c-912e-e601bcfa4411": {
           "type": "image",
           "settings": {
+            "first-image": "shopify:\/\/shop_images\/04-10-2022-WAX1517.jpg",
+            "second-image": "shopify:\/\/shop_images\/04-10-2022-WAX1307.jpg",
             "block-width": "small",
-            "full-image": false,
+            "full-image": true,
             "swap": false,
             "gap": 56,
             "background-color": "#C1BEB4",
