@@ -3,7 +3,7 @@
     {% case block.type %}
       {% when 'image-text' %}
 
-        <div class="block-wrapper-{{ block.id }}{% if block.settings.swap == true %} row-reverse{% endif %}">
+        <div class="block-wrapper-{{ block.id }}">
           <div class="image-section">
             {% if block.settings.image %}
             <img
@@ -43,14 +43,15 @@
         max-width: 1156px;
         margin: 0 auto;
       }
+      .section-wrapper-{{ section.id }}.width-{{ section.settings.section-width }}.single-column-text-image{
+        padding-left: 15px;
+        padding-right: 15px;
+      } 
      
   {% for block in section.blocks %}
     {% case block.type %}
     {% when 'image-text' %}
 
-      .section-wrapper-{{ section.id }} .block-wrapper-{{ block.id }}.row-reverse{
-      flex-direction: row-reverse;
-      }
       .section-wrapper-{{ section.id }} .block-wrapper-{{ block.id }}{
           display: flex;
           justify-content: space-between;
@@ -79,13 +80,18 @@
 
       @media screen and (max-width: 600px) {
         .section-wrapper-{{ section.id }} .block-wrapper-{{ block.id }}{
-          flex-direction: column;
+          flex-direction: column !important;
           gap: 10px;
         }
         .section-wrapper-{{ section.id }} .block-wrapper-{{ block.id }} .image-section{
           width: 100%;
        }
       }
+    {% if block.settings.swap == true %} 
+    .section-wrapper-{{ section.id }} .block-wrapper-{{ block.id }}{
+      flex-direction: row-reverse;
+      }
+    {% endif %}
 
       {% when 'spacer-block' %}
         .section-wrapper-{{ section.id }} .spacer-{{ block.id }}{
