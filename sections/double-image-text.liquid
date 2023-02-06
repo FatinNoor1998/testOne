@@ -129,6 +129,14 @@
       .section-wrapper-{{ section.id }} .image-wrapper-{{ block.id }} .image .text-block.hide-text p{
         display: none;
       }
+
+      {% if block.settings.hide-text == true %}
+      .section-wrapper-{{ section.id }} .image-wrapper-{{ block.id }} .image .left-image,
+      .section-wrapper-{{ section.id }} .image-wrapper-{{ block.id }} .image .right-image{
+        height: 90%;
+        width: 100%;
+      }
+      {% endif %}
      @media screen and (max-width: 600px) {
       .section-wrapper-{{ section.id }} .image-wrapper-{{ block.id }}.medium{
         flex-wrap: wrap;
