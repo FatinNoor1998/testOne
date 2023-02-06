@@ -78,40 +78,35 @@
       .section-wrapper-{{ section.id }} .image-wrapper-{{ block.id }}.row-reverse{
         flex-direction: row-reverse;
       }
-      .section-wrapper-{{ section.id }} .image-wrapper-{{ block.id }}.small .image{       
+      .section-wrapper-{{ section.id }} .image-wrapper-{{ block.id }} .image{       
         flex: 1;
-        {% comment %} height: 375px; {% endcomment %}
-      }
-      .section-wrapper-{{ section.id }} .image-wrapper-{{ block.id }}.medium .image{       
-        flex: 1;
-        {% comment %} height: 605px; {% endcomment %}
       }
       .section-wrapper-{{ section.id }} .image-wrapper-{{ block.id }} .left-image-wrapper .left-image{
         background: {{ block.settings.background-color }};
         display: flex;
         justify-content: center;
         align-items: center;
-        height: 95%;
+        height: 100%;
+        line-height: 0px;
       }
-      .section-wrapper-{{ section.id }} .image-wrapper-{{ block.id }}.small .left-image-wrapper .left-image .inner-image-block-left{
-        width: 76%;
-        height: 74%;
+      .section-wrapper-{{ section.id }} .image-wrapper-{{ block.id }}.small .left-image-wrapper .left-image{
+         padding: 45px 36px 45px 36px;
       }
-      .section-wrapper-{{ section.id }} .image-wrapper-{{ block.id }}.medium .left-image-wrapper .left-image .inner-image-block-left{
-        width: 77%;
-        height: 76%;
+      .section-wrapper-{{ section.id }} .image-wrapper-{{ block.id }}.medium .left-image-wrapper .left-image{
+        padding: 69px 55px 69px 55px;
       }
       .section-wrapper-{{ section.id }} .image-wrapper-{{ block.id }} .left-image-wrapper .left-image .inner-image-block-left.full-image{
         width: 100%;
         height: 100%;
-        line-height: 0px;
       }
       .section-wrapper-{{ section.id }} .image-wrapper-{{ block.id }} .image .right-image{
-        height: 95%;
+        height: 100%;
       }
-      .section-wrapper-{{ section.id }} .image-wrapper-{{ block.id }} .image .right-image .inner-image-block-right
+      .section-wrapper-{{ section.id }} .image-wrapper-{{ block.id }} .image .right-image .inner-image-block-right,
+      .section-wrapper-{{ section.id }} .image-wrapper-{{ block.id }} .image .left-image .inner-image-block-left
       {
         height: 100%;
+        width: 100%;
       }
 
       .section-wrapper-{{ section.id }} .image-wrapper-{{ block.id }} .image img{
@@ -141,6 +136,12 @@
         flex-direction: column;
       }
      }
+     @media screen and (max-width: 450px){
+      .section-wrapper-{{ section.id }} .image-wrapper-{{ block.id }}.medium .left-image-wrapper .left-image{
+        padding: 50px 40px 50px 40px;
+      }
+     } 
+
 
       {% when 'spacer-block' %}
         .section-wrapper-{{ section.id }} .spacer-{{ block.id }}{
