@@ -2,7 +2,7 @@
     {% for block in section.blocks %}
       {% case block.type %}
         {% when 'image' %}
-          <div class="image-wrapper {{ block.settings.block-width }} {% if block.settings.swap == true %}row-reverse{% endif %}">
+          <div class="image-wrapper-{{ block.id }} {{ block.settings.block-width }} {% if block.settings.swap == true %}row-reverse{% endif %}">
                 <div class="left-image-wrapper image">
                    <div class="left-image">
                       <div class="inner-image-block-left {% if block.settings.full-image == true %}full-image{% endif %}">
@@ -62,65 +62,60 @@
   {% for block in section.blocks %}
     {% case block.type %}
     {% when 'image' %}
-      .section-wrapper-{{ section.id }} .image-wrapper.small{
+      .section-wrapper-{{ section.id }} .image-wrapper-{{ block.id }}.small{
         max-width: 600px;
         margin: 0 auto;
       }
-      .section-wrapper-{{ section.id }} .image-wrapper.medium{
+      .section-wrapper-{{ section.id }} .image-wrapper-{{ block.id }}.medium{
         max-width: 968px;
         margin: 0 auto;
       }
-      .section-wrapper-{{ section.id }} .image-wrapper{
+      .section-wrapper-{{ section.id }} .image-wrapper-{{ block.id }}{
         display: flex;
         justify-content: center;
         gap: {{ block.settings.gap }}px;
       }
-      .section-wrapper-{{ section.id }} .image-wrapper.row-reverse{
+      .section-wrapper-{{ section.id }} .image-wrapper-{{ block.id }}.row-reverse{
         flex-direction: row-reverse;
       }
-      .section-wrapper-{{ section.id }} .image-wrapper.small .image{       
+      .section-wrapper-{{ section.id }} .image-wrapper-{{ block.id }} .image{       
         flex: 1;
-        {% comment %} height: 375px; {% endcomment %}
       }
-      .section-wrapper-{{ section.id }} .image-wrapper.medium .image{       
-        flex: 1;
-        {% comment %} height: 605px; {% endcomment %}
-      }
-      .section-wrapper-{{ section.id }} .image-wrapper .left-image-wrapper .left-image{
+      .section-wrapper-{{ section.id }} .image-wrapper-{{ block.id }} .left-image-wrapper .left-image{
         background: {{ block.settings.background-color }};
         display: flex;
         justify-content: center;
         align-items: center;
         height: 100%;
+        line-height: 0px;
       }
-      .section-wrapper-{{ section.id }} .image-wrapper.small .left-image-wrapper .left-image .inner-image-block-left{
-        {% comment %} width: 228px;
-        height: 285px; {% endcomment %}
-
-        width: 76%;
-        height: 74%;
+      .section-wrapper-{{ section.id }} .image-wrapper-{{ block.id }}.small .left-image-wrapper .left-image{
+         padding: 45px 36px 45px 36px;
       }
-      .section-wrapper-{{ section.id }} .image-wrapper.medium .left-image-wrapper .left-image .inner-image-block-left{
-        width: 77%;
-        height: 76%;
+      .section-wrapper-{{ section.id }} .image-wrapper-{{ block.id }}.medium .left-image-wrapper .left-image{
+        padding: 69px 55px 69px 55px;
       }
-      .section-wrapper-{{ section.id }} .image-wrapper .left-image-wrapper .left-image .inner-image-block-left.full-image{
+      .section-wrapper-{{ section.id }} .image-wrapper-{{ block.id }} .left-image-wrapper .left-image .inner-image-block-left.full-image{
         width: 100%;
         height: 100%;
       }
-      .section-wrapper-{{ section.id }} .image-wrapper .image .right-image,
-      .section-wrapper-{{ section.id }} .image-wrapper .image .right-image .inner-image-block-right
-      {
+      .section-wrapper-{{ section.id }} .image-wrapper-{{ block.id }} .image .right-image{
         height: 100%;
       }
+      .section-wrapper-{{ section.id }} .image-wrapper-{{ block.id }} .image .right-image .inner-image-block-right,
+      .section-wrapper-{{ section.id }} .image-wrapper-{{ block.id }} .image .left-image .inner-image-block-left
+      {
+        height: 100%;
+        width: 100%;
+      }
 
-      .section-wrapper-{{ section.id }} .image-wrapper .image img{
+      .section-wrapper-{{ section.id }} .image-wrapper-{{ block.id }} .image img{
         width: 100%;
         height: 100%;
         object-fit: cover;
       }
 
-       .section-wrapper-{{ section.id }} .image-wrapper .image .text-block p{
+       .section-wrapper-{{ section.id }} .image-wrapper-{{ block.id }} .image .text-block p{
         font-size: {{ block.settings.font-size | append: 'px' }};
         font-family: {{ block.settings.font }};
         color: {{ block.settings.text-color }};
@@ -128,19 +123,25 @@
         line-height: 18px;
       }
 
-      .section-wrapper-{{ section.id }} .image-wrapper .image .text-block p a{
+      .section-wrapper-{{ section.id }} .image-wrapper-{{ block.id }} .image .text-block p a{
         color: {{ block.settings.text-color }};
       }
-      .section-wrapper-{{ section.id }} .image-wrapper .image .text-block.hide-text p{
+      .section-wrapper-{{ section.id }} .image-wrapper-{{ block.id }} .image .text-block.hide-text p{
         display: none;
       }
      @media screen and (max-width: 600px) {
-      .section-wrapper-{{ section.id }} .image-wrapper.medium{
+      .section-wrapper-{{ section.id }} .image-wrapper-{{ block.id }}.medium{
         flex-wrap: wrap;
         gap: 15px;
         flex-direction: column;
       }
      }
+     @media screen and (max-width: 450px){
+      .section-wrapper-{{ section.id }} .image-wrapper-{{ block.id }}.medium .left-image-wrapper .left-image{
+        padding: 50px 40px 50px 40px;
+      }
+     } 
+
 
       {% when 'spacer-block' %}
         .section-wrapper-{{ section.id }} .spacer-{{ block.id }}{
