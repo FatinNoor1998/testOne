@@ -73,21 +73,9 @@
         "template--17540903534868__33f08f80-f410-4ef0-b249-c466c80b4b1b-1674042405642b286e-0": {
           "type": "text-block",
           "settings": {
-            "block-width": "475",
+            "block-width": "medium",
             "first-column-text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eu euismod ante, quis finibus odio. Aenean scelerisque consectetur pharetra. In condimentum est eu eros malesuada aliquam. Aenean iaculis ligula a quam vehicula mattis. Nulla fringilla bibendum erat id molestie. Quisque id arcu in libero euismod rutrum sed ut libero. Nunc et dolor non ex elementum varius vel ut ligula. Sed id felis ex. Aenean tristique lobortis est, vitae consequat turpis sagittis varius. Quisque pharetra, dui ornare iaculis consectetur, magna velit condimentum nulla, non tristique nisl lorem ac risus. Cras accumsan eu est in dignissim.<\/p>",
-            "second-column-text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eu euismod ante, quis finibus odio. Aenean scelerisque consectetur pharetra. In condimentum est eu eros malesuada aliquam. Aenean iaculis ligula a quam vehicula mattis. Nulla fringilla bibendum erat id molestie. Quisque id arcu in libero euismod rutrum sed ut libero. Nunc et dolor non ex elementum varius vel ut ligula. Sed id felis ex. Aenean tristique lobortis est, vitae consequat turpis sagittis varius. Quisque pharetra, dui ornare iaculis consectetur, magna velit condimentum nulla, non tristique nisl lorem ac risus. Cras accumsan eu est in dignissim.<\/p>",
-            "font-size": 15,
-            "mobile-font-size": 12,
-            "text-color": "#000000",
-            "text-align": "left"
-          }
-        },
-        "4edd1de6-cd0a-4dc6-93cc-0232a24fc9cc": {
-          "type": "text-block",
-          "settings": {
-            "block-width": "475",
-            "first-column-text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eu euismod ante, quis finibus odio. Aenean scelerisque consectetur pharetra. In condimentum est eu eros malesuada aliquam. Aenean iaculis ligula a quam vehicula mattis. Nulla fringilla bibendum erat id molestie. Quisque id arcu in libero euismod rutrum sed ut libero. Nunc et dolor non ex elementum varius vel ut ligula. Sed id felis ex. Aenean tristique lobortis est, vitae consequat turpis sagittis varius. Quisque pharetra, dui ornare iaculis consectetur, magna velit condimentum nulla, non tristique nisl lorem ac risus. Cras accumsan eu est in dignissim.<\/p>",
-            "second-column-text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eu euismod ante, quis finibus odio. Aenean scelerisque consectetur pharetra. In condimentum est eu eros malesuada aliquam. Aenean iaculis ligula a quam vehicula mattis. Nulla fringilla bibendum erat id molestie. Quisque id arcu in libero euismod rutrum sed ut libero. Nunc et dolor non ex elementum varius vel ut ligula. Sed id felis ex. Aenean tristique lobortis est, vitae consequat turpis sagittis varius. Quisque pharetra, dui ornare iaculis consectetur, magna velit condimentum nulla, non tristique nisl lorem ac risus. Cras accumsan eu est in dignissim.<\/p>",
+            "second-column-text": "<p>Aenean ligula felis, rutrum in augue quis, consectetur porta libero. Sed eleifend arcu vel porta cursus. <\/p><p>Nunc faucibus ornare risus nec accumsan. Donec sed nisi rutrum, mattis diam a, tempus risus. Morbi at lectus elementum, laoreet orci sit amet, rutrum ipsum. Integer vel aliquet risus, sed pharetra justo. Pellentesque commodo eu quam vel hendrerit. Mauris non turpis fermentum, faucibus nulla quis, convallis nulla. Ut efficitur metus eros, quis consequat nunc tincidunt et. Quisque a mattis turpis. Sed nisl purus, malesuada.<\/p>",
             "font-size": 15,
             "mobile-font-size": 12,
             "text-color": "#000000",
@@ -96,8 +84,7 @@
         }
       },
       "block_order": [
-        "template--17540903534868__33f08f80-f410-4ef0-b249-c466c80b4b1b-1674042405642b286e-0",
-        "4edd1de6-cd0a-4dc6-93cc-0232a24fc9cc"
+        "template--17540903534868__33f08f80-f410-4ef0-b249-c466c80b4b1b-1674042405642b286e-0"
       ],
       "settings": {
       }
@@ -108,7 +95,7 @@
         "template--17540903534868__e82f6cb4-3f26-4f82-886b-b89658766ad9-167456935603fe817e-0": {
           "type": "image",
           "settings": {
-            "block-width": "medium",
+            "block-width": "small",
             "image": "shopify:\/\/shop_images\/04-10-2022-WAX1465-Square_2ab5c0f0-5eff-4119-b7db-7df313e95bfb.jpg",
             "text-content": "<p>Model wears <a href=\"\/products\/nike-crackle-print-tb-tee\" title=\"NIKE | CRACKLE PRINT TB TEE\">Whiting Shirt Cosmic Papaya Check <\/a>with Dean T Shirt Black and Pleat Trousers Black<\/p>",
             "font-size": 13,
@@ -117,277 +104,38 @@
             "text-color": "#000000",
             "text-align": "left"
           }
-        }
-      },
-      "block_order": [
-        "template--17540903534868__e82f6cb4-3f26-4f82-886b-b89658766ad9-167456935603fe817e-0"
-      ],
-      "settings": {
-      }
-    },
-    "93a9fe20-e24c-4658-8863-42270c6991af": {
-      "type": "spacer",
-      "blocks": {
-        "template--17540903534868__93a9fe20-e24c-4658-8863-42270c6991af-1674569464422dadac-0": {
-          "type": "spacer-block",
-          "settings": {
-            "spacer-height": 35
-          }
-        }
-      },
-      "block_order": [
-        "template--17540903534868__93a9fe20-e24c-4658-8863-42270c6991af-1674569464422dadac-0"
-      ],
-      "settings": {
-      }
-    },
-    "c995ca55-ba94-491c-9dda-4f400cffa065": {
-      "type": "single-image",
-      "blocks": {
-        "template--17540903534868__c995ca55-ba94-491c-9dda-4f400cffa065-167456935603fe817e-0": {
+        },
+        "9b113e2c-ceb6-4d16-ae6b-87d2df13f93d": {
           "type": "image",
           "settings": {
             "block-width": "medium",
-            "image": "shopify:\/\/shop_images\/04-10-2022-WAX1465-Square_2ab5c0f0-5eff-4119-b7db-7df313e95bfb.jpg",
-            "text-content": "<p>Model wears Whiting Shirt Cosmic Papaya Check with Dean T Shirt Black and Pleat Trousers Black<\/p>",
-            "font-size": 14,
-            "mobile-font-size": 16,
-            "font": "",
+            "image": "shopify:\/\/shop_images\/04-10-2022-WAX1465-Square.jpg",
+            "text-content": "<p>Model wears <a href=\"\/products\/nike-crackle-print-tb-tee\" title=\"NIKE | CRACKLE PRINT TB TEE\">Whiting Shirt Cosmic Papaya Check <\/a>with Dean T Shirt Black and Pleat Trousers Black<\/p>",
+            "font-size": 12,
+            "mobile-font-size": 12,
+            "font": "Helvetica, Arial, sans-serif",
             "text-color": "#000000",
             "text-align": "left"
           }
-        }
-      },
-      "block_order": [
-        "template--17540903534868__c995ca55-ba94-491c-9dda-4f400cffa065-167456935603fe817e-0"
-      ],
-      "settings": {
-      }
-    },
-    "4b4b8b9b-66aa-4625-a962-47a34395afc0": {
-      "type": "spacer",
-      "blocks": {
-        "template--17540903534868__4b4b8b9b-66aa-4625-a962-47a34395afc0-1674569464422dadac-0": {
-          "type": "spacer-block",
-          "settings": {
-            "spacer-height": 35
-          }
-        }
-      },
-      "block_order": [
-        "template--17540903534868__4b4b8b9b-66aa-4625-a962-47a34395afc0-1674569464422dadac-0"
-      ],
-      "settings": {
-      }
-    },
-    "914d6dfc-8779-43e6-b492-007775b64893": {
-      "type": "single-image",
-      "blocks": {
-        "template--17540903534868__914d6dfc-8779-43e6-b492-007775b64893-167456935603fe817e-0": {
+        },
+        "a3b96edb-705c-444f-b1f8-e06523ab9011": {
           "type": "image",
           "settings": {
-            "block-width": "medium",
-            "image": "shopify:\/\/shop_images\/04-10-2022-WAX1465-Square_2ab5c0f0-5eff-4119-b7db-7df313e95bfb.jpg",
-            "text-content": "<p>Model wears Whiting Shirt Cosmic Papaya Check with Dean T Shirt Black and Pleat Trousers Black<\/p>",
-            "font-size": 14,
-            "mobile-font-size": 16,
-            "font": "",
+            "block-width": "full",
+            "image": "shopify:\/\/shop_images\/04-10-2022-WAX1465-Square.jpg",
+            "text-content": "<p>Model wears <a href=\"\/products\/adidas-classic-backpack\" title=\"ADIDAS | CLASSIC BACKPACK\">Whiting Shirt Cosmic Papaya Check <\/a>with Dean T Shirt Black and Pleat Trousers Black<\/p>",
+            "font-size": 12,
+            "mobile-font-size": 12,
+            "font": "Helvetica, Arial, sans-serif",
             "text-color": "#000000",
             "text-align": "center"
           }
         }
       },
       "block_order": [
-        "template--17540903534868__914d6dfc-8779-43e6-b492-007775b64893-167456935603fe817e-0"
-      ],
-      "settings": {
-      }
-    },
-    "2efc624e-061b-497b-b23a-750ea9d78ba5": {
-      "type": "spacer",
-      "blocks": {
-        "template--17540903534868__2efc624e-061b-497b-b23a-750ea9d78ba5-1674569464422dadac-0": {
-          "type": "spacer-block",
-          "settings": {
-            "spacer-height": 35
-          }
-        }
-      },
-      "block_order": [
-        "template--17540903534868__2efc624e-061b-497b-b23a-750ea9d78ba5-1674569464422dadac-0"
-      ],
-      "settings": {
-      }
-    },
-    "f1088849-632e-47b3-9fe3-1cd8678520f0": {
-      "type": "image-section",
-      "disabled": true,
-      "settings": {
-      }
-    },
-    "096f5e82-a588-4008-b695-394b4cdb317d": {
-      "type": "double-image-text",
-      "blocks": {
-        "template--17540903534868__096f5e82-a588-4008-b695-394b4cdb317d-1674485400c993eb83-0": {
-          "type": "image",
-          "settings": {
-            "first-image": "shopify:\/\/shop_images\/04-10-2022-WAX1307.jpg",
-            "second-image": "shopify:\/\/shop_images\/04-10-2022-WAX1517.jpg",
-            "block-width": "small",
-            "full-image": true,
-            "swap": false,
-            "gap": 0,
-            "background-color": "#c1beb4",
-            "text-first": "<p>hello <a href=\"\/collections\/all\" target=\"_blank\" title=\"All products\">first<\/a><\/p>",
-            "text-second": "<p>hello <a href=\"\/collections\/all\" target=\"_blank\" title=\"All products\">second<\/a><\/p>",
-            "font": "",
-            "font-size": 16,
-            "text-color": "#000000",
-            "hide-text": true,
-            "text-align": "center"
-          }
-        },
-        "template--17540903534868__096f5e82-a588-4008-b695-394b4cdb317d-1674485400c993eb83-1": {
-          "type": "spacer-block",
-          "settings": {
-            "spacer-height": 40
-          }
-        }
-      },
-      "block_order": [
-        "template--17540903534868__096f5e82-a588-4008-b695-394b4cdb317d-1674485400c993eb83-0",
-        "template--17540903534868__096f5e82-a588-4008-b695-394b4cdb317d-1674485400c993eb83-1"
-      ],
-      "settings": {
-      }
-    },
-    "ef0b94e8-fa46-4d58-b683-d4aa1bbed932": {
-      "type": "double-image-text",
-      "blocks": {
-        "template--17540903534868__ef0b94e8-fa46-4d58-b683-d4aa1bbed932-1674569648713189b2-0": {
-          "type": "image",
-          "settings": {
-            "first-image": "shopify:\/\/shop_images\/04-10-2022-WAX1307.jpg",
-            "second-image": "shopify:\/\/shop_images\/04-10-2022-WAX1517.jpg",
-            "block-width": "small",
-            "full-image": false,
-            "swap": true,
-            "gap": 0,
-            "background-color": "#c1beb4",
-            "text-first": "<p>hello<\/p>",
-            "text-second": "<p>hello<\/p>",
-            "font": "",
-            "font-size": 14,
-            "text-color": "#000000",
-            "hide-text": true,
-            "text-align": "left"
-          }
-        },
-        "template--17540903534868__ef0b94e8-fa46-4d58-b683-d4aa1bbed932-1674569648713189b2-1": {
-          "type": "spacer-block",
-          "settings": {
-            "spacer-height": 30
-          }
-        }
-      },
-      "block_order": [
-        "template--17540903534868__ef0b94e8-fa46-4d58-b683-d4aa1bbed932-1674569648713189b2-0",
-        "template--17540903534868__ef0b94e8-fa46-4d58-b683-d4aa1bbed932-1674569648713189b2-1"
-      ],
-      "settings": {
-      }
-    },
-    "559305e9-a977-47e8-836d-a608fc91e80a": {
-      "type": "double-image-text",
-      "blocks": {
-        "template--17540903534868__559305e9-a977-47e8-836d-a608fc91e80a-1674569648713189b2-0": {
-          "type": "image",
-          "settings": {
-            "first-image": "shopify:\/\/shop_images\/04-10-2022-WAX1307.jpg",
-            "second-image": "shopify:\/\/shop_images\/04-10-2022-WAX1342.jpg",
-            "block-width": "small",
-            "full-image": true,
-            "swap": false,
-            "gap": 16,
-            "background-color": "#c1beb4",
-            "text-first": "<p>hello<\/p>",
-            "text-second": "<p>hello<\/p>",
-            "font": "",
-            "font-size": 14,
-            "text-color": "#000000",
-            "hide-text": true,
-            "text-align": "left"
-          }
-        },
-        "template--17540903534868__559305e9-a977-47e8-836d-a608fc91e80a-1674569648713189b2-1": {
-          "type": "spacer-block",
-          "settings": {
-            "spacer-height": 30
-          }
-        }
-      },
-      "block_order": [
-        "template--17540903534868__559305e9-a977-47e8-836d-a608fc91e80a-1674569648713189b2-0",
-        "template--17540903534868__559305e9-a977-47e8-836d-a608fc91e80a-1674569648713189b2-1"
-      ],
-      "settings": {
-      }
-    },
-    "ddeeec38-0605-44cb-a301-75064ec9d2e5": {
-      "type": "double-image-text",
-      "blocks": {
-        "template--17540903534868__ddeeec38-0605-44cb-a301-75064ec9d2e5-1674569648713189b2-0": {
-          "type": "image",
-          "settings": {
-            "first-image": "shopify:\/\/shop_images\/04-10-2022-WAX1517.jpg",
-            "second-image": "shopify:\/\/shop_images\/04-10-2022-WAX1334.jpg",
-            "block-width": "medium",
-            "full-image": false,
-            "swap": false,
-            "gap": 16,
-            "background-color": "#c1beb4",
-            "text-first": "<p>hello<\/p>",
-            "text-second": "<p>hello<\/p>",
-            "font": "",
-            "font-size": 14,
-            "text-color": "#000000",
-            "hide-text": true,
-            "text-align": "left"
-          }
-        },
-        "template--17540903534868__ddeeec38-0605-44cb-a301-75064ec9d2e5-1674569648713189b2-1": {
-          "type": "spacer-block",
-          "settings": {
-            "spacer-height": 45
-          }
-        }
-      },
-      "block_order": [
-        "template--17540903534868__ddeeec38-0605-44cb-a301-75064ec9d2e5-1674569648713189b2-0",
-        "template--17540903534868__ddeeec38-0605-44cb-a301-75064ec9d2e5-1674569648713189b2-1"
-      ],
-      "settings": {
-      }
-    },
-    "02ef450f-464b-438d-869c-4272c8f127a7": {
-      "type": "single_column_text",
-      "blocks": {
-        "template--17540903534868__02ef450f-464b-438d-869c-4272c8f127a7-16745698980cbb05df-0": {
-          "type": "text-block",
-          "settings": {
-            "block-width": "small",
-            "text-content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam mollis, nulla at tempus feugiat, ligula diam tempus velit, quis semper urna sapien eu nunc. Nullam volutpat tellus ac quam convallis, sit amet tincidunt turpis hendrerit. Donec id blandit enim. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Integer sed ipsum et diam tincidunt scelerisque. Integer gravida quam nibh, nec sollicitudin metus mollis nec. In vulputate, neque id fermentum scelerisque, nisi neque porttitor velit, id scelerisque purus libero ut nulla. Praesent fringilla convallis egestas. Sed maximus malesuada nibh sed ultrices.<\/p>",
-            "font-size": 20,
-            "mobile-font-size": 16,
-            "line-height": 30,
-            "mobile-line-height": 30,
-            "font": "",
-            "text-color": "#000000"
-          }
-        }
-      },
-      "block_order": [
-        "template--17540903534868__02ef450f-464b-438d-869c-4272c8f127a7-16745698980cbb05df-0"
+        "template--17540903534868__e82f6cb4-3f26-4f82-886b-b89658766ad9-167456935603fe817e-0",
+        "9b113e2c-ceb6-4d16-ae6b-87d2df13f93d",
+        "a3b96edb-705c-444f-b1f8-e06523ab9011"
       ],
       "settings": {
       }
@@ -399,10 +147,10 @@
           "type": "image",
           "settings": {
             "first-image": "shopify:\/\/shop_images\/04-10-2022-WAX1307.jpg",
-            "second-image": "shopify:\/\/shop_images\/04-10-2022-WAX1342.jpg",
-            "block-width": "medium",
-            "full-image": false,
-            "swap": true,
+            "second-image": "shopify:\/\/shop_images\/04-10-2022-WAX1517.jpg",
+            "block-width": "small",
+            "full-image": true,
+            "swap": false,
             "gap": 0,
             "background-color": "#c1beb4",
             "text-first": "<p>hello<\/p>",
@@ -419,42 +167,238 @@
           "settings": {
             "spacer-height": 30
           }
+        },
+        "13a6b322-0e20-422d-ad4f-64c9d7146f7f": {
+          "type": "image",
+          "settings": {
+            "first-image": "shopify:\/\/shop_images\/04-10-2022-WAX1517.jpg",
+            "second-image": "shopify:\/\/shop_images\/04-10-2022-WAX1307.jpg",
+            "block-width": "small",
+            "full-image": false,
+            "swap": true,
+            "gap": 0,
+            "background-color": "#c1beb4",
+            "text-first": "<p>hello<\/p>",
+            "text-second": "<p>hello<\/p>",
+            "font": "Helvetica, Arial, sans-serif",
+            "font-size": 14,
+            "text-color": "#000000",
+            "hide-text": true,
+            "text-align": "left"
+          }
+        },
+        "1a6df497-4373-433c-ad66-91ad12631e17": {
+          "type": "spacer-block",
+          "settings": {
+            "spacer-height": 30
+          }
+        },
+        "de66bb85-c7fa-400c-912e-e601bcfa4411": {
+          "type": "image",
+          "settings": {
+            "first-image": "shopify:\/\/shop_images\/04-10-2022-WAX1517.jpg",
+            "second-image": "shopify:\/\/shop_images\/04-10-2022-WAX1307.jpg",
+            "block-width": "small",
+            "full-image": false,
+            "swap": false,
+            "gap": 0,
+            "background-color": "#c1beb4",
+            "text-first": "<p>Model wears <a href=\"\/collections\/adidas\" title=\"ADIDAS\">Whiting Shirt Cosmic Papaya Check <\/a>with Dean T Shirt Black and Pleat Trousers Black<\/p>",
+            "text-second": "<p>Model wears Oz Shirt Grey and Yellow Check with F<a href=\"\/collections\/caps\" title=\"Caps\">isherman Beanie Khaki and Pleat<\/a> Trousers Black<\/p>",
+            "font": "Helvetica, Arial, sans-serif",
+            "font-size": 12,
+            "text-color": "#000000",
+            "hide-text": false,
+            "text-align": "left"
+          }
+        },
+        "9a8cd3b2-06b2-480e-8065-2e0285c4cf84": {
+          "type": "spacer-block",
+          "settings": {
+            "spacer-height": 60
+          }
+        },
+        "941f2e27-c59b-41ab-9c82-3eb6cb92b7ac": {
+          "type": "image",
+          "settings": {
+            "first-image": "shopify:\/\/shop_images\/04-10-2022-WAX1307.jpg",
+            "second-image": "shopify:\/\/shop_images\/04-10-2022-WAX1334.jpg",
+            "block-width": "small",
+            "full-image": true,
+            "swap": false,
+            "gap": 20,
+            "background-color": "#c1beb4",
+            "text-first": "<p>hello<\/p>",
+            "text-second": "<p>hello<\/p>",
+            "font": "Helvetica, Arial, sans-serif",
+            "font-size": 14,
+            "text-color": "#000000",
+            "hide-text": true,
+            "text-align": "left"
+          }
+        },
+        "9ac04cd5-565e-459a-950f-809fb61d56a8": {
+          "type": "spacer-block",
+          "settings": {
+            "spacer-height": 50
+          }
         }
       },
       "block_order": [
         "template--17540903534868__40758450-9a8e-441c-8728-210b8be980ef-1674569648713189b2-0",
-        "template--17540903534868__40758450-9a8e-441c-8728-210b8be980ef-1674569648713189b2-1"
+        "template--17540903534868__40758450-9a8e-441c-8728-210b8be980ef-1674569648713189b2-1",
+        "13a6b322-0e20-422d-ad4f-64c9d7146f7f",
+        "1a6df497-4373-433c-ad66-91ad12631e17",
+        "de66bb85-c7fa-400c-912e-e601bcfa4411",
+        "9a8cd3b2-06b2-480e-8065-2e0285c4cf84",
+        "941f2e27-c59b-41ab-9c82-3eb6cb92b7ac",
+        "9ac04cd5-565e-459a-950f-809fb61d56a8"
       ],
       "settings": {
       }
     },
-    "646a7249-a971-4384-8242-cdbdba7e2f22": {
+    "f2cf8e7a-a865-4aae-a855-4c528a76344c": {
+      "type": "double-image-text",
+      "blocks": {
+        "template--17540903534868__f2cf8e7a-a865-4aae-a855-4c528a76344c-1675423268eeb067b0-0": {
+          "type": "image",
+          "settings": {
+            "first-image": "shopify:\/\/shop_images\/04-10-2022-WAX1307.jpg",
+            "second-image": "shopify:\/\/shop_images\/04-10-2022-WAX1517.jpg",
+            "block-width": "medium",
+            "full-image": true,
+            "swap": false,
+            "gap": 0,
+            "background-color": "#c1beb4",
+            "text-first": "<p>hello<\/p>",
+            "text-second": "<p>hello<\/p>",
+            "font": "",
+            "font-size": 14,
+            "text-color": "#000000",
+            "hide-text": true,
+            "text-align": "left"
+          }
+        },
+        "template--17540903534868__f2cf8e7a-a865-4aae-a855-4c528a76344c-1675423268eeb067b0-1": {
+          "type": "spacer-block",
+          "settings": {
+            "spacer-height": 30
+          }
+        },
+        "1f51ae88-22cc-4153-ac0a-1f8455d862fb": {
+          "type": "image",
+          "settings": {
+            "first-image": "shopify:\/\/shop_images\/04-10-2022-WAX1307.jpg",
+            "second-image": "shopify:\/\/shop_images\/04-10-2022-WAX1517.jpg",
+            "block-width": "medium",
+            "full-image": true,
+            "swap": false,
+            "gap": 20,
+            "background-color": "#c1beb4",
+            "text-first": "<p>hello<\/p>",
+            "text-second": "<p>hello<\/p>",
+            "font": "Helvetica, Arial, sans-serif",
+            "font-size": 14,
+            "text-color": "#000000",
+            "hide-text": true,
+            "text-align": "left"
+          }
+        }
+      },
+      "block_order": [
+        "template--17540903534868__f2cf8e7a-a865-4aae-a855-4c528a76344c-1675423268eeb067b0-0",
+        "template--17540903534868__f2cf8e7a-a865-4aae-a855-4c528a76344c-1675423268eeb067b0-1",
+        "1f51ae88-22cc-4153-ac0a-1f8455d862fb"
+      ],
+      "settings": {
+      }
+    },
+    "8d5bb6eb-1c39-4b9b-8dcb-dd776bcd17f6": {
       "type": "single_column_text",
       "blocks": {
-        "template--17540903534868__646a7249-a971-4384-8242-cdbdba7e2f22-16745698980cbb05df-0": {
+        "template--17540903534868__8d5bb6eb-1c39-4b9b-8dcb-dd776bcd17f6-16754233707dbc08af-0": {
           "type": "text-block",
           "settings": {
-            "block-width": "small",
-            "text-content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eu euismod ante, quis finibus odio. Aenean scelerisque consectetur pharetra. In condimentum est eu eros malesuada aliquam.<\/p>",
-            "font-size": 22,
+            "block-width": "medium",
+            "text-content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam mollis, nulla at tempus feugiat, ligula diam tempus velit, quis semper urna sapien eu nunc. Nullam volutpat tellus ac quam convallis, sit amet tincidunt turpis hendrerit. Donec id blandit enim. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Integer sed ipsum et diam tincidunt scelerisque. Integer gravida quam nibh, nec sollicitudin metus mollis nec. In vulputate, neque id fermentum scelerisque, nisi neque porttitor velit, id scelerisque purus libero ut nulla. Praesent fringilla convallis egestas. Sed maximus malesuada nibh sed ultrices.<\/p>",
+            "font-size": 24,
             "mobile-font-size": 16,
             "line-height": 30,
             "mobile-line-height": 30,
-            "font": "",
+            "font": "Georgia, Utopia, 'Times New Roman', Times, serif",
             "text-color": "#000000"
           }
         }
       },
       "block_order": [
-        "template--17540903534868__646a7249-a971-4384-8242-cdbdba7e2f22-16745698980cbb05df-0"
+        "template--17540903534868__8d5bb6eb-1c39-4b9b-8dcb-dd776bcd17f6-16754233707dbc08af-0"
       ],
       "settings": {
       }
     },
-    "3bf84eaa-0c83-4c21-8362-8c49c89c7481": {
+    "d3ad2421-aa56-4431-b03d-18f0c9020de0": {
       "type": "double-image-text",
       "blocks": {
-        "template--17540903534868__3bf84eaa-0c83-4c21-8362-8c49c89c7481-1674569648713189b2-0": {
+        "template--17540903534868__d3ad2421-aa56-4431-b03d-18f0c9020de0-1675423268eeb067b0-0": {
+          "type": "image",
+          "settings": {
+            "first-image": "shopify:\/\/shop_images\/04-10-2022-WAX1307.jpg",
+            "second-image": "shopify:\/\/shop_images\/04-10-2022-WAX1517.jpg",
+            "block-width": "medium",
+            "full-image": false,
+            "swap": true,
+            "gap": 0,
+            "background-color": "#c1beb4",
+            "text-first": "<p>hello<\/p>",
+            "text-second": "<p>hello<\/p>",
+            "font": "",
+            "font-size": 14,
+            "text-color": "#000000",
+            "hide-text": true,
+            "text-align": "left"
+          }
+        },
+        "template--17540903534868__d3ad2421-aa56-4431-b03d-18f0c9020de0-1675423268eeb067b0-1": {
+          "type": "spacer-block",
+          "settings": {
+            "spacer-height": 30
+          }
+        }
+      },
+      "block_order": [
+        "template--17540903534868__d3ad2421-aa56-4431-b03d-18f0c9020de0-1675423268eeb067b0-0",
+        "template--17540903534868__d3ad2421-aa56-4431-b03d-18f0c9020de0-1675423268eeb067b0-1"
+      ],
+      "settings": {
+      }
+    },
+    "81eb3a00-fce8-4329-a211-00d92cb7c4df": {
+      "type": "single_column_text",
+      "blocks": {
+        "template--17540903534868__81eb3a00-fce8-4329-a211-00d92cb7c4df-16754233707dbc08af-0": {
+          "type": "text-block",
+          "settings": {
+            "block-width": "small",
+            "text-content": "<p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam mollis, nulla at tempus feugiat, ligula diam tempus velit, quis semper urna sapien eu nunc. Nullam volutpat tellus ac quam convallis, sit amet tincidunt turpis hendrerit. Donec id blandit enim. Sed maximus malesuada nibh sed ultrices.”<\/p>",
+            "font-size": 24,
+            "mobile-font-size": 16,
+            "line-height": 30,
+            "mobile-line-height": 30,
+            "font": "Georgia, Utopia, 'Times New Roman', Times, serif",
+            "text-color": "#000000"
+          }
+        }
+      },
+      "block_order": [
+        "template--17540903534868__81eb3a00-fce8-4329-a211-00d92cb7c4df-16754233707dbc08af-0"
+      ],
+      "settings": {
+      }
+    },
+    "81ffcc9a-9521-4df9-851c-d55a67c74f84": {
+      "type": "double-image-text",
+      "blocks": {
+        "template--17540903534868__81ffcc9a-9521-4df9-851c-d55a67c74f84-1675423268eeb067b0-0": {
           "type": "image",
           "settings": {
             "first-image": "shopify:\/\/shop_images\/04-10-2022-WAX1307.jpg",
@@ -464,41 +408,242 @@
             "swap": false,
             "gap": 0,
             "background-color": "#c1beb4",
-            "text-first": "<p>Model wears <a href=\"\/products\/nike-crackle-print-tb-tee\" title=\"NIKE | CRACKLE PRINT TB TEE\">Whiting Shirt Cosmic Papaya Check<\/a> with Dean T Shirt Black and Pleat Trousers Black<\/p>",
-            "text-second": "<p>Model wears Oz Shirt Grey and Yellow Check with <a href=\"\/products\/adidas-classic-backpack\" title=\"ADIDAS | CLASSIC BACKPACK\">Fisherman Beanie Khaki <\/a>and Pleat Trousers Black<\/p>",
+            "text-first": "<p>Model wears <a href=\"\/collections\/flex-fit\" title=\"FLEX FIT\">Whiting Shirt Cosmic Papaya Check <\/a>with Dean T Shirt Black and Pleat Trousers Black<\/p>",
+            "text-second": "<p>Model wears Whiting Shirt Cosmic Papaya Check with <a href=\"\/products\/converse-chuck-taylor-all-star-lo\" title=\"CONVERSE | CHUCK TAYLOR ALL STAR LO\">Dean T Shirt <\/a>Black and Pleat Trousers Black<\/p>",
             "font": "",
             "font-size": 14,
-            "text-color": "#121212",
+            "text-color": "#000000",
             "hide-text": false,
             "text-align": "left"
           }
         },
-        "template--17540903534868__3bf84eaa-0c83-4c21-8362-8c49c89c7481-1674569648713189b2-1": {
+        "template--17540903534868__81ffcc9a-9521-4df9-851c-d55a67c74f84-1675423268eeb067b0-1": {
           "type": "spacer-block",
           "settings": {
-            "spacer-height": 100
+            "spacer-height": 65
           }
         }
       },
       "block_order": [
-        "template--17540903534868__3bf84eaa-0c83-4c21-8362-8c49c89c7481-1674569648713189b2-0",
-        "template--17540903534868__3bf84eaa-0c83-4c21-8362-8c49c89c7481-1674569648713189b2-1"
+        "template--17540903534868__81ffcc9a-9521-4df9-851c-d55a67c74f84-1675423268eeb067b0-0",
+        "template--17540903534868__81ffcc9a-9521-4df9-851c-d55a67c74f84-1675423268eeb067b0-1"
       ],
       "settings": {
       }
     },
-    "22bcb4fe-ea57-4636-a7ce-319dc6254681": {
-      "type": "spacer",
+    "7370fd3a-5042-46d8-ae64-ee3b29eff77c": {
+      "type": "single-column-text-image-style-1",
       "blocks": {
-        "template--17540903534868__22bcb4fe-ea57-4636-a7ce-319dc6254681-1674569464422dadac-0": {
+        "template--17540903534868__7370fd3a-5042-46d8-ae64-ee3b29eff77c-1675423655f2b8b0a2-0": {
+          "type": "image-text",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/04-10-2022-WAX1307.jpg",
+            "swap": false,
+            "custom-image-width": 55,
+            "description-content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eu euismod ante, quis finibus odio. Aenean scelerisque consectetur pharetra. In condimentum est eu eros malesuada aliquam. Aenean iaculis ligula a quam vehicula mattis. Nulla fringilla bibendum erat id molestie. Quisque id arcu in libero euismod rutrum sed ut libero. Nunc et dolor non ex elementum varius vel ut ligula. Sed id felis ex. Aenean tristique lobortis est, vitae consequat turpis sagittis varius. Quisque pharetra, dui ornare iaculis consectetur, magna velit condimentum nulla, non tristique nisl lorem ac risus. Cras accumsan eu est in dignissim. Aenean ligula felis, rutrum in augue quis, consectetur porta libero. Nunc faucibus ornare risus nec accumsan. Donec sed nisi rutrum, mattis diam a, tempus risus. Morbi at lectus elementum, laoreet orci sit amet, rutrum ipsum. Integer vel aliquet risus, sed pharetra justo. Pellentesque commodo eu quam vel hendrerit. Mauris non turpis fermentum, faucibus nulla quis, convallis nulla. Ut efficitur metus eros, quis consequat nunc tincidunt et. Sed eleifend arcu vel porta cursus. Mauris ultrices mauris vel lacus hendrerit sodales. Quisque a mattis turpis. Sed nisl purus, malesuada ac ultricies iaculis, iaculis id tellus. Morbi hendrerit ipsum sit amet lacus convallis tincidunt. Praesent quis libero rutrum, pharetra ex non, tincidunt justo. Nulla facilisi.<\/p>",
+            "text-align": "left",
+            "description-font-size": 16,
+            "description-mobile-font-size": 16,
+            "description-font": "",
+            "description-text-color": "#000000"
+          }
+        },
+        "5649bc5c-444e-4a46-ace2-cce28c07c8d2": {
           "type": "spacer-block",
           "settings": {
-            "spacer-height": 45
+            "spacer-height": 55
+          }
+        },
+        "df38ff5e-9b0b-4455-8a0b-4204c49c6501": {
+          "type": "image-text",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/04-10-2022-WAX1307.jpg",
+            "swap": true,
+            "custom-image-width": 50,
+            "description-content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eu euismod ante, quis finibus odio. Aenean scelerisque consectetur pharetra. In condimentum est eu eros malesuada aliquam. Aenean iaculis ligula a quam vehicula mattis. Nulla fringilla bibendum erat id molestie. Quisque id arcu in libero euismod rutrum sed ut libero. Nunc et dolor non ex elementum varius vel ut ligula. Sed id felis ex. <\/p><p>Aenean tristique lobortis est, vitae consequat turpis sagittis varius. Quisque pharetra, dui ornare iaculis consectetur, magna velit condimentum nulla, non tristique nisl lorem ac risus. Cras accumsan eu est in dignissim. Aenean ligula felis, rutrum in augue quis, consectetur porta libero. Nunc faucibus ornare risus nec accumsan. Donec sed nisi rutrum, mattis diam a, tempus risus. Morbi at lectus elementum, laoreet orci sit amet, rutrum ipsum. Integer vel aliquet risus, sed pharetra justo. Pellentesque commodo eu quam vel hendrerit. Mauris non turpis fermentum, faucibus nulla quis, convallis nulla. Ut efficitur metus eros, quis consequat nunc tincidunt et. Sed eleifend arcu vel porta cursus. Mauris ultrices mauris vel lacus hendrerit sodales. Quisque a mattis turpis. Sed nisl purus, malesuada ac ultricies iaculis, iaculis id tellus. Morbi hendrerit ipsum sit amet lacus convallis tincidunt. Praesent quis libero rutrum, pharetra ex non, tincidunt justo. Nulla facilisi.<\/p>",
+            "text-align": "left",
+            "description-font-size": 16,
+            "description-mobile-font-size": 16,
+            "description-font": "Helvetica, Arial, sans-serif",
+            "description-text-color": "#000000"
           }
         }
       },
       "block_order": [
-        "template--17540903534868__22bcb4fe-ea57-4636-a7ce-319dc6254681-1674569464422dadac-0"
+        "template--17540903534868__7370fd3a-5042-46d8-ae64-ee3b29eff77c-1675423655f2b8b0a2-0",
+        "5649bc5c-444e-4a46-ace2-cce28c07c8d2",
+        "df38ff5e-9b0b-4455-8a0b-4204c49c6501"
+      ],
+      "settings": {
+        "section-width": "small"
+      }
+    },
+    "6fcb05aa-7d7b-402e-8046-926230ce8ce9": {
+      "type": "single-column-text-image-style-2",
+      "blocks": {
+        "template--17540903534868__6fcb05aa-7d7b-402e-8046-926230ce8ce9-167542449192ae1bcc-0": {
+          "type": "image-text",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/04-10-2022-WAX1307.jpg",
+            "swap": false,
+            "align-self": "center",
+            "text-align": "left",
+            "background-color": "#e4e4c9",
+            "heading": "<p><strong>Whiting Overshirt<\/strong><\/p>",
+            "heading-font-size": 24,
+            "heading-font-size-mobile": 16,
+            "heading-font": "",
+            "heading-color": "#121212",
+            "description-content": "<p>Whiting Overshirt Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eu euismod ante, quis finibus odio. Aenean scelerisque consectetur pharetra. In condimentum est eu eros malesuada aliquam. Aenean iaculis ligula a quam vehicula mattis. Nulla fringilla bibendum erat id molestie. Quisque id arcu in libero euismod rutrum sed ut libero. <\/p><p>Nunc et dolor non ex elementum varius vel ut ligula. Sed id felis ex. Aenean tristique lobortis est, vitae consequat turpis sagittis varius. Quisque pharetra, dui ornare iaculis consectetur, magna velit condimentum nulla, non tristique nisl lorem ac risus. Cras accumsan eu est in dignissim. Aenean ligula felis, rutrum in augue quis, consectetur porta libero.<\/p>",
+            "description-font-size": 15,
+            "description-mobile-font-size": 16,
+            "description-font": "",
+            "description-text-color": "#000000",
+            "hide-button": true,
+            "button-text": "Shop The Look",
+            "button-url": ""
+          }
+        },
+        "869569ab-f9eb-4e77-9500-a70d1cce3ee2": {
+          "type": "image-text",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/04-10-2022-WAX1307.jpg",
+            "swap": true,
+            "align-self": "center",
+            "text-align": "left",
+            "background-color": "#4E4E3F",
+            "heading": "<p>Whiting Overshirt<\/p>",
+            "heading-font-size": 24,
+            "heading-font-size-mobile": 16,
+            "heading-font": "Helvetica, Arial, sans-serif",
+            "heading-color": "#FFFFFF",
+            "description-content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eu euismod ante, quis finibus odio. Aenean scelerisque consectetur pharetra. In condimentum est eu eros malesuada aliquam. Aenean iaculis ligula a quam vehicula mattis. Nulla fringilla bibendum erat id molestie. Quisque id arcu in libero euismod rutrum sed ut libero. <\/p><p>Nunc et dolor non ex elementum varius vel ut ligula. Sed id felis ex. Aenean tristique lobortis est, vitae consequat.<\/p>",
+            "description-font-size": 16,
+            "description-mobile-font-size": 16,
+            "description-font": "Helvetica, Arial, sans-serif",
+            "description-text-color": "#000000",
+            "hide-button": false,
+            "button-text": "Shop The Look",
+            "button-url": ""
+          }
+        },
+        "5b1bfd65-8503-4750-b7aa-09a407e82349": {
+          "type": "image-text",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/04-10-2022-WAX1307.jpg",
+            "swap": false,
+            "align-self": "center",
+            "text-align": "left",
+            "background-color": "#4E4E3F",
+            "heading": "<p>Whiting Overshirt<\/p>",
+            "heading-font-size": 24,
+            "heading-font-size-mobile": 16,
+            "heading-font": "Helvetica, Arial, sans-serif",
+            "heading-color": "#FFFFFF",
+            "description-content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eu euismod ante, quis finibus odio. Aenean scelerisque consectetur pharetra. In condimentum est eu eros malesuada aliquam. Aenean iaculis ligula a quam vehicula mattis. <\/p><p>Nulla fringilla bibendum erat id molestie. Quisque id arcu in libero euismod rutrum sed ut libero. Nunc et dolor non ex elementum varius vel ut ligula. Sed id felis ex. Aenean tristique lobortis est, vitae consequat turpis sagittis varius. Quisque pharetra, dui ornare iaculis consectetur, magna velit condimentum nulla, non tristique nisl lorem ac risus. Cras accumsan eu est in dignissim. Aenean ligula felis, rutrum in augue quis, consectetur porta libero.<\/p>",
+            "description-font-size": 16,
+            "description-mobile-font-size": 16,
+            "description-font": "Helvetica, Arial, sans-serif",
+            "description-text-color": "#000000",
+            "hide-button": false,
+            "button-text": "Shop The Look",
+            "button-url": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--17540903534868__6fcb05aa-7d7b-402e-8046-926230ce8ce9-167542449192ae1bcc-0",
+        "869569ab-f9eb-4e77-9500-a70d1cce3ee2",
+        "5b1bfd65-8503-4750-b7aa-09a407e82349"
+      ],
+      "settings": {
+        "section-width": "small"
+      }
+    },
+    "f031858b-9d0c-4d04-b1a3-3243a2963621": {
+      "type": "single-column-text-image-style-1",
+      "blocks": {
+        "e61e2c69-974b-4c8e-bdcf-06256d959365": {
+          "type": "spacer-block",
+          "settings": {
+            "spacer-height": 75
+          }
+        },
+        "template--17540903534868__f031858b-9d0c-4d04-b1a3-3243a2963621-167542475997dcd76f-0": {
+          "type": "image-text",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/04-10-2022-WAX1465-Square_2ab5c0f0-5eff-4119-b7db-7df313e95bfb.jpg",
+            "swap": false,
+            "custom-image-width": 55,
+            "description-content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eu euismod ante, quis finibus odio. Aenean scelerisque consectetur pharetra. In condimentum est eu eros malesuada aliquam. Aenean iaculis ligula a quam vehicula mattis. Nulla fringilla bibendum erat id molestie. Quisque id arcu in libero euismod rutrum sed ut libero. Nunc et dolor non ex elementum varius vel ut ligula. Sed id felis ex. Aenean tristique lobortis est, vitae consequat turpis sagittis varius. Quisque pharetra, dui ornare iaculis consectetur, magna velit condimentum nulla, non tristique nisl lorem ac risus. Cras accumsan eu est in dignissim. Aenean ligula felis, rutrum in augue quis, consectetur porta libero. Nunc faucibus ornare risus nec accumsan. Donec sed nisi rutrum, mattis diam a, tempus risus. Morbi at lectus elementum, laoreet orci sit amet, rutrum ipsum. Integer vel aliquet risus, sed pharetra justo. Pellentesque commodo eu quam vel hendrerit. Mauris non turpis fermentum, faucibus nulla quis, convallis nulla. Ut efficitur metus eros, quis consequat nunc tincidunt et. Sed eleifend arcu vel porta cursus. Mauris ultrices mauris vel lacus hendrerit sodales. Quisque a mattis turpis. Sed nisl purus, malesuada ac ultricies iaculis, iaculis id tellus. Morbi hendrerit ipsum sit amet lacus convallis tincidunt. Praesent quis libero rutrum, pharetra ex non, tincidunt justo. Nulla facilisi.<\/p>",
+            "text-align": "left",
+            "description-font-size": 16,
+            "description-mobile-font-size": 16,
+            "description-font": "",
+            "description-text-color": "#000000"
+          }
+        },
+        "9046d3fc-cab7-450f-8159-9bbe17619089": {
+          "type": "spacer-block",
+          "settings": {
+            "spacer-height": 30
+          }
+        },
+        "46e06a52-a9b0-4881-ace9-7c2e1c0c19ee": {
+          "type": "image-text",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/04-10-2022-WAX1465-Square_2ab5c0f0-5eff-4119-b7db-7df313e95bfb.jpg",
+            "swap": true,
+            "custom-image-width": 65,
+            "description-content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eu euismod ante, quis finibus odio. Aenean scelerisque consectetur pharetra. In condimentum est eu eros malesuada aliquam. Aenean iaculis ligula a quam vehicula mattis. Nulla fringilla bibendum erat id molestie. Quisque id arcu in libero euismod rutrum sed ut libero. Nunc et dolor non ex elementum varius vel ut ligula. Sed id felis ex. Aenean tristique lobortis est, vitae consequat turpis sagittis varius. Quisque pharetra, dui ornare iaculis consectetur, magna velit condimentum nulla, non tristique nisl lorem ac risus. Cras accumsan eu est in dignissim. Aenean ligula felis, rutrum in augue quis, consectetur porta libero. Nunc faucibus ornare risus nec accumsan. Donec sed nisi rutrum, mattis diam a, tempus risus. Morbi at lectus elementum, laoreet orci sit amet, rutrum ipsum. Integer vel aliquet risus, sed pharetra justo. Pellentesque commodo eu quam vel hendrerit. Mauris non turpis fermentum, faucibus nulla quis, convallis nulla. Ut efficitur metus eros, quis consequat nunc tincidunt et. Sed eleifend arcu vel porta cursus. Mauris ultrices mauris vel lacus hendrerit sodales. Quisque a mattis turpis. Sed nisl purus, malesuada ac ultricies iaculis, iaculis id tellus. Morbi hendrerit ipsum sit amet lacus convallis tincidunt. Praesent quis libero rutrum, pharetra ex non, tincidunt justo. Nulla facilisi.<\/p>",
+            "text-align": "left",
+            "description-font-size": 16,
+            "description-mobile-font-size": 16,
+            "description-font": "Helvetica, Arial, sans-serif",
+            "description-text-color": "#000000"
+          }
+        }
+      },
+      "block_order": [
+        "e61e2c69-974b-4c8e-bdcf-06256d959365",
+        "template--17540903534868__f031858b-9d0c-4d04-b1a3-3243a2963621-167542475997dcd76f-0",
+        "9046d3fc-cab7-450f-8159-9bbe17619089",
+        "46e06a52-a9b0-4881-ace9-7c2e1c0c19ee"
+      ],
+      "settings": {
+        "section-width": "medium"
+      }
+    },
+    "f036a483-cd28-4173-865a-d0cdd8b667e1": {
+      "type": "double-image-style-2",
+      "blocks": {
+        "template--17540903534868__f036a483-cd28-4173-865a-d0cdd8b667e1-167542485105e80d0c-1": {
+          "type": "spacer-block",
+          "settings": {
+            "spacer-height": 30
+          }
+        },
+        "template--17540903534868__f036a483-cd28-4173-865a-d0cdd8b667e1-167542485105e80d0c-0": {
+          "type": "image",
+          "settings": {
+            "first-image": "shopify:\/\/shop_images\/04-10-2022-WAX1307.jpg",
+            "second-image": "shopify:\/\/shop_images\/04-10-2022-WAX1517.jpg",
+            "image-width": 60,
+            "block-width": "medium",
+            "swap": false,
+            "text-first": "<p>Model wears Whiting Shirt Cosmic Papaya Check with Dean T Shirt Black and Pleat Trousers Black<\/p>",
+            "text-second": "<p>Model wears Whiting Shirt Cosmic Papaya Check with Dean T Shirt Black and Pleat Trousers Black<\/p>",
+            "font": "",
+            "font-size": 12,
+            "text-color": "#000000",
+            "hide-text": false,
+            "text-align": "left"
+          }
+        }
+      },
+      "block_order": [
+        "template--17540903534868__f036a483-cd28-4173-865a-d0cdd8b667e1-167542485105e80d0c-1",
+        "template--17540903534868__f036a483-cd28-4173-865a-d0cdd8b667e1-167542485105e80d0c-0"
       ],
       "settings": {
       }
@@ -506,10 +651,10 @@
     "7de081bf-3bf8-4929-8e92-4fbafbfc43cd": {
       "type": "faq-section",
       "blocks": {
-        "4bc6bcc3-c15a-4064-91af-0c3157e90c95": {
+        "356dc0b5-ba5b-4268-95b3-a0bc8685291b": {
           "type": "spacer-block",
           "settings": {
-            "spacer-height": 55
+            "spacer-height": 30
           }
         },
         "template--17540903534868__7de081bf-3bf8-4929-8e92-4fbafbfc43cd-1674570876c89d71be-0": {
@@ -527,7 +672,7 @@
         "template--17540903534868__7de081bf-3bf8-4929-8e92-4fbafbfc43cd-1674570876c89d71be-1": {
           "type": "answer-block",
           "settings": {
-            "ans-text-content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eu euismod ante, quis finibus odio. Aenean scelerisque consectetur pharetra. In condimentum est eu eros malesuada aliquam. Aenean iaculis ligula a quam vehicula mattis. Nulla fringilla bibendum erat id molestie. Quisque id arcu in libero euismod rutrum sed ut libero. Nunc et dolor non ex elementum varius vel ut ligula. Sed id felis ex. Aenean tristique lobortis est, vitae consequat turpis sagittis varius. Quisque pharetra, dui ornare iaculis consectetur, magna velit condimentum nulla, non tristique nisl lorem ac risus. Cras accumsan eu est in dignissim. Aenean ligula felis, rutrum in augue quis, consectetur porta libero. Nunc faucibus ornare risus nec accumsan. Donec sed nisi rutrum, mattis diam a, tempus risus. Morbi at lectus elementum, laoreet orci sit amet, rutrum ipsum. Integer vel aliquet risus, sed pharetra justo. <br> Pellentesque commodo eu quam vel hendrerit. Mauris non turpis fermentum, faucibus nulla quis, convallis nulla. Ut efficitur metus eros, quis consequat nunc tincidunt et. Sed eleifend arcu vel porta cursus. Mauris ultrices mauris vel lacus hendrerit sodales. Quisque a mattis turpis. Sed nisl purus, malesuada ac ultricies iaculis, iaculis id tellus. Morbi hendrerit ipsum sit amet lacus convallis tincidunt. Praesent quis libero rutrum, pharetra ex non, tincidunt justo. Nulla facilisi.<\/p>",
+            "ans-text-content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eu euismod ante, quis finibus odio. Aenean scelerisque consectetur pharetra. In condimentum est eu eros malesuada aliquam. Aenean iaculis ligula a quam vehicula mattis. Nulla fringilla bibendum erat id molestie. Quisque id arcu in libero euismod rutrum sed ut libero. Nunc et dolor non ex elementum varius vel ut ligula. Sed id felis ex. Aenean tristique lobortis est, vitae consequat turpis sagittis varius.<\/p><p>Quisque pharetra, dui ornare iaculis consectetur, magna velit condimentum nulla, non tristique nisl lorem ac risus. Cras accumsan eu est in dignissim. Aenean ligula felis, rutrum in augue quis, consectetur porta libero. Nunc faucibus ornare risus nec accumsan. Donec sed nisi rutrum, mattis diam a, tempus risus. Morbi at lectus elementum, laoreet orci sit amet, rutrum ipsum. Integer vel aliquet risus, sed pharetra justo. <br\/> Pellentesque commodo eu quam vel hendrerit. Mauris non turpis fermentum, faucibus nulla quis, convallis nulla. Ut efficitur metus eros, quis consequat nunc tincidunt et. Sed eleifend arcu vel porta cursus. Mauris ultrices mauris vel lacus hendrerit sodales. Quisque a mattis turpis. Sed nisl purus, malesuada ac ultricies iaculis, iaculis id tellus. Morbi hendrerit ipsum sit amet lacus convallis tincidunt. Praesent quis libero rutrum, pharetra ex non, tincidunt justo. Nulla facilisi.<\/p>",
             "ans-font-size": 15,
             "ans-mobile-font-size": 15,
             "ans-line-height": 22,
@@ -588,7 +733,7 @@
         }
       },
       "block_order": [
-        "4bc6bcc3-c15a-4064-91af-0c3157e90c95",
+        "356dc0b5-ba5b-4268-95b3-a0bc8685291b",
         "template--17540903534868__7de081bf-3bf8-4929-8e92-4fbafbfc43cd-1674570876c89d71be-0",
         "template--17540903534868__7de081bf-3bf8-4929-8e92-4fbafbfc43cd-1674570876c89d71be-1",
         "a69ed7a9-ac75-44ff-b48e-b41a688a38a8",
@@ -598,6 +743,129 @@
         "4699c604-729b-48c1-9924-88137f2ccb5d"
       ],
       "settings": {
+      }
+    },
+    "64ea0c9f-9934-49c1-9ab7-0b4b30e8843d": {
+      "type": "ordered-list",
+      "blocks": {
+        "template--17540903534868__64ea0c9f-9934-49c1-9ab7-0b4b30e8843d-167542495405e987aa-0": {
+          "type": "text",
+          "settings": {
+            "list-item-title": "Young Again",
+            "title-font-size": 15,
+            "title-font": "",
+            "title-color": "#333333",
+            "list-item-description": "Hak Baker",
+            "description-font-size": 15,
+            "description-font": "",
+            "description-color": "#333333",
+            "number-color": "#E37730",
+            "line-height": 22
+          }
+        },
+        "c20790eb-9911-4280-b751-be8352a6cfb7": {
+          "type": "text",
+          "settings": {
+            "list-item-title": "Juno",
+            "title-font-size": 15,
+            "title-font": "Helvetica, Arial, sans-serif",
+            "title-color": "#333333",
+            "list-item-description": "Sam Akpro",
+            "description-font-size": 15,
+            "description-font": "Helvetica, Arial, sans-serif",
+            "description-color": "#333333",
+            "number-color": "#E37730",
+            "line-height": 22
+          }
+        },
+        "000e1360-e596-4ed6-b2a6-bad90dd8ccf9": {
+          "type": "text",
+          "settings": {
+            "list-item-title": "Dancing Girl",
+            "title-font-size": 15,
+            "title-font": "Helvetica, Arial, sans-serif",
+            "title-color": "#333333",
+            "list-item-description": "Terry Callier",
+            "description-font-size": 15,
+            "description-font": "Helvetica, Arial, sans-serif",
+            "description-color": "#333333",
+            "number-color": "#E37730",
+            "line-height": 22
+          }
+        },
+        "db2d9446-9f73-4464-a4cb-660201440cb2": {
+          "type": "text",
+          "settings": {
+            "list-item-title": "Wanna Be Adored (Madchester Remix)",
+            "title-font-size": 15,
+            "title-font": "Helvetica, Arial, sans-serif",
+            "title-color": "#333333",
+            "list-item-description": "hello world",
+            "description-font-size": 15,
+            "description-font": "Helvetica, Arial, sans-serif",
+            "description-color": "#333333",
+            "number-color": "#E37730",
+            "line-height": 22
+          }
+        },
+        "8cfd9c03-da8d-46fa-b3f8-74abeefbaf73": {
+          "type": "text",
+          "settings": {
+            "list-item-title": "Young Again",
+            "title-font-size": 15,
+            "title-font": "Helvetica, Arial, sans-serif",
+            "title-color": "#333333",
+            "list-item-description": "hello world",
+            "description-font-size": 15,
+            "description-font": "Helvetica, Arial, sans-serif",
+            "description-color": "#333333",
+            "number-color": "#E37730",
+            "line-height": 22
+          }
+        },
+        "d1f4e189-5ec8-4d55-bcd4-fe9f53d622ae": {
+          "type": "text",
+          "settings": {
+            "list-item-title": "Young Again",
+            "title-font-size": 15,
+            "title-font": "Helvetica, Arial, sans-serif",
+            "title-color": "#333333",
+            "list-item-description": "hello world",
+            "description-font-size": 15,
+            "description-font": "Helvetica, Arial, sans-serif",
+            "description-color": "#333333",
+            "number-color": "#E37730",
+            "line-height": 22
+          }
+        },
+        "61370cf3-ccee-4588-8321-2691c8ef511d": {
+          "type": "text",
+          "settings": {
+            "list-item-title": "Young Again",
+            "title-font-size": 15,
+            "title-font": "Helvetica, Arial, sans-serif",
+            "title-color": "#333333",
+            "list-item-description": "hello world",
+            "description-font-size": 15,
+            "description-font": "Helvetica, Arial, sans-serif",
+            "description-color": "#333333",
+            "number-color": "#E37730",
+            "line-height": 22
+          }
+        }
+      },
+      "block_order": [
+        "template--17540903534868__64ea0c9f-9934-49c1-9ab7-0b4b30e8843d-167542495405e987aa-0",
+        "c20790eb-9911-4280-b751-be8352a6cfb7",
+        "000e1360-e596-4ed6-b2a6-bad90dd8ccf9",
+        "db2d9446-9f73-4464-a4cb-660201440cb2",
+        "8cfd9c03-da8d-46fa-b3f8-74abeefbaf73",
+        "d1f4e189-5ec8-4d55-bcd4-fe9f53d622ae",
+        "61370cf3-ccee-4588-8321-2691c8ef511d"
+      ],
+      "settings": {
+        "section-width": "small",
+        "custom-section-width": 400
       }
     },
     "792ee03b-2f33-47de-96bb-5c1f75587cdf": {
@@ -618,113 +886,6 @@
       ],
       "settings": {
       }
-    },
-    "5ae64b78-c454-477d-a2d4-769f228776c5": {
-      "type": "ordered-list",
-      "blocks": {
-        "template--17540903534868__5ae64b78-c454-477d-a2d4-769f228776c5-16746611719e6556da-0": {
-          "type": "text",
-          "settings": {
-            "list-item-title": "Young Again",
-            "title-font-size": 15,
-            "title-font": "",
-            "title-color": "#333333",
-            "list-item-description": "hello world",
-            "description-font-size": 15,
-            "description-font": "",
-            "description-color": "#333333",
-            "number-color": "#121212",
-            "line-height": 22
-          }
-        },
-        "63726a66-5a36-4bf2-8bef-7b01df5b6190": {
-          "type": "text",
-          "settings": {
-            "list-item-title": "Young Again",
-            "title-font-size": 15,
-            "title-font": "Helvetica, Arial, sans-serif",
-            "title-color": "#333333",
-            "list-item-description": "hello world",
-            "description-font-size": 15,
-            "description-font": "Helvetica, Arial, sans-serif",
-            "description-color": "#333333",
-            "number-color": "#e37730",
-            "line-height": 22
-          }
-        },
-        "2b7d1da9-5135-4fac-864f-ed352ddb9f47": {
-          "type": "text",
-          "settings": {
-            "list-item-title": "Young Again",
-            "title-font-size": 15,
-            "title-font": "Helvetica, Arial, sans-serif",
-            "title-color": "#333333",
-            "list-item-description": "hello world",
-            "description-font-size": 15,
-            "description-font": "Helvetica, Arial, sans-serif",
-            "description-color": "#333333",
-            "number-color": "#e37730",
-            "line-height": 22
-          }
-        },
-        "54cb1a02-be95-48c9-be94-f41de6359634": {
-          "type": "text",
-          "settings": {
-            "list-item-title": "Young Again",
-            "title-font-size": 15,
-            "title-font": "Helvetica, Arial, sans-serif",
-            "title-color": "#333333",
-            "list-item-description": "hello world",
-            "description-font-size": 15,
-            "description-font": "Helvetica, Arial, sans-serif",
-            "description-color": "#333333",
-            "number-color": "#e37730",
-            "line-height": 22
-          }
-        },
-        "6a202d79-a04d-4a03-9277-a9485b344679": {
-          "type": "text",
-          "settings": {
-            "list-item-title": "Young Again",
-            "title-font-size": 15,
-            "title-font": "Helvetica, Arial, sans-serif",
-            "title-color": "#333333",
-            "list-item-description": "hello world",
-            "description-font-size": 15,
-            "description-font": "Helvetica, Arial, sans-serif",
-            "description-color": "#333333",
-            "number-color": "#e37730",
-            "line-height": 22
-          }
-        },
-        "6e45be3f-8c1c-4e13-8f43-fd9fe2bb0cb2": {
-          "type": "text",
-          "settings": {
-            "list-item-title": "Young Again",
-            "title-font-size": 15,
-            "title-font": "Helvetica, Arial, sans-serif",
-            "title-color": "#333333",
-            "list-item-description": "hello world",
-            "description-font-size": 15,
-            "description-font": "Helvetica, Arial, sans-serif",
-            "description-color": "#333333",
-            "number-color": "#e37730",
-            "line-height": 22
-          }
-        }
-      },
-      "block_order": [
-        "template--17540903534868__5ae64b78-c454-477d-a2d4-769f228776c5-16746611719e6556da-0",
-        "63726a66-5a36-4bf2-8bef-7b01df5b6190",
-        "2b7d1da9-5135-4fac-864f-ed352ddb9f47",
-        "54cb1a02-be95-48c9-be94-f41de6359634",
-        "6a202d79-a04d-4a03-9277-a9485b344679",
-        "6e45be3f-8c1c-4e13-8f43-fd9fe2bb0cb2"
-      ],
-      "settings": {
-        "section-width": "small",
-        "custom-section-width": 400
-      }
     }
   },
   "order": [
@@ -732,23 +893,18 @@
     "7a9084b0-7bdd-4ca3-9b1e-e61e98be5640",
     "33f08f80-f410-4ef0-b249-c466c80b4b1b",
     "e82f6cb4-3f26-4f82-886b-b89658766ad9",
-    "93a9fe20-e24c-4658-8863-42270c6991af",
-    "c995ca55-ba94-491c-9dda-4f400cffa065",
-    "4b4b8b9b-66aa-4625-a962-47a34395afc0",
-    "914d6dfc-8779-43e6-b492-007775b64893",
-    "2efc624e-061b-497b-b23a-750ea9d78ba5",
-    "f1088849-632e-47b3-9fe3-1cd8678520f0",
-    "096f5e82-a588-4008-b695-394b4cdb317d",
-    "ef0b94e8-fa46-4d58-b683-d4aa1bbed932",
-    "559305e9-a977-47e8-836d-a608fc91e80a",
-    "ddeeec38-0605-44cb-a301-75064ec9d2e5",
-    "02ef450f-464b-438d-869c-4272c8f127a7",
     "40758450-9a8e-441c-8728-210b8be980ef",
-    "646a7249-a971-4384-8242-cdbdba7e2f22",
-    "3bf84eaa-0c83-4c21-8362-8c49c89c7481",
-    "22bcb4fe-ea57-4636-a7ce-319dc6254681",
+    "f2cf8e7a-a865-4aae-a855-4c528a76344c",
+    "8d5bb6eb-1c39-4b9b-8dcb-dd776bcd17f6",
+    "d3ad2421-aa56-4431-b03d-18f0c9020de0",
+    "81eb3a00-fce8-4329-a211-00d92cb7c4df",
+    "81ffcc9a-9521-4df9-851c-d55a67c74f84",
+    "7370fd3a-5042-46d8-ae64-ee3b29eff77c",
+    "6fcb05aa-7d7b-402e-8046-926230ce8ce9",
+    "f031858b-9d0c-4d04-b1a3-3243a2963621",
+    "f036a483-cd28-4173-865a-d0cdd8b667e1",
     "7de081bf-3bf8-4929-8e92-4fbafbfc43cd",
-    "792ee03b-2f33-47de-96bb-5c1f75587cdf",
-    "5ae64b78-c454-477d-a2d4-769f228776c5"
+    "64ea0c9f-9934-49c1-9ab7-0b4b30e8843d",
+    "792ee03b-2f33-47de-96bb-5c1f75587cdf"
   ]
 }
