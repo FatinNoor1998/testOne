@@ -67,13 +67,6 @@
   {% for block in section.blocks %}
     {% case block.type %}
     {% when 'image-text' %}
-
-     {% if block.settings.swap == true %} 
-      .section-wrapper-{{ section.id }} .block-wrapper-{{ block.id }}{
-         flex-direction: row-reverse;
-      }
-     {% endif %}
-
       section .section-wrapper-{{ section.id }} .text-section .button.hide-btn{
          display: none;
       }
@@ -127,12 +120,18 @@
       }
 
       @media screen and (max-width: 600px) {
-        .section-wrapper-{{ section.id }} .block-wrapper-{{ block.id }}{
+        .section-wrapper-{{ section.id }}.single-column-text-image .block-wrapper-{{ block.id }}{
           flex-direction: column;
           gap: 10px;
         }
         
       }
+      {% if block.settings.swap == true %} 
+      .section-wrapper-{{ section.id }} .block-wrapper-{{ block.id }}{
+         flex-direction: row-reverse;
+      }
+     {% endif %}
+
       {% when 'spacer-block' %}
         .section-wrapper-{{ section.id }} .spacer-{{ block.id }}{
           height: {{ block.settings.spacer-height }}px;
