@@ -1,12 +1,223 @@
+<div class="section-wrapper-{{ section.id }} multi-column-text"> 
+    {% for block in section.blocks %}
+      {% case block.type %}
+        {% when 'block-content-style-2' %}
+            <div class="heading-block-{{ block.id }} text-block">
+                    <h2 class="heading">
+                      {{ block.settings.heading }} 
+                    </h2>
+                    <div class="section-descrption">
+                        {{ block.settings.description }} 
+                    </div>
+            </div>
+  
+        {% when 'block-content-style-1' %}  
+              <div class="text-content-block-{{ block.id }} text-block">
+                 <div class="block-title">
+                    <h3 class="title">
+                      {{ block.settings.title }}     
+                    </h3>
+                 </div>
+                 <div class="sub-title">
+                    {{ block.settings.sub-title }}
+                 </div>
+                 <div class="description">
+                  {{ block.settings.block-description }}
+                 </div>                             
+              </div>  
+       {% endcase %}
+     {% endfor %}  
+</div>
+
+<style>
+
+ .section-wrapper-{{ section.id }}.multi-column-text{
+    max-width: 1320px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    text-align: justify;
+    row-gap: unset;
+ }
+
+{% for block in section.blocks %}
+  {% case block.type %}
+  {% when 'block-content-style-2' %}
+
+    .heading-block-{{ block.id }} h2.heading{
+      margin-top: 0px;
+      font-size: 70px;
+      line-height: 56px;
+    }
+    .heading-block-{{ block.id }} .section-descrption p{
+      font-size: {{ section.settings.description-font-size }}px;
+      color: {{ section.settings.description-color }};
+      line-height: 28px;
+    }
+    
+    {% when 'block-content-style-1' %}  
+
+      .text-content-block-{{ block.id }} .block-title h3.title{
+        margin-top: 0px;
+        font-size: {{ section.settings.title-font-size }}px;
+        color: #000000;
+        line-height: 37.21px;
+      }
+      .text-content-block-{{ block.id }} .sub-title{
+        height: 45px;
+      }
+      .text-content-block-{{ block.id }} .sub-title p{
+        font-size: {{ section.settings.sub-title-font-size }}px;
+        color: #000000;
+        line-height: 21px;
+      }
+      .text-content-block-{{ block.id }} .description p{
+        font-size: {{ section.settings.description-font-size }}px;
+        color: #000000;
+        line-height: 28px;
+      }
+      
+      .text-block:not(:nth-child(3n)){
+          border-right: 1px solid rgba(43, 39, 37, 0.3);         
+      }
+      .text-block{
+        max-width: 33%;
+        padding: 0px 45px;
+        padding-top: 100px;
+        height: 650px;
+        border-bottom: 1px solid rgba(43, 39, 37, 0.3);
+      }
+      .text-block:nth-last-child(-n+3){
+        border-bottom: none;
+      }
+      .text-block:nth-child(n+4){
+        padding-top: 75px;
+      }
+
+
+
+
+
+  {% endcase %}
+{% endfor %}
+</style>
+
+
 {% schema %}
+{
+"name": "multicolumn-text",
+"tag": "section",
+"settings": [ 
+   {
+     "type": "range",
+     "id": "description-font-size",
+     "label": "Description Font size",
+     "min": 12,
+     "max": 70,
+     "step": 1,
+     "unit": "px",
+     "default": 16
+   },
+   {
+     "type": "color",
+     "label": "Description color",
+     "id": "description-color",
+     "default": "#000000"
+   },
+   {
+    "type": "header",
+    "content": "Block Title"
+   },
+   {
+     "type": "range",
+     "id": "title-font-size",
+     "label": "Font size",
+     "min": 12,
+     "max": 70,
+     "step": 1,
+     "unit": "px",
+     "default": 26
+   },
+   {
+    "type": "header",
+    "content": "Sub Title"
+   },
+   {
+     "type": "range",
+     "id": "sub-title-font-size",
+     "label": "Font size",
+     "min": 12,
+     "max": 70,
+     "step": 1,
+     "unit": "px",
+     "default": 12
+   }
+ ],
+ "blocks": [
   {
-    "name": "Section name",
-    "settings": []
+   "type": "block-content-style-1",
+   "name": "block-content-style-1",
+   "settings": [
+    {
+     "type": "text",
+     "id": "title",
+     "label": "Title",
+     "default": "Wild Aid"    
+   },
+   {
+     "type": "richtext",
+     "id": "sub-title",
+     "label": "Sub Title",
+     "default": "<p>Wild Aid</p>"    
+   },
+   {
+     "type": "richtext",
+     "id": "block-description",
+     "label": "Description",
+     "default": "<p>While most wildlife conservation groups focus on scientific studies and anti-poaching efforts, Wild Aid work to reduce global consumption of wildlife products and to increase local support for conservation efforts. They collaborate with government and NGO partners to secure marine protected areas, such as the Galapagos Islands in Ecuador and Palau’s Northern Reefs, from threats such as illegal fishing./p>"    
+   }
+   ]
+  },
+  {
+    "type": "block-content-style-2",
+    "name": "block-content-style-2",
+    "settings": [
+      {
+        "type": "text",
+        "id": "heading",
+        "default": "Heading",
+        "label": "Heading"
+      },
+      {
+        "type": "richtext",
+        "id": "description",
+        "default": "<p>Of the profits we share, 80% of those are shared between five charitable causes. Chosen because they speak to our values and eclectic in their reach, each cause is connected through a care for people and planet.</p>",
+        "label": "Description"
+      }
+    ]
   }
+ ],
+    
+    "presets": [
+    {
+    "category": "content",
+    "name": "multicolumn-text",
+    "blocks": [
+      {
+        "type": "block-content-style-2"
+      },
+      {
+        "type": "block-content-style-1"
+      }
+    ]
+    }
+    ] 
+}
 {% endschema %}
 
-{% stylesheet %}
-{% endstylesheet %}
+
 
 {% javascript %}
 {% endjavascript %}
